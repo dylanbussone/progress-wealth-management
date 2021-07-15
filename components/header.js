@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { SECTIONS } from '../constants';
 import styles from '../styles/header.module.css';
@@ -48,15 +49,7 @@ const Header = ({ activeSection }) => (
     <header className={styles.header}>
         <div>
             <button onClick={() => scrollToId(null)} style={logoButtonStyles}>
-                {/* TODOOO */}
-                {/* <StaticImage
-                    src="../images/logo-simple.png"
-                    alt="Progress Wealth Management"
-                    placeholder="blurred"
-                    loading="eager"
-                    layout="fixed"
-                    height={50}
-                /> */}
+                <img src="/logo-simple.png" alt="Progress Wealth Management" height="50" />
             </button>
             <ul>
                 {links.map(link => (

@@ -1,10 +1,11 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet';
+import Head from 'next/head';
+/* eslint-disable @next/next/no-img-element */
+// import Image from 'next/image';
 import { SECTIONS } from '../constants';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import { openCalendlyPopup, debounce } from '../utils';
-// import Favicon from '../public/logo-icon.png'; TODOOOO
 import styles from '../styles/index.module.css';
 
 const Index = () => {
@@ -34,9 +35,7 @@ const Index = () => {
 
     return (
         <React.Fragment>
-            <Helmet title="Progress Wealth Management">
-                {/* TODOOOO */}
-                {/* <link rel="icon" type="image/png" href={Favicon} sizes="16x16" /> */}
+            <Head>
                 <script
                     type="text/javascript"
                     src="https://assets.calendly.com/assets/external/widget.js"
@@ -55,7 +54,7 @@ const Index = () => {
                 <link
                     href="https://assets.calendly.com/assets/external/widget.css"
                     rel="stylesheet"></link>
-            </Helmet>
+            </Head>
             <Header activeSection={activeSection} />
             <main>
                 <div className={styles.hero}>
@@ -74,16 +73,8 @@ const Index = () => {
                             </button>
                             with us to get a free financial plan.
                         </p>
-                        <div>
-                            {/* TODOOOOO */}
-                            {/* <StaticImage
-            className="meeting-image"
-            src="../images/meeting.jpg"
-            alt="Meeting"
-            placeholder="blurred"
-            objectFit="cover"
-            loading="lazy"
-        /> */}
+                        <div className={styles.meeting_image}>
+                            <img src="/meeting.jpg" alt="Meeting" width="100%" loading="lazy" />
                         </div>
                     </div>
                 </section>
