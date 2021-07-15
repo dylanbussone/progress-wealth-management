@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import Head from 'next/head';
+import Script from 'next/script';
 /* eslint-disable @next/next/no-img-element */
 // import Image from 'next/image';
 import { SECTIONS } from '../constants';
@@ -36,21 +37,6 @@ const Index = () => {
     return (
         <React.Fragment>
             <Head>
-                <script
-                    type="text/javascript"
-                    src="https://assets.calendly.com/assets/external/widget.js"
-                    async></script>
-                <script type="text/javascript">
-                    {`window.onload = function() {
-                        Calendly.initBadgeWidget({
-                            url: "https://calendly.com/progress-wealth-management",
-                            text: "Schedule an Appointment",
-                            color: "#2A9D8F",
-                            textColor: "#ffffff",
-                            branding: false,
-                        });
-                    }`}
-                </script>
                 <link
                     href="https://assets.calendly.com/assets/external/widget.css"
                     rel="stylesheet"></link>
@@ -134,6 +120,8 @@ const Index = () => {
                 </section>
             </main>
             <Footer />
+            {/* Calendly widget */}
+            <Script strategy="lazyOnload" src="/calendly.js" />
         </React.Fragment>
     );
 };
