@@ -1,0 +1,36 @@
+.black-text {
+    color: rgb(35, 33, 41);
+}
+
+.blue-text {
+    color: #0f1d2b;
+}
+
+.gold-text {
+    color: #c93;
+}
+
+.white-text {
+    color: #ffc;
+}
+
+
+.black-bg {
+    background-color: rgb(35, 33, 41);
+}
+
+.blue-bg {
+    background-color: #0f1d2b;
+}
+
+.gold-bg {
+    background-color: #c93;
+}
+
+.white-bg {
+    background-color: #ffc;
+}
+
+.green-button-bg {
+    background-color: #2A9D8F;
+}

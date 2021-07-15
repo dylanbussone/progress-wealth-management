@@ -1,0 +1,118 @@
+@value mobile_breakpoint: 768px;
+@value max_content_width: 1000px;
+@value header_height: 100px;
+
+/* COLORS */
+/* @value black: rgb(35, 33, 41);
+@value green: #2A9D8F;
+@value blue: #227C9D;
+@value logo-blue: #0F1D2B;
+@value logo-gold: #c93;
+@value logo-white: #ffc; */
+
+
+.hero {
+    composes: box-shadow from "./effect.css";
+    composes: unselectable from "./effect.css";
+    
+    position: relative;
+    height: calc(100vh - header_height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: mobile_breakpoint) {
+    .hero {
+        height: 350px;
+    }
+}
+
+.hero_image {
+    height: 100%;
+    width: 100%;
+    composes: blue-bg from "./colors.css";
+    background-image: url("../public/logo.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.section {
+    max-width: max_content_width;
+    margin: 0 auto;
+    padding: calc(48px + header_height) 72px 48px; /* TODO layout */
+}
+@media (max-width: mobile_breakpoint) {
+    .section {
+        padding: 48px 72px; /* TODO layout */
+        min-height: 200px;
+    }
+}
+
+.section_header {
+    font-family: "RobotoThin";
+    font-size: 42px; /* TODO typography */
+}
+@media (max-width: mobile_breakpoint) {
+    .section_header {
+        font-size: 36px; /* TODO typography */
+    }
+}
+
+.section_content {
+    margin-top: 48px; /* TODO layout */
+}
+.section_content p, .section_content button {
+    font-size: 18px; /* TODO typography */
+    padding: 0;
+}
+.section_content button {
+    text-decoration: underline;
+}
+
+.schedule .meeting-image {
+    margin-top: 48px; /* TODO layout */
+    width: 100%;
+    max-height: 500px;
+}
+
+.services ul {
+    list-style-type: unset;
+    margin-left: 24px;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+@media (max-width: mobile_breakpoint) {
+    .services ul {
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+    }
+}
+.services ul li {
+    line-height: 3;
+}
+
+.who_we_are {}
+
+.contact_us form input, .contact_us form textarea {
+    background-color: transparent;
+    display: block;
+    border: 1px solid #ccc; /* TODO add a border to colors */
+    margin-bottom: 12px; /* TODO layout */
+    padding: 12px; /* TODO layout */
+    width: calc(100% - 24px); /* TODO layout for this width? */
+}
+
+.submit_button {
+    composes: green-button-bg from "./colors.css";
+    composes: box-shadow-thin from "./effect.css";
+    composes: transition from "./effect.css";
+    color: white;
+    text-decoration: none;
+    padding: 12px; /* TODO layout */
+    margin-top: 12px; /* TODO layout */
+    border-radius: 6px; /* TODO layout */
+    width: 100%;
+    opacity: 0.9;
+}
