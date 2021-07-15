@@ -1,0 +1,78 @@
+/* @import "./variables.scss";
+@import "./mixins.scss";
+
+.header {
+    @include mobile {
+        display: none;
+    }
+    
+    // @include boxshadow;
+    height: $header-height;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background: $logo_blue;
+    z-index: 3;
+    
+    > div {
+        display: flex;
+        align-items: center;
+    }
+    
+    ul {
+        display: flex;
+        li {
+            margin-left: 18px;
+            button {
+                font-size: 16px;
+                padding: 16px;
+                color: white;
+                
+                &.active {
+                    color: $logo_gold;
+                }
+            }
+        }
+    }
+} */
+@value mobile_breakpoint: 768px;
+@value header_height: 100px;
+
+.header {
+    composes: blue_bg from './colors.css';
+    height: header_height;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+}
+@media (max-width: mobile_breakpoint) {
+    .header {
+        /* TODO: mobile header */
+        display: none;
+    }
+}
+
+.header > div {
+    display: flex;
+    align-items: center;
+}
+.header ul {
+    display: flex;
+}
+.header ul li {
+    margin-left: 18px; /* TODO layout */
+}
+
+.header_link {
+    font-size: 16px; /* TODO typography */
+    padding: 16px; /* TODO layout */
+    composes: white_text from './colors.css';
+}
+.active_header_link {
+    font-size: 16px; /* TODO typography */
+    padding: 16px; /* TODO layout */
+    composes: gold_text from './colors.css';
+}

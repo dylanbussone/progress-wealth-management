@@ -1,0 +1,15 @@
+.footer {
+    background: #333;
+    padding: 88px 0; /* TODO layout */
+    margin-top: 48px; /* TODO layout */
+}
+
+.footer * {
+    color: white;
+}
+
+.footer_content {
+    composes: max_content_width from "./layout.css";
+    margin: 0 auto;
+    padding: 24px; /* TODO layout */
+}

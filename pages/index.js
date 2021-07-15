@@ -1,10 +1,10 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { SECTIONS } from '../constants';
-// import Header from '../components/header';
-// import Footer from '../components/footer';
+import Header from '../components/header';
+import Footer from '../components/footer';
 import { openCalendlyPopup, debounce } from '../utils';
-// import Favicon from '../public/logo-icon.png';
+// import Favicon from '../public/logo-icon.png'; TODOOOO
 import styles from '../styles/index.module.css';
 
 const Index = () => {
@@ -40,8 +40,7 @@ const Index = () => {
                 <script
                     type="text/javascript"
                     src="https://assets.calendly.com/assets/external/widget.js"
-                    async
-                ></script>
+                    async></script>
                 <script type="text/javascript">
                     {`window.onload = function() {
                         Calendly.initBadgeWidget({
@@ -55,22 +54,24 @@ const Index = () => {
                 </script>
                 <link
                     href="https://assets.calendly.com/assets/external/widget.css"
-                    rel="stylesheet"
-                ></link>
+                    rel="stylesheet"></link>
             </Helmet>
-            {/* TODOOO */}
-            {/* <Header activeSection={activeSection} /> */}
+            <Header activeSection={activeSection} />
             <main>
                 <div className={styles.hero}>
                     <div className={styles.hero_image} />
                 </div>
-                <section className={`${styles.section} ${styles.schedule}`} id={SECTIONS.SCHEDULE.id}>
-                    <h2 className={styles.section_header} ref={scheduleRef}>{SECTIONS.SCHEDULE.text}</h2>
+                <section
+                    className={`${styles.section} ${styles.schedule}`}
+                    id={SECTIONS.SCHEDULE.id}>
+                    <h2 className={styles.section_header} ref={scheduleRef}>
+                        {SECTIONS.SCHEDULE.text}
+                    </h2>
                     <div className={styles.section_content}>
                         <p>
-                            <button onClick={openCalendlyPopup}>
+                            <button className={styles.button_link} onClick={openCalendlyPopup}>
                                 Schedule an appointment
-                            </button>{' '}
+                            </button>
                             with us to get a free financial plan.
                         </p>
                         <div>
@@ -86,8 +87,12 @@ const Index = () => {
                         </div>
                     </div>
                 </section>
-                <section className={`${styles.section} ${styles.services}`} id={SECTIONS.SERVICES.id}>
-                    <h2 className={styles.section_header} ref={servicesRef}>{SECTIONS.SERVICES.text}</h2>
+                <section
+                    className={`${styles.section} ${styles.services}`}
+                    id={SECTIONS.SERVICES.id}>
+                    <h2 className={styles.section_header} ref={servicesRef}>
+                        {SECTIONS.SERVICES.text}
+                    </h2>
                     <div className={styles.section_content}>
                         <ul>
                             <li>Life Changes</li>
@@ -99,38 +104,36 @@ const Index = () => {
                         </ul>
                     </div>
                 </section>
-                <section className={`${styles.section} ${styles.who_we_are}`} id={SECTIONS.WHO_WE_ARE.id}>
-                    <h2 className={styles.section_header} ref={whoWeAreRef}>{SECTIONS.WHO_WE_ARE.text}</h2>
+                <section
+                    className={`${styles.section} ${styles.who_we_are}`}
+                    id={SECTIONS.WHO_WE_ARE.id}>
+                    <h2 className={styles.section_header} ref={whoWeAreRef}>
+                        {SECTIONS.WHO_WE_ARE.text}
+                    </h2>
                     <div className={styles.section_content}></div>
                 </section>
-                <section className={`${styles.section} ${styles.mailing_list}`} id={SECTIONS.MAILING_LIST.id}>
-                    <h2 className={styles.section_header} ref={mailingListRef}>{SECTIONS.MAILING_LIST.text}</h2>
+                <section
+                    className={`${styles.section} ${styles.mailing_list}`}
+                    id={SECTIONS.MAILING_LIST.id}>
+                    <h2 className={styles.section_header} ref={mailingListRef}>
+                        {SECTIONS.MAILING_LIST.text}
+                    </h2>
                     <div className={styles.section_content}></div>
                 </section>
-                <section className={`${styles.section} ${styles.contact_us}`} id={SECTIONS.CONTACT_US.id}>
-                    <h2 className={styles.section_header} ref={contactRef}>{SECTIONS.CONTACT_US.text}</h2>
+                <section
+                    className={`${styles.section} ${styles.contact_us}`}
+                    id={SECTIONS.CONTACT_US.id}>
+                    <h2 className={styles.section_header} ref={contactRef}>
+                        {SECTIONS.CONTACT_US.text}
+                    </h2>
                     <div className={styles.section_content}>
                         <form>
                             {' '}
                             {/* TODO: just do a mailto for now */}
-                            <input
-                                type="text"
-                                id="first-name"
-                                placeholder="First name"
-                                required
-                            />
-                            <input
-                                type="text"
-                                id="last-name"
-                                placeholder="Last name"
-                                required
-                            />
+                            <input type="text" id="first-name" placeholder="First name" required />
+                            <input type="text" id="last-name" placeholder="Last name" required />
                             <input type="text" id="email" placeholder="Email" required />
-                            <input
-                                type="text"
-                                id="phone"
-                                placeholder="Phone number (optional)"
-                            />
+                            <input type="text" id="phone" placeholder="Phone number (optional)" />
                             <textarea id="message" placeholder="Message" rows={4} required />
                             <button className={styles.submit_button} type="submit">
                                 Submit
@@ -139,7 +142,7 @@ const Index = () => {
                     </div>
                 </section>
             </main>
-            {/* <Footer /> */}
+            <Footer />
         </React.Fragment>
     );
 };
@@ -148,7 +151,7 @@ function getActiveSection(sectionsWithRefs) {
     const scrollY = window.scrollY + 100; // 100px header height
     const padding = 100;
     let activeSection;
-    Object.keys(sectionsWithRefs).forEach((section) => {
+    Object.keys(sectionsWithRefs).forEach(section => {
         const ref = sectionsWithRefs[section].ref;
         const sectionOffsetTop = ref.current?.offsetTop;
         if (scrollY + padding > sectionOffsetTop) {

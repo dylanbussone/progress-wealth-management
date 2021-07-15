@@ -1,18 +1,8 @@
 @value mobile_breakpoint: 768px;
-@value max_content_width: 1000px;
 @value header_height: 100px;
 
-/* COLORS */
-/* @value black: rgb(35, 33, 41);
-@value green: #2A9D8F;
-@value blue: #227C9D;
-@value logo-blue: #0F1D2B;
-@value logo-gold: #c93;
-@value logo-white: #ffc; */
-
-
 .hero {
-    composes: box-shadow from "./effect.css";
+    composes: box_shadow from "./effect.css";
     composes: unselectable from "./effect.css";
     
     position: relative;
@@ -30,14 +20,14 @@
 .hero_image {
     height: 100%;
     width: 100%;
-    composes: blue-bg from "./colors.css";
+    composes: blue_bg from "./colors.css";
     background-image: url("../public/logo.svg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
 
 .section {
-    max-width: max_content_width;
+    composes: max_content_width from "./layout.css";
     margin: 0 auto;
     padding: calc(48px + header_height) 72px 48px; /* TODO layout */
 }
@@ -63,9 +53,9 @@
 }
 .section_content p, .section_content button {
     font-size: 18px; /* TODO typography */
-    padding: 0;
 }
-.section_content button {
+
+.button_link {
     text-decoration: underline;
 }
 
@@ -105,8 +95,8 @@
 }
 
 .submit_button {
-    composes: green-button-bg from "./colors.css";
-    composes: box-shadow-thin from "./effect.css";
+    composes: green_button_bg from "./colors.css";
+    composes: box_shadow_thin from "./effect.css";
     composes: transition from "./effect.css";
     color: white;
     text-decoration: none;

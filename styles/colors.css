@@ -1,36 +1,36 @@
-.black-text {
+.black_text {
     color: rgb(35, 33, 41);
 }
 
-.blue-text {
+.blue_text {
     color: #0f1d2b;
 }
 
-.gold-text {
+.gold_text {
     color: #c93;
 }
 
-.white-text {
-    color: #ffc;
+.white_text {
+    color: #fff;
 }
 
 
-.black-bg {
+.black_bg {
     background-color: rgb(35, 33, 41);
 }
 
-.blue-bg {
+.blue_bg {
     background-color: #0f1d2b;
 }
 
-.gold-bg {
+.gold_bg {
     background-color: #c93;
 }
 
-.white-bg {
+.white_bg {
     background-color: #ffc;
 }
 
-.green-button-bg {
+.green_button_bg {
     background-color: #2A9D8F;
 }
