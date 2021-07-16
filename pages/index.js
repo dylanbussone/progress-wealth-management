@@ -34,6 +34,22 @@ const Index = () => {
             }, 100);
     });
 
+    const contactFormRef = useRef();
+
+    const sendMail = e => {
+        e.preventDefault();
+        const [name, email, phone, message] = Array.from(contactFormRef.current.elements).map(
+            el => el.value,
+        );
+        const addr = 'blaine@progresswealthmanagement.com';
+        const subject = `Message from ${name}`;
+        const body = `${message.replace(
+            /\n/g,
+            '%0D%0A',
+        )}%0D%0A%0D%0A--%0D%0A${name}%0D%0A${email}%0D%0A${phone}`;
+        window.location.href = `mailto:${addr}?subject=${subject}&body=${body}`;
+    };
+
     return (
         <React.Fragment>
             <Head>
@@ -104,15 +120,33 @@ const Index = () => {
                         {SECTIONS.CONTACT_US.text}
                     </h2>
                     <div className={styles.section_content}>
-                        <form>
+                        <form ref={contactFormRef}>
                             {' '}
-                            {/* TODO: just do a mailto for now */}
-                            <input type="text" id="first-name" placeholder="First name" required />
-                            <input type="text" id="last-name" placeholder="Last name" required />
-                            <input type="text" id="email" placeholder="Email" required />
-                            <input type="text" id="phone" placeholder="Phone number (optional)" />
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Name"
+                                autoComplete="name"
+                                required
+                            />
+                            <input
+                                type="text"
+                                id="email"
+                                placeholder="Email"
+                                autoComplete="email"
+                                required
+                            />
+                            <input
+                                type="text"
+                                id="phone"
+                                placeholder="Phone number (optional)"
+                                autoComplete="phone"
+                            />
                             <textarea id="message" placeholder="Message" rows={4} required />
-                            <button className={styles.submit_button} type="submit">
+                            <button
+                                className={styles.submit_button}
+                                type="submit"
+                                onClick={sendMail}>
                                 Submit
                             </button>
                         </form>
