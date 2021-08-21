@@ -22,29 +22,6 @@ const logoButtonStyles = {
     background: '#0F1D2B',
 };
 
-const links = [
-    {
-        text: SECTIONS.SCHEDULE.text,
-        onClick: () => scrollToId(SECTIONS.SCHEDULE.id),
-    },
-    {
-        text: SECTIONS.SERVICES.text,
-        onClick: () => scrollToId(SECTIONS.SERVICES.id),
-    },
-    {
-        text: SECTIONS.WHO_WE_ARE.text,
-        onClick: () => scrollToId(SECTIONS.WHO_WE_ARE.id),
-    },
-    {
-        text: SECTIONS.MAILING_LIST.text,
-        onClick: () => scrollToId(SECTIONS.MAILING_LIST.id),
-    },
-    {
-        text: SECTIONS.CONTACT_US.text,
-        onClick: () => scrollToId(SECTIONS.CONTACT_US.id),
-    },
-];
-
 const Header = ({ activeSection }) => (
     <header className={styles.header}>
         <div>
@@ -52,16 +29,16 @@ const Header = ({ activeSection }) => (
                 <img src="/logo-simple.png" alt="Progress Wealth Management" height="50" />
             </button>
             <ul>
-                {links.map(link => (
-                    <li key={link.text}>
+                {Object.keys(SECTIONS).map(section => (
+                    <li key={SECTIONS[section].text}>
                         <button
-                            onClick={link.onClick}
+                            onClick={() => scrollToId(SECTIONS[section].id)}
                             className={
-                                activeSection?.text === link.text
+                                activeSection?.text === SECTIONS[section].text
                                     ? styles.active_header_link
                                     : styles.header_link
                             }>
-                            {link.text}
+                            {SECTIONS[section].text}
                         </button>
                     </li>
                 ))}

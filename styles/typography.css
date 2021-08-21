@@ -1,17 +1,6 @@
-/* ??? */
-.sm {
-    font-size: 11px;
-}
-
-.md {
-    font-size: 13px;
-}
-
-.lg {
-    font-size: 16px;
-}
-
-.header {
-    font-size: 24px;
-}
-
+@value text_sm: 13px;
+@value text_md: 15px;
+@value text_header_link: 16px;
+@value text_lg: 18px;
+@value text_section_header: 42px;
+@value text_section_header_mob: 36px;

@@ -1,7 +1,10 @@
+@value footer_bg, white from './colors.css';
+@value lg, xxl, xxxl from './layout.css';
+
 .footer {
-    background: #333;
-    padding: 88px 0; /* TODO layout */
-    margin-top: 48px; /* TODO layout */
+    background: footer_bg;
+    min-height: 220px;
+    margin-top: xxl;
 }
 
 .footer * {
@@ -9,7 +12,11 @@
 }
 
 .footer_content {
-    composes: max_content_width from "./layout.css";
+    composes: max_content_width from './layout.css';
     margin: 0 auto;
-    padding: 24px; /* TODO layout */
+    padding: xxxl;
+}
+
+.footer_content ul {
+    list-style: none;
 }

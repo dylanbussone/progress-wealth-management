@@ -1,17 +1,20 @@
-@value mobile_breakpoint: 768px;
-@value header_height: 100px;
+@value mobile, sm, md, lg, xl, xxl from './layout.css';
+@value text_md, text_lg, text_section_header, text_section_header_mob from './typography.css';
+@value blue, green_button, white, border from './colors.css';
+@value header_height from './header.module.css';
 
+/* Hero */
 .hero {
-    composes: box_shadow from "./effect.css";
-    composes: unselectable from "./effect.css";
-    
+    composes: box_shadow from './effect.css';
+    composes: unselectable from './effect.css';
+
     position: relative;
     height: calc(100vh - header_height);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-@media (max-width: mobile_breakpoint) {
+@media (max-width: mobile) {
     .hero {
         height: 350px;
     }
@@ -20,54 +23,64 @@
 .hero_image {
     height: 100%;
     width: 100%;
-    composes: blue_bg from "./colors.css";
-    background-image: url("/logo.svg");
+    background: blue;
+    background-image: url('/logo.svg');
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
 
+/* All Sections */
 .section {
-    composes: max_content_width from "./layout.css";
+    composes: max_content_width from './layout.css';
     margin: 0 auto;
-    padding: calc(48px + header_height) 72px 48px; /* TODO layout */
+    padding: calc(xl + header_height) xxl xl;
 }
-@media (max-width: mobile_breakpoint) {
+@media (max-width: mobile) {
     .section {
-        padding: 48px 72px; /* TODO layout */
+        padding: xl xxl;
         min-height: 200px;
     }
 }
-
 .section_header {
-    font-family: "RobotoThin";
-    font-size: 42px; /* TODO typography */
+    font-family: 'RobotoThin';
+    font-size: text_section_header;
 }
-@media (max-width: mobile_breakpoint) {
+@media (max-width: mobile) {
     .section_header {
-        font-size: 36px; /* TODO typography */
+        font-size: text_section_header_mob;
+        color: pink;
     }
 }
-
 .section_content {
-    margin-top: 48px; /* TODO layout */
+    composes: margin_xl from './layout.css';
 }
-.section_content p, .section_content button {
-    font-size: 18px; /* TODO typography */
+.section_content * {
+    font-size: text_lg;
+    line-height: 1.5;
 }
 
+/* Who We Are */
 .button_link {
     text-decoration: underline;
 }
-
-.schedule .meeting_image {
-    margin-top: 48px; /* TODO layout */
-    width: 100%;
-    max-height: 500px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
+.who_we_are {
+}
+.who_we_are > div {
+    margin: xl 0;
+    border: 1px dashed border;
+}
+.who_we_are li {
+    margin-left: 1rem;
 }
 
+.easy_opt_pers {
+    composes: three_col from './layout.css';
+}
+.easy_opt_pers p {
+    font-style: italic;
+}
+
+/* Our Services */
 .services ul {
     list-style-type: unset;
     margin-left: 24px;
@@ -75,7 +88,7 @@
     -webkit-columns: 2;
     -moz-columns: 2;
 }
-@media (max-width: mobile_breakpoint) {
+@media (max-width: mobile) {
     .services ul {
         columns: 1;
         -webkit-columns: 1;
@@ -86,26 +99,26 @@
     line-height: 3;
 }
 
-.who_we_are {}
-
-.contact_us form input, .contact_us form textarea {
+/* Contact Us */
+.contact_us form input,
+.contact_us form textarea {
+    font-size: text_md;
     background-color: transparent;
     display: block;
-    border: 1px solid #ccc; /* TODO add a border to colors */
-    margin-bottom: 12px; /* TODO layout */
-    padding: 12px; /* TODO layout */
-    width: calc(100% - 24px); /* TODO layout for this width? */
+    border: 1px solid border;
+    margin-bottom: sm;
+    padding: sm;
+    width: calc(100% - (sm * 2));
 }
-
 .submit_button {
-    composes: green_button_bg from "./colors.css";
-    composes: box_shadow_thin from "./effect.css";
-    composes: transition from "./effect.css";
+    composes: box_shadow_thin from './effect.css';
+    composes: transition from './effect.css';
+    background: green_button;
     color: white;
     text-decoration: none;
-    padding: 12px; /* TODO layout */
-    margin-top: 12px; /* TODO layout */
-    border-radius: 6px; /* TODO layout */
+    padding: sm;
+    margin-top: sm;
+    border-radius: 6px;
     width: 100%;
     opacity: 0.9;
 }

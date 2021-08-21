@@ -1,8 +1,22 @@
-/* ??? */
-.padding_md {
-    padding: 8px;
-}
+@value mobile: 768px;
+@value max_width: 1000px;
+
+@value xs: 8px;
+@value sm: 12px;
+@value md: 16px;
+@value lg: 32px;
+@value xl: 48px;
+@value xxl: 72px;
+@value xxxl: 98px;
 
 .max_content_width {
-    max-width: 1000px;
+    max-width: max_width;
+}
+
+.three_col {
+    display: flex;
+}
+.three_col > div {
+    flex-grow: 1;
+    width: 33%;
 }

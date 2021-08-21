@@ -1,36 +1,8 @@
-.black_text {
-    color: rgb(35, 33, 41);
-}
-
-.blue_text {
-    color: #0f1d2b;
-}
-
-.gold_text {
-    color: #c93;
-}
-
-.white_text {
-    color: #fff;
-}
-
-
-.black_bg {
-    background-color: rgb(35, 33, 41);
-}
-
-.blue_bg {
-    background-color: #0f1d2b;
-}
-
-.gold_bg {
-    background-color: #c93;
-}
-
-.white_bg {
-    background-color: #ffc;
-}
-
-.green_button_bg {
-    background-color: #2A9D8F;
-}
+@value black: rgb(35, 33, 41);
+@value blue: #0f1d2b;
+@value gold: #c93;
+@value white: white;
+@value offwhite: #ffc;
+@value border: #ccc;
+@value green_button: #2A9D8F;
+@value footer_bg: #333;

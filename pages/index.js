@@ -2,7 +2,6 @@ import React, { useRef, useState, useEffect } from 'react';
 import Head from 'next/head';
 import Script from 'next/script';
 /* eslint-disable @next/next/no-img-element */
-// import Image from 'next/image';
 import { SECTIONS } from '../constants';
 import Header from '../components/header';
 import Footer from '../components/footer';
@@ -11,17 +10,15 @@ import styles from '../styles/index.module.css';
 
 const Index = () => {
     const [activeSection, setActiveSection] = useState();
-    const scheduleRef = useRef();
-    const servicesRef = useRef();
+    // const scheduleRef = useRef();
     const whoWeAreRef = useRef();
-    const mailingListRef = useRef();
+    const servicesRef = useRef();
     const contactRef = useRef();
 
     const sectionsWithRefs = { ...SECTIONS };
-    sectionsWithRefs.SCHEDULE.ref = scheduleRef;
-    sectionsWithRefs.SERVICES.ref = servicesRef;
+    // sectionsWithRefs.SCHEDULE.ref = scheduleRef;
     sectionsWithRefs.WHO_WE_ARE.ref = whoWeAreRef;
-    sectionsWithRefs.MAILING_LIST.ref = mailingListRef;
+    sectionsWithRefs.SERVICES.ref = servicesRef;
     sectionsWithRefs.CONTACT_US.ref = contactRef;
 
     useEffect(() => {
@@ -62,7 +59,7 @@ const Index = () => {
                 <div className={styles.hero}>
                     <div className={styles.hero_image} />
                 </div>
-                <section
+                {/* <section
                     className={`${styles.section} ${styles.schedule}`}
                     id={SECTIONS.SCHEDULE.id}>
                     <h2 className={styles.section_header} ref={scheduleRef}>
@@ -78,6 +75,130 @@ const Index = () => {
                         <div className={styles.meeting_image}>
                             <img src="/meeting.jpg" alt="Meeting" width="100%" loading="lazy" />
                         </div>
+                    </div>
+                </section> */}
+                <section
+                    className={`${styles.section} ${styles.who_we_are}`}
+                    id={SECTIONS.WHO_WE_ARE.id}>
+                    <h2 className={styles.section_header} ref={whoWeAreRef}>
+                        Financial Planning for Progress
+                    </h2>
+
+                    <div>
+                        <p>
+                            Meet your financial planning partners that provide you the tools,
+                            guidance, inspiration and advice you need to succeed.
+                            <button className={styles.button_link} onClick={openCalendlyPopup}>
+                                Get Started.
+                            </button>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Financial Planning for a Better Future</h3>
+
+                        <p>
+                            Whether you’re worth $100 or $100M, we’re here to help you figure out
+                            everything about your financial life.
+                        </p>
+                    </div>
+                    <div className={`${styles.easy_opt_pers}`}>
+                        <div>
+                            <h4>Easy</h4>
+                            <p>You don’t need to dedicate months to this process.</p>
+                        </div>
+                        <div>
+                            <h4>Optimized</h4>
+                            <p>
+                                We comb through your finances to find every area of opportunity so
+                                we help you grow as fast as we can.
+                            </p>
+                        </div>
+                        <div>
+                            <h4>Personalized</h4>
+                            <p>
+                                We customize everything to your liking, collaborating with you or
+                                permitting you to delegate everything to us.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>What Makes Progress Wealth Management better?</h3>
+
+                        <ul>
+                            <li>
+                                Built to make achieving progress EASY.
+                                <ul>
+                                    <li>
+                                        Our goal is to make it as simple as possible to bring
+                                        organization, objectivity and simplicity to your financial
+                                        life.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                We use a time tested model for building wealth to give you the best
+                                chance at affording whatever life throws at you.
+                            </li>
+                            <li>
+                                We’re truly holistic, so there’s no stone left unturned as we help
+                                you figure out your financial life.
+                                <ul>
+                                    <li>
+                                        If it can benefit your financial future, we will do anything
+                                        to support you and to optimize your future progress.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                We’re tax professionals and CFPs, so we don’t just help you plan for
+                                your future but we do so in the most tax efficient way.
+                            </li>
+                            <li>
+                                We hold your hand every step of the way to help you stay disciplined
+                                and to make every big decision simple.
+                            </li>
+                            <li>
+                                Invest with your values. Our socially responsible investing helps
+                                you make a positive impact on society without sacrificing
+                                performance.
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Common Questions We Help Our Clients Answer</h3>
+
+                        <ul>
+                            <li>How can I plan for the future in the most tax efficient way? </li>
+                            <li>
+                                How should I approach my stock options to ensure I’m not wasting any
+                                money?
+                            </li>
+                            <li>
+                                What can be done today to ensure I’m not throwing away any of my
+                                employer sponsored benefits?
+                            </li>
+                            <li>
+                                How can I ensure that I’m truly maximizing my earning potential
+                                early on and in doing so, getting paid what I’m worth?
+                            </li>
+                            <li>What can I do today to decrease my tax burden? </li>
+                            <li>
+                                How do I protect myself from liability of getting sued either by
+                                clients or from whatever could happen?
+                            </li>
+                            <li>What can I do differently to grow my money more effectively? </li>
+                            <li>How should I approach paying off my student loans?</li>
+                            <li>How can I grow my rental property empire in a smart way? </li>
+                            <li>Do I need an estate plan and if so, how should it look?</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>
+                            Progress Wealth today.
+                            <br />
+                            Progress tomorrow.
+                        </h3>
                     </div>
                 </section>
                 <section
@@ -96,22 +217,6 @@ const Index = () => {
                             <li>Tax Advice</li>
                         </ul>
                     </div>
-                </section>
-                <section
-                    className={`${styles.section} ${styles.who_we_are}`}
-                    id={SECTIONS.WHO_WE_ARE.id}>
-                    <h2 className={styles.section_header} ref={whoWeAreRef}>
-                        {SECTIONS.WHO_WE_ARE.text}
-                    </h2>
-                    <div className={styles.section_content}></div>
-                </section>
-                <section
-                    className={`${styles.section} ${styles.mailing_list}`}
-                    id={SECTIONS.MAILING_LIST.id}>
-                    <h2 className={styles.section_header} ref={mailingListRef}>
-                        {SECTIONS.MAILING_LIST.text}
-                    </h2>
-                    <div className={styles.section_content}></div>
                 </section>
                 <section
                     className={`${styles.section} ${styles.contact_us}`}

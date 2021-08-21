@@ -1,46 +1,10 @@
-/* @import "./variables.scss";
-@import "./mixins.scss";
-
-.header {
-    @include mobile {
-        display: none;
-    }
-    
-    // @include boxshadow;
-    height: $header-height;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    background: $logo_blue;
-    z-index: 3;
-    
-    > div {
-        display: flex;
-        align-items: center;
-    }
-    
-    ul {
-        display: flex;
-        li {
-            margin-left: 18px;
-            button {
-                font-size: 16px;
-                padding: 16px;
-                color: white;
-                
-                &.active {
-                    color: $logo_gold;
-                }
-            }
-        }
-    }
-} */
-@value mobile_breakpoint: 768px;
+@value mobile, md from './layout.css';
+@value text_header_link from './typography.css';
+@value blue, white, gold from './colors.css';
 @value header_height: 100px;
 
 .header {
-    composes: blue_bg from './colors.css';
+    background: blue;
     height: header_height;
     position: sticky;
     top: 0;
@@ -48,7 +12,7 @@
     justify-content: center;
     z-index: 3;
 }
-@media (max-width: mobile_breakpoint) {
+@media (max-width: mobile) {
     .header {
         /* TODO: mobile header */
         display: none;
@@ -61,18 +25,19 @@
 }
 .header ul {
     display: flex;
+    list-style: none;
 }
 .header ul li {
-    margin-left: 18px; /* TODO layout */
+    margin-left: md;
 }
 
 .header_link {
-    font-size: 16px; /* TODO typography */
-    padding: 16px; /* TODO layout */
-    composes: white_text from './colors.css';
+    font-size: text_header_link;
+    padding: md;
+    color: white;
 }
 .active_header_link {
-    font-size: 16px; /* TODO typography */
-    padding: 16px; /* TODO layout */
-    composes: gold_text from './colors.css';
+    font-size: text_header_link;
+    padding: md;
+    color: gold;
 }

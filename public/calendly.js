@@ -889,7 +889,7 @@ Calendly._util.assign = function assign(target, varArgs) {
 Calendly._autoLoadInlineWidgets();
 
 Calendly.initBadgeWidget({
-    url: 'https://calendly.com/progress-wealth-management',
+    url: 'https://calendly.com/blaine-thiederman1',
     text: 'Schedule an Appointment',
     color: '#2A9D8F',
     textColor: '#ffffff',
