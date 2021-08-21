@@ -1,6 +1,19 @@
 @value text_sm: 13px;
-@value text_md: 15px;
-@value text_header_link: 16px;
+@value text_md: 16px;
 @value text_lg: 18px;
-@value text_section_header: 42px;
-@value text_section_header_mob: 36px;
+@value text_h2: 22px;
+@value text_h1: 42px;
+@value text_h1_mob: 36px;
+
+@font-face {
+    font-family: "RobotoThin";
+    src: url("./fonts/Roboto/Roboto-Thin.ttf");
+}
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("./fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: "RobotoBold";
+    src: url("./fonts/Roboto/Roboto-Bold.ttf");
+}

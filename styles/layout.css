@@ -18,5 +18,6 @@
 }
 .three_col > div {
     flex-grow: 1;
-    width: 33%;
+    width: calc(33% - lg);
+    margin-right: lg;
 }

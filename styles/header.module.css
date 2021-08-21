@@ -1,5 +1,5 @@
 @value mobile, md from './layout.css';
-@value text_header_link from './typography.css';
+@value text_md from './typography.css';
 @value blue, white, gold from './colors.css';
 @value header_height: 100px;
 
@@ -32,12 +32,12 @@
 }
 
 .header_link {
-    font-size: text_header_link;
+    font-size: text_md;
     padding: md;
     color: white;
 }
 .active_header_link {
-    font-size: text_header_link;
+    font-size: text_md;
     padding: md;
     color: gold;
 }

@@ -1,5 +1,5 @@
 @value mobile, sm, md, lg, xl, xxl from './layout.css';
-@value text_md, text_lg, text_section_header, text_section_header_mob from './typography.css';
+@value text_md, text_lg, text_h1, text_h1_mob, text_h2 from './typography.css';
 @value blue, green_button, white, border from './colors.css';
 @value header_height from './header.module.css';
 
@@ -37,25 +37,24 @@
 }
 @media (max-width: mobile) {
     .section {
-        padding: xl xxl;
+        padding: xl lg;
         min-height: 200px;
     }
 }
 .section_header {
     font-family: 'RobotoThin';
-    font-size: text_section_header;
+    font-size: text_h1;
 }
 @media (max-width: mobile) {
     .section_header {
-        font-size: text_section_header_mob;
-        color: pink;
+        font-size: text_h1_mob;
     }
 }
 .section_content {
-    composes: margin_xl from './layout.css';
+    margin: xl 0;
 }
 .section_content * {
-    font-size: text_lg;
+    font-size: text_md;
     line-height: 1.5;
 }
 
@@ -63,21 +62,71 @@
 .button_link {
     text-decoration: underline;
 }
-.who_we_are {
+@media (min-width: mobile) {
+    .button_link {
+        display: block;
+        padding: 0;
+    }
 }
-.who_we_are > div {
-    margin: xl 0;
-    border: 1px dashed border;
+.meeting_image {
+    margin-top: lg;
+    width: 100%;
+    max-height: 500px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.who_we_are > div > div {
+    margin-bottom: xxl;
+}
+.who_we_are h2 {
+    font-size: text_h2;
+    margin: md 0;
+    font-family: "RobotoBold";
+}
+.who_we_are h3 {
+    font-size: text_lg;
 }
 .who_we_are li {
-    margin-left: 1rem;
+    margin-left: lg;
+    margin-bottom: md;
+    line-height: 1.8;
 }
 
 .easy_opt_pers {
     composes: three_col from './layout.css';
 }
+@media (max-width: mobile) {
+    .easy_opt_pers {
+        flex-direction: column;
+    }
+    .easy_opt_pers > div {
+        width: 100%;
+        margin-bottom: lg;
+    }
+    .easy_opt_pers > div:last-of-type {
+        margin-bottom: 0;
+    }
+}
 .easy_opt_pers p {
-    font-style: italic;
+    font-size: text_md;
+}
+
+.today_tomorrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.today_tomorrow > * {
+    flex-grow: 1;
+    width: 50%;
+}
+.today_tomorrow_img_wrapper {
+    width: 100%;
+    max-height: 800px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
 /* Our Services */
