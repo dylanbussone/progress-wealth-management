@@ -1,8 +1,12 @@
-@value black: rgb(35, 33, 41);
 @value blue: #0f1d2b;
-@value gold: #c93;
+@value gold: #CC9933;
+@value green: #81AE9D;
+@value lavender: #EEE5E9;
+@value violet: #6369D1;
+
+
+@value footer_bg: #333;
+@value black: #232129;
 @value white: white;
 @value offwhite: #ffc;
 @value border: #ccc;
-@value green_button: #2A9D8F;
-@value footer_bg: #333;

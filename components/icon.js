@@ -1,18 +1,33 @@
 import React from 'react';
-import Easy from './icons/easy.svg';
-import Optimized from './icons/optimized.svg';
-import Personalized from './icons/personalized.svg';
 import styles from '../styles/icon.module.css';
+import { toTitleCase } from '../utils';
+
+import Career from './icons/career.svg';
+import Easy from './icons/easy.svg';
+import Family from './icons/family.svg';
+import Investments from './icons/investments.svg';
+import Optimized from './icons/optimized.svg';
+import Personal from './icons/personal.svg';
+import Personalized from './icons/personalized.svg';
+import Retirement from './icons/retirement.svg';
+import Tax from './icons/tax.svg';
 
 const ICONS = {
-    easy: Easy,
-    optimized: Optimized,
-    personalized: Personalized,
+    Career,
+    Easy,
+    Family,
+    Investments,
+    Optimized,
+    Personal,
+    Personalized,
+    Retirement,
+    Tax,
 };
 
 const Icon = ({ name, size = '64', color, ...props }) => {
-    if (ICONS[name]) {
-        return React.createElement(ICONS[name], { height: size, width: size, className: styles[color], ...props });
+    const iconName = toTitleCase(name);
+    if (ICONS[iconName]) {
+        return React.createElement(ICONS[iconName], { height: size, width: size, className: styles[color], ...props });
     }
     console.error(`Missing icon "${name}.svg"`);
     return null;

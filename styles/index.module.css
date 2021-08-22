@@ -1,6 +1,6 @@
 @value mobile, xs, sm, md, lg, xl, xxl, xxxl from './layout.css';
 @value text_md, text_lg, text_h1, text_h1_mob, text_h2, text_h3 from './typography.css';
-@value blue, green_button, white, border from './colors.css';
+@value blue, green, white, border, violet from './colors.css';
 @value header_height from './header.module.css';
 
 /* Hero */
@@ -69,7 +69,7 @@
 .section_content li {
     margin-left: lg;
     margin-bottom: md;
-    line-height: 1.8;
+    line-height: 2;
 }
 .section_content .section_content_group {
     margin-bottom: xxxl;
@@ -112,10 +112,15 @@
 .easy_opt_pers svg {
     margin-bottom: calc(-1 * xs);
 }
+.easy_opt_pers h4 {
+    color: violet;
+    margin-bottom: sm;
+}
 .easy_opt_pers p {
     font-size: text_md;
 }
 
+/* Boat */
 .today_tomorrow {
     display: flex;
     align-items: center;
@@ -135,8 +140,7 @@
 
 /* Our Services */
 .services .services_list {
-    list-style-type: unset;
-    margin-left: 24px;
+    list-style: none;
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
@@ -149,7 +153,15 @@
     }
 }
 .services .services_list li {
-    line-height: 3;
+    line-height: 6;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: text_lg;
+    font-weight: bold;
+}
+.services .services_list li svg {
+    width: 80px;
 }
 
 /* Contact Us */
@@ -166,7 +178,7 @@
 .submit_button {
     composes: box_shadow_thin from './effect.css';
     composes: transition from './effect.css';
-    background: green_button;
+    background: green;
     color: white;
     text-decoration: none;
     padding: sm;

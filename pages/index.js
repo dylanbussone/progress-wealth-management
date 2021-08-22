@@ -109,12 +109,12 @@ const Index = () => {
                         </div>
                         <div className={`${styles.easy_opt_pers} ${styles.section_content_group}`}>
                             <div>
-                                <Icon name="easy" color="icon_blue" />
+                                <Icon name="easy" color="icon_violet" />
                                 <h4>Easy</h4>
                                 <p>You don’t need to dedicate months to this process.</p>
                             </div>
                             <div>
-                                <Icon name="optimized" color="icon_blue" />
+                                <Icon name="optimized" color="icon_violet" />
                                 <h4>Optimized</h4>
                                 <p>
                                     We comb through your finances to find every area of opportunity
@@ -122,7 +122,7 @@ const Index = () => {
                                 </p>
                             </div>
                             <div>
-                                <Icon name="personalized" color="icon_blue" />
+                                <Icon name="personalized" color="icon_violet" />
                                 <h4>Personalized</h4>
                                 <p>
                                     We customize everything to your liking, collaborating with you
@@ -195,12 +195,12 @@ const Index = () => {
                     <div className={styles.section_content}>
                         <div className={styles.section_content_group}>
                             <ul className={styles.services_list}>
-                                <li>Life Changes</li>
-                                <li>Career Advice</li>
-                                <li>Personal Finance</li>
-                                <li>Retirement Planning</li>
-                                <li>Investment Advice</li>
-                                <li>Tax Advice</li>
+                                <li><Icon name="family" size={48} color="icon_gold" />Life Changes</li>
+                                <li><Icon name="career" size={52} color="icon_gold" />Career Advice</li>
+                                <li><Icon name="personal" size={42} color="icon_gold" />Personal Finance</li>
+                                <li><Icon name="retirement" size={52} color="icon_gold" />Retirement Planning</li>
+                                <li><Icon name="investments" size={34} color="icon_gold" />Investment Advice</li>
+                                <li><Icon name="tax" size={42} color="icon_gold" />Tax Advice</li>
                             </ul>
                         </div>
                         <div className={styles.section_content_group}>

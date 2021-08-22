@@ -1,4 +1,4 @@
-@value black, white, blue, gold from './colors.css';
+@value black, white, blue, gold, violet, lavender, green from './colors.css';
 
 .icon_black {
     fill: black;
@@ -14,4 +14,16 @@
 
 .icon_gold {
     fill: gold;
+}
+
+.icon_violet {
+    fill: violet;
+}
+
+.icon_lavender {
+    fill: lavender;
+}
+
+.icon_green {
+    fill: green;
 }

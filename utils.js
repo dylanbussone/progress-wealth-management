@@ -10,4 +10,10 @@ function debounce(fn, delay) {
     fn._tId = setTimeout(fn, delay);
 }
 
-export { openCalendlyPopup, debounce };
+function toTitleCase(str) {
+    return str.replace(/\w\S*/g, function (txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+}
+
+export { openCalendlyPopup, debounce, toTitleCase };

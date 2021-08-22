@@ -891,7 +891,7 @@ Calendly._autoLoadInlineWidgets();
 Calendly.initBadgeWidget({
     url: 'https://calendly.com/blaine-thiederman1',
     text: 'Schedule an Appointment',
-    color: '#2A9D8F',
+    color: '#81AE9D',
     textColor: '#ffffff',
     branding: false,
 });
