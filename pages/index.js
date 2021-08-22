@@ -5,6 +5,7 @@ import Script from 'next/script';
 import { SECTIONS } from '../constants';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import Icon from '../components/icon';
 import { openCalendlyPopup, debounce } from '../utils';
 import styles from '../styles/index.module.css';
 
@@ -85,7 +86,7 @@ const Index = () => {
                     </h1>
 
                     <div className={styles.section_content}>
-                        <div>
+                        <div className={styles.section_content_group}>
                             <p>
                                 Meet your financial planning partners that provide you the tools,
                                 guidance, inspiration and advice you need to succeed.
@@ -98,7 +99,7 @@ const Index = () => {
                             </div>
                         </div>
 
-                        <div>
+                        <div className={styles.section_content_group}>
                             <h2>Financial Planning for a Better Future</h2>
 
                             <p>
@@ -106,12 +107,14 @@ const Index = () => {
                                 out everything about your financial life.
                             </p>
                         </div>
-                        <div className={`${styles.easy_opt_pers}`}>
+                        <div className={`${styles.easy_opt_pers} ${styles.section_content_group}`}>
                             <div>
+                                <Icon name="easy" color="icon_blue" />
                                 <h4>Easy</h4>
                                 <p>You don’t need to dedicate months to this process.</p>
                             </div>
                             <div>
+                                <Icon name="optimized" color="icon_blue" />
                                 <h4>Optimized</h4>
                                 <p>
                                     We comb through your finances to find every area of opportunity
@@ -119,6 +122,7 @@ const Index = () => {
                                 </p>
                             </div>
                             <div>
+                                <Icon name="personalized" color="icon_blue" />
                                 <h4>Personalized</h4>
                                 <p>
                                     We customize everything to your liking, collaborating with you
@@ -126,7 +130,7 @@ const Index = () => {
                                 </p>
                             </div>
                         </div>
-                        <div>
+                        <div className={styles.section_content_group}>
                             <h2>What Makes Progress Wealth Management better?</h2>
 
                             <ul>
@@ -170,7 +174,36 @@ const Index = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div>
+                    </div>
+                    <div className={styles.today_tomorrow}>
+                        <h3>
+                            Progress Wealth today.
+                            <br />
+                            Progress tomorrow.
+                        </h3>
+                        <div className={styles.today_tomorrow_img_wrapper}>
+                            <img src="/boat.jpg" alt="Sailing" width="100%" loading="lazy" />
+                        </div>
+                    </div>
+                </section>
+                <section
+                    className={`${styles.section} ${styles.services}`}
+                    id={SECTIONS.SERVICES.id}>
+                    <h1 className={styles.section_header} ref={servicesRef}>
+                        {SECTIONS.SERVICES.text}
+                    </h1>
+                    <div className={styles.section_content}>
+                        <div className={styles.section_content_group}>
+                            <ul className={styles.services_list}>
+                                <li>Life Changes</li>
+                                <li>Career Advice</li>
+                                <li>Personal Finance</li>
+                                <li>Retirement Planning</li>
+                                <li>Investment Advice</li>
+                                <li>Tax Advice</li>
+                            </ul>
+                        </div>
+                        <div className={styles.section_content_group}>
                             <h2>Common Questions We Help Our Clients Answer</h2>
 
                             <ul>
@@ -203,33 +236,6 @@ const Index = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className={styles.today_tomorrow}>
-                        <h2>
-                            Progress Wealth today.
-                            <br />
-                            Progress tomorrow.
-                        </h2>
-                        <div className={styles.today_tomorrow_img_wrapper}>
-                        <img src="/boat.jpg" alt="Sailing" width="100%" loading="lazy" />
-                        </div>
-                    </div>
-                </section>
-                <section
-                    className={`${styles.section} ${styles.services}`}
-                    id={SECTIONS.SERVICES.id}>
-                    <h1 className={styles.section_header} ref={servicesRef}>
-                        {SECTIONS.SERVICES.text}
-                    </h1>
-                    <div className={styles.section_content}>
-                        <ul>
-                            <li>Life Changes</li>
-                            <li>Career Advice</li>
-                            <li>Personal Finance</li>
-                            <li>Retirement Planning</li>
-                            <li>Investment Advice</li>
-                            <li>Tax Advice</li>
-                        </ul>
-                    </div>
                 </section>
                 <section
                     className={`${styles.section} ${styles.contact_us}`}
@@ -238,36 +244,38 @@ const Index = () => {
                         {SECTIONS.CONTACT_US.text}
                     </h1>
                     <div className={styles.section_content}>
-                        <form ref={contactFormRef}>
-                            {' '}
-                            <input
-                                type="text"
-                                id="name"
-                                placeholder="Name"
-                                autoComplete="name"
-                                required
-                            />
-                            <input
-                                type="text"
-                                id="email"
-                                placeholder="Email"
-                                autoComplete="email"
-                                required
-                            />
-                            <input
-                                type="text"
-                                id="phone"
-                                placeholder="Phone number (optional)"
-                                autoComplete="phone"
-                            />
-                            <textarea id="message" placeholder="Message" rows={4} required />
-                            <button
-                                className={styles.submit_button}
-                                type="submit"
-                                onClick={sendMail}>
-                                Submit
-                            </button>
-                        </form>
+                        <div className={styles.section_content_group}>
+                            <form ref={contactFormRef}>
+                                {' '}
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder="Name"
+                                    autoComplete="name"
+                                    required
+                                />
+                                <input
+                                    type="text"
+                                    id="email"
+                                    placeholder="Email"
+                                    autoComplete="email"
+                                    required
+                                />
+                                <input
+                                    type="text"
+                                    id="phone"
+                                    placeholder="Phone number (optional)"
+                                    autoComplete="phone"
+                                />
+                                <textarea id="message" placeholder="Message" rows={4} required />
+                                <button
+                                    className={styles.submit_button}
+                                    type="submit"
+                                    onClick={sendMail}>
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </section>
             </main>

@@ -1,0 +1,17 @@
+@value black, white, blue, gold from './colors.css';
+
+.icon_black {
+    fill: black;
+}
+
+.icon_white {
+    fill: white;
+}
+
+.icon_blue {
+    fill: blue;
+}
+
+.icon_gold {
+    fill: gold;
+}

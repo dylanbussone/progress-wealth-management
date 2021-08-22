@@ -1,8 +1,9 @@
 @value text_sm: 13px;
 @value text_md: 16px;
 @value text_lg: 18px;
-@value text_h2: 22px;
-@value text_h1: 42px;
+@value text_h3: 24px;
+@value text_h2: 32px;
+@value text_h1: 48px;
 @value text_h1_mob: 36px;
 
 @font-face {

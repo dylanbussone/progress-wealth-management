@@ -1,5 +1,5 @@
-@value mobile, sm, md, lg, xl, xxl from './layout.css';
-@value text_md, text_lg, text_h1, text_h1_mob, text_h2 from './typography.css';
+@value mobile, xs, sm, md, lg, xl, xxl, xxxl from './layout.css';
+@value text_md, text_lg, text_h1, text_h1_mob, text_h2, text_h3 from './typography.css';
 @value blue, green_button, white, border from './colors.css';
 @value header_height from './header.module.css';
 
@@ -57,6 +57,23 @@
     font-size: text_md;
     line-height: 1.5;
 }
+.section_content h2 {
+    font-size: text_h2;
+    margin: xxl 0 md;
+    font-family: "RobotoThin";
+}
+.section_content h3 {
+    font-size: text_h3;
+    font-family: "RobotoThin";
+}
+.section_content li {
+    margin-left: lg;
+    margin-bottom: md;
+    line-height: 1.8;
+}
+.section_content .section_content_group {
+    margin-bottom: xxxl;
+}
 
 /* Who We Are */
 .button_link {
@@ -76,25 +93,9 @@
     align-items: center;
     overflow: hidden;
 }
-.who_we_are > div > div {
-    margin-bottom: xxl;
-}
-.who_we_are h2 {
-    font-size: text_h2;
-    margin: md 0;
-    font-family: "RobotoBold";
-}
-.who_we_are h3 {
-    font-size: text_lg;
-}
-.who_we_are li {
-    margin-left: lg;
-    margin-bottom: md;
-    line-height: 1.8;
-}
-
 .easy_opt_pers {
     composes: three_col from './layout.css';
+    text-align: center;
 }
 @media (max-width: mobile) {
     .easy_opt_pers {
@@ -107,6 +108,9 @@
     .easy_opt_pers > div:last-of-type {
         margin-bottom: 0;
     }
+}
+.easy_opt_pers svg {
+    margin-bottom: calc(-1 * xs);
 }
 .easy_opt_pers p {
     font-size: text_md;
@@ -130,7 +134,7 @@
 }
 
 /* Our Services */
-.services ul {
+.services .services_list {
     list-style-type: unset;
     margin-left: 24px;
     columns: 2;
@@ -138,13 +142,13 @@
     -moz-columns: 2;
 }
 @media (max-width: mobile) {
-    .services ul {
+    .services .services_list {
         columns: 1;
         -webkit-columns: 1;
         -moz-columns: 1;
     }
 }
-.services ul li {
+.services .services_list li {
     line-height: 3;
 }
 
