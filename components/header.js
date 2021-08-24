@@ -4,7 +4,7 @@ import { SECTIONS } from '../constants';
 import Icon from '../components/icon';
 import styles from '../styles/header.module.css';
 
-const scrollToId = (id, additionalOffset) => {
+const scrollToId = (id, additionalOffset = 0) => {
     if (window.scrollTo) {
         const offsetTop = document.getElementById(id)?.offsetTop || 0;
         window.scrollTo({
