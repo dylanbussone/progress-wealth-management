@@ -1,50 +1,61 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { SECTIONS } from '../constants';
+import Icon from '../components/icon';
 import styles from '../styles/header.module.css';
 
-const scrollToId = id => {
+const scrollToId = (id, additionalOffset) => {
     if (window.scrollTo) {
         const offsetTop = document.getElementById(id)?.offsetTop || 0;
         window.scrollTo({
-            top: offsetTop,
+            top: offsetTop + additionalOffset,
             behavior: 'smooth',
         });
     }
 };
 
-const logoButtonStyles = {
-    height: 70,
-    width: 100,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    background: '#0F1D2B',
+const Header = ({ activeSection }) => {
+    const headerRef = useRef();
+    const [mobileMenuActive, setMobileMenuActive] = useState(false);
+    const toggleMobileMenu = () => {
+        setMobileMenuActive(!mobileMenuActive);
+    };
+    const handleLinkClick = (id) => {
+        setMobileMenuActive(false);
+        console.log(headerRef.current, headerRef.current.offsetHeight);
+        if (mobileMenuActive) {
+            scrollToId(id, -1 * headerRef.current.offsetHeight);
+        } else {
+            scrollToId(id);
+        }
+    }
+    return (
+        <header className={`${styles.header} ${mobileMenuActive && styles.mobile_menu_active}`} ref={headerRef}>
+            <div>
+                <button onClick={() => handleLinkClick(null)} className={styles.logo_button}>
+                    <img src="/logo-simple.png" alt="Progress Wealth Management" height="50" />
+                </button>
+                <button className={styles.mobile_toggle} onClick={toggleMobileMenu}>
+                    {mobileMenuActive ? <Icon name="close" size={32} color="icon_white" /> : <Icon name="menu" size={32} color="icon_white" /> }
+                </button>
+                <ul className={styles.link_list}>
+                    {Object.keys(SECTIONS).map(section => (
+                        <li key={SECTIONS[section].text}>
+                            <button
+                                onClick={() => handleLinkClick(SECTIONS[section].id)}
+                                className={
+                                    activeSection?.text === SECTIONS[section].text
+                                        ? styles.active_header_link
+                                        : styles.header_link
+                                }>
+                                {SECTIONS[section].text}
+                            </button>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </header>
+    );
 };
-
-const Header = ({ activeSection }) => (
-    <header className={styles.header}>
-        <div>
-            <button onClick={() => scrollToId(null)} style={logoButtonStyles}>
-                <img src="/logo-simple.png" alt="Progress Wealth Management" height="50" />
-            </button>
-            <ul>
-                {Object.keys(SECTIONS).map(section => (
-                    <li key={SECTIONS[section].text}>
-                        <button
-                            onClick={() => scrollToId(SECTIONS[section].id)}
-                            className={
-                                activeSection?.text === SECTIONS[section].text
-                                    ? styles.active_header_link
-                                    : styles.header_link
-                            }>
-                            {SECTIONS[section].text}
-                        </button>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    </header>
-);
 
 export default Header;

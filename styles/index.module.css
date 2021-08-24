@@ -1,7 +1,7 @@
 @value mobile, xs, sm, md, lg, xl, xxl, xxxl from './layout.css';
 @value text_p, text_label, text_h1, text_h1_mob, text_h2, text_h2_mob, text_h3 from './typography.css';
 @value blue, green, white, border, violet from './colors.css';
-@value header_height from './header.module.css';
+@value header_height, mob_header_height from './header.module.css';
 
 /* Hero */
 .hero {
@@ -16,7 +16,7 @@
 }
 @media (max-width: mobile) {
     .hero {
-        height: 50vh;
+        height: calc(50vh - mob_header_height);
     }
 }
 

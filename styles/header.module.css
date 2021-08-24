@@ -1,7 +1,8 @@
-@value mobile, md from './layout.css';
+@value mobile, xs, sm, md from './layout.css';
 @value text_p from './typography.css';
 @value blue, white, gold from './colors.css';
 @value header_height: 100px;
+@value mob_header_height: 56px;
 
 .header {
     background: blue;
@@ -12,22 +13,24 @@
     justify-content: center;
     z-index: 3;
 }
-@media (max-width: mobile) {
-    .header {
-        /* TODO: mobile header */
-        display: none;
-    }
-}
 
 .header > div {
     display: flex;
     align-items: center;
 }
-.header ul {
+.logo_button {
+    height: 70;
+    width: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+}
+.link_list {
     display: flex;
     list-style: none;
 }
-.header ul li {
+.link_list li {
     margin-left: md;
 }
 
@@ -40,4 +43,37 @@
     font-size: text_p;
     padding: md;
     color: gold;
+}
+
+/* Mobile header */
+.mobile_toggle {
+    display: none;
+    padding: sm md xs;
+}
+@media (max-width: mobile) {
+    .header {
+        composes: box_shadow from './effect.css';
+        height: 100%;
+        justify-content: flex-end;
+    }
+    .header > div {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .mobile_toggle {
+        display: block;
+    }
+    .link_list {
+        display: none;
+        flex-direction: column;
+    }
+    .link_list li {
+        text-align: right;
+    }
+    .mobile_menu_active .link_list {
+        display: flex;
+    }
+    .logo_button {
+        display: none;
+    }
 }
