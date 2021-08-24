@@ -1,10 +1,10 @@
-@value text_sm: 13px;
-@value text_md: 16px;
-@value text_lg: 18px;
-@value text_h3: 24px;
-@value text_h2: 32px;
-@value text_h1: 48px;
-@value text_h1_mob: 36px;
+@value text_p: 1rem;
+@value text_label: 1.1rem;
+@value text_h3: 1.3rem;
+@value text_h2: 2rem;
+@value text_h2_mob: 1.6rem;
+@value text_h1: 3rem;
+@value text_h1_mob: 2.5rem;
 
 @font-face {
     font-family: "RobotoThin";

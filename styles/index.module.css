@@ -1,5 +1,5 @@
 @value mobile, xs, sm, md, lg, xl, xxl, xxxl from './layout.css';
-@value text_md, text_lg, text_h1, text_h1_mob, text_h2, text_h3 from './typography.css';
+@value text_p, text_label, text_h1, text_h1_mob, text_h2, text_h2_mob, text_h3 from './typography.css';
 @value blue, green, white, border, violet from './colors.css';
 @value header_height from './header.module.css';
 
@@ -16,7 +16,7 @@
 }
 @media (max-width: mobile) {
     .hero {
-        height: 350px;
+        height: 50vh;
     }
 }
 
@@ -54,7 +54,7 @@
     margin: xl 0;
 }
 .section_content * {
-    font-size: text_md;
+    font-size: text_p;
     line-height: 1.5;
 }
 .section_content h2 {
@@ -62,9 +62,17 @@
     margin: xxl 0 md;
     font-family: "RobotoThin";
 }
+@media (max-width: mobile) {
+    .section_content h2 {
+        font-size: text_h2_mob;
+    }
+}
 .section_content h3 {
     font-size: text_h3;
     font-family: "RobotoThin";
+}
+.section_content h4 {
+    font-size: text_label;
 }
 .section_content li {
     margin-left: lg;
@@ -78,12 +86,9 @@
 /* Who We Are */
 .button_link {
     text-decoration: underline;
-}
-@media (min-width: mobile) {
-    .button_link {
-        display: block;
-        padding: 0;
-    }
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
 }
 .meeting_image {
     margin-top: lg;
@@ -117,7 +122,7 @@
     margin-bottom: sm;
 }
 .easy_opt_pers p {
-    font-size: text_md;
+    font-size: text_p;
 }
 
 /* Boat */
@@ -157,7 +162,7 @@
     margin: 0;
     display: flex;
     align-items: center;
-    font-size: text_lg;
+    font-size: text_label;
     font-weight: bold;
 }
 .services .services_list li svg {
@@ -167,7 +172,7 @@
 /* Contact Us */
 .contact_us form input,
 .contact_us form textarea {
-    font-size: text_md;
+    font-size: text_p;
     background-color: transparent;
     display: block;
     border: 1px solid border;

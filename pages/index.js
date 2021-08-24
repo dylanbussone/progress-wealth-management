@@ -89,7 +89,7 @@ const Index = () => {
                         <div className={styles.section_content_group}>
                             <p>
                                 Meet your financial planning partners that provide you the tools,
-                                guidance, inspiration and advice you need to succeed.
+                                guidance, inspiration and advice you need to succeed.{' '}
                                 <button className={styles.button_link} onClick={openCalendlyPopup}>
                                     Get Started.
                                 </button>
@@ -175,12 +175,12 @@ const Index = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className={styles.today_tomorrow}>
-                        <h3>
+                    <div className={`${styles.section_content} ${styles.today_tomorrow}`}>
+                        <h4>
                             Progress Wealth today.
                             <br />
                             Progress tomorrow.
-                        </h3>
+                        </h4>
                         <div className={styles.today_tomorrow_img_wrapper}>
                             <img src="/boat.jpg" alt="Sailing" width="100%" loading="lazy" />
                         </div>
