@@ -88,6 +88,13 @@ const Index = () => {
 
                     <div className={styles.section_content}>
                         <div className={styles.section_content_group}>
+                            <div className={styles.quote}>
+                                <h5>
+                                    Planning is bringing the future into the present so that you can
+                                    do something about it now.
+                                </h5>
+                                <p>-- Alan Lakein</p>
+                            </div>
                             <p>
                                 Meet your financial planning partners that provide you the tools,
                                 guidance, inspiration and advice you need to succeed.{' '}

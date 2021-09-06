@@ -1,6 +1,7 @@
 @value mobile: 768px;
 @value max_width: 1000px;
 
+@value xxs: 4px;
 @value xs: 8px;
 @value sm: 12px;
 @value md: 16px;
