@@ -6,6 +6,8 @@
 
 }
 .dropdown_question {
+    composes: box_shadow_thin from './effect.css';
+    composes: unselectable from './effect.css';
     margin: xl 0;
     padding: md;
     background: lavender;
