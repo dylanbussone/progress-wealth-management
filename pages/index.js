@@ -6,6 +6,7 @@ import { SECTIONS } from '../constants';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Icon from '../components/icon';
+import DropdownQuestions from '../components/dropdown-questions';
 import { openCalendlyPopup, debounce } from '../utils';
 import styles from '../styles/index.module.css';
 
@@ -195,12 +196,30 @@ const Index = () => {
                     <div className={styles.section_content}>
                         <div className={styles.section_content_group}>
                             <ul className={styles.services_list}>
-                                <li><Icon name="family" size={48} color="icon_gold" />Life Changes</li>
-                                <li><Icon name="career" size={52} color="icon_gold" />Career Advice</li>
-                                <li><Icon name="personal" size={42} color="icon_gold" />Personal Finance</li>
-                                <li><Icon name="retirement" size={52} color="icon_gold" />Retirement Planning</li>
-                                <li><Icon name="investments" size={34} color="icon_gold" />Investment Advice</li>
-                                <li><Icon name="tax" size={42} color="icon_gold" />Tax Advice</li>
+                                <li>
+                                    <Icon name="family" size={48} color="icon_gold" />
+                                    Life Changes
+                                </li>
+                                <li>
+                                    <Icon name="career" size={52} color="icon_gold" />
+                                    Career Advice
+                                </li>
+                                <li>
+                                    <Icon name="personal" size={42} color="icon_gold" />
+                                    Personal Finance
+                                </li>
+                                <li>
+                                    <Icon name="retirement" size={52} color="icon_gold" />
+                                    Retirement Planning
+                                </li>
+                                <li>
+                                    <Icon name="investments" size={34} color="icon_gold" />
+                                    Investment Advice
+                                </li>
+                                <li>
+                                    <Icon name="tax" size={42} color="icon_gold" />
+                                    Tax Advice
+                                </li>
                             </ul>
                         </div>
                         <div className={styles.section_content_group}>
@@ -234,6 +253,11 @@ const Index = () => {
                                 <li>How can I grow my rental property empire in a smart way? </li>
                                 <li>Do I need an estate plan and if so, how should it look?</li>
                             </ul>
+                        </div>
+
+                        <div className={styles.section_content_group}>
+                            <h2>Still have questions?</h2>
+                            <DropdownQuestions />
                         </div>
                     </div>
                 </section>
