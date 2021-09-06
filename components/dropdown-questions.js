@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from './link';
 import styles from '../styles/dropdown-questions.module.css';
 import { openCalendlyPopup } from '../utils';
 
@@ -25,29 +26,29 @@ const DROPDOWN_CONTENT = [
                     money and support our trading technology. Betterment Securities is a Member of
                     SIPC, which protects securities customers of its members up to $500,000
                     (including $250,000 for claims for cash). Explanatory brochure available upon
-                    request or at <a href="https://www.sipc.org">www.sipc.org</a>. What you should
+                    request or at <Link href="https://www.sipc.org">www.sipc.org</Link>. What you should
                     remember is that the SPIC does not protect against market changes in your
                     investing account.
                 </p>
                 <p>
                     Individual Cash Reserve accounts have FDIC insurance up to $1,000,000.00 and
                     joint Cash Reserve accounts offer up to $2,000,000 in{' '}
-                    <a href="https://www.betterment.com/resources/fdic-insurance/">
+                    <Link href="https://www.betterment.com/resources/fdic-insurance/">
                         FDIC insurance
-                    </a>{' '}
+                    </Link>{' '}
                     once funds are deposited into our{' '}
-                    <a href="https://www.betterment.com/legal/cash-reserve-program-banks/">
+                    <Link href="https://www.betterment.com/legal/cash-reserve-program-banks/">
                         program banks
-                    </a>
+                    </Link>
                     .
                 </p>
                 <p>
                     Funds deposited into Checking are FDIC-insured up to $250k for individual
                     accounts and up to $250k per depositor for joint accounts, provided by nbkc
                     bank, Member FDIC. Explore further details about{' '}
-                    <a href="https://www.betterment.com/resources/fdic-insurance/">
+                    <Link href="https://www.betterment.com/resources/fdic-insurance/">
                         FDIC insurance
-                    </a>
+                    </Link>
                     .
                 </p>
             </React.Fragment>
@@ -69,16 +70,16 @@ const DROPDOWN_CONTENT = [
             <React.Fragment>
                 <p>
                     Our team of investing experts make decisions about our
-                    <a href="https://www.betterment.com/investments/">portfolio strategies</a> and
+                    <Link href="https://www.betterment.com/investments/">portfolio strategies</Link> and
                     fund selection with the help of an external committee of economists, PhDs, and
                     industry experts.
                 </p>
                 <p>
                     More than just a portfolio management team, our experts work to develop
                     improvements to our{' '}
-                    <a href="https://www.betterment.com/tax-efficient-investing">
+                    <Link href="https://www.betterment.com/tax-efficient-investing">
                         Tax Smart technology
-                    </a>
+                    </Link>
                     , our cash analysis tools, and other advanced strategies.
                 </p>
             </React.Fragment>
