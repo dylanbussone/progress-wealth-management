@@ -1,5 +1,4 @@
 import React, { useRef, useState, useEffect } from 'react';
-import Head from 'next/head';
 import Script from 'next/script';
 /* eslint-disable @next/next/no-img-element */
 import { HOME_SECTIONS } from '../constants';
@@ -51,11 +50,6 @@ const Index = () => {
 
     return (
         <React.Fragment>
-            <Head>
-                <link
-                    href="https://assets.calendly.com/assets/external/widget.css"
-                    rel="stylesheet"></link>
-            </Head>
             <Header page="index" activeSection={activeSection} />
             <main>
                 <div className={styles.hero}>

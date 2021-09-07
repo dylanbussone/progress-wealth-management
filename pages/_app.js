@@ -1,5 +1,5 @@
-import Head from 'next/head';
 import React from 'react';
+import Head from 'next/head';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
@@ -8,9 +8,14 @@ function MyApp({ Component, pageProps }) {
             <Head>
                 <title>Progress Wealth Management</title>
                 <link rel="icon" type="image/png" href="/logo-icon.png" sizes="16x16" />
+                <link
+                    href="https://assets.calendly.com/assets/external/widget.css"
+                    rel="stylesheet"></link>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2GFTDTW6P"></script>
                 <script async src="/ga.js"></script>
+                {/* <Script strategy="lazyOnload" src="/calendly.js" /> */}
+                <script async src="/calendly.js" />
             </Head>
             <Component {...pageProps} />
         </React.Fragment>
