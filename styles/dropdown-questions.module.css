@@ -1,6 +1,6 @@
 @value sm, md, lg, xl, xxl from './layout.css';
 @value text_p, text_label from './typography.css';
-@value black, white, blue, border, lightblue from './colors.css';
+@value black, white, blue, border, lightgrey from './colors.css';
 
 .dropdown_questions {
 
@@ -10,7 +10,7 @@
     composes: unselectable from './effect.css';
     margin: xl 0;
     padding: md;
-    background: lightblue;
+    background: lightgrey;
     color: black;
 }
 .dropdown_question:first-of-type {

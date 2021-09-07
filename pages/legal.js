@@ -11,11 +11,6 @@ const Legal = () => (
         <div className={styles.legal}>
             <h1>Legal</h1>
             <p>
-                <button className={styles.home_link}>
-                    <NextLink href="/">Home</NextLink>
-                </button>
-            </p>
-            <p>
                 Accurate as of 06.01.2021. This property and any marketing on the property are
                 provided by Progress Wealth Management.
             </p>

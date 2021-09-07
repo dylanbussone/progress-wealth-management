@@ -1,6 +1,6 @@
 function openCalendlyPopup() {
     window.Calendly.initPopupWidget({
-        url: 'https://calendly.com/blaine-thiederman1',
+        url: 'https://calendly.com/progresswealth',
     });
     return false;
 }
