@@ -69,7 +69,7 @@ const DROPDOWN_CONTENT = [
         dropdownContent: (
             <React.Fragment>
                 <p>
-                    Our team of investing experts make decisions about our
+                    Our team of investing experts make decisions about our{' '}
                     <Link href="https://www.betterment.com/investments/">portfolio strategies</Link> and
                     fund selection with the help of an external committee of economists, PhDs, and
                     industry experts.
