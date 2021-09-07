@@ -1,5 +1,5 @@
 @value footer_bg, white from './colors.css';
-@value lg, xxl, xxxl from './layout.css';
+@value md, lg, xxl, xxxl from './layout.css';
 
 .footer {
     background: footer_bg;
@@ -19,4 +19,10 @@
 
 .footer_content ul {
     list-style: none;
+}
+.footer_content ul li {
+    margin: md 0;
+}
+.footer_content ul li a {
+    text-decoration: underline;
 }

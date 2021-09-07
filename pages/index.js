@@ -1,11 +1,11 @@
 import React, { useRef, useState, useEffect } from 'react';
-import Head from 'next/head';
 import Script from 'next/script';
 /* eslint-disable @next/next/no-img-element */
-import { SECTIONS } from '../constants';
+import { HOME_SECTIONS } from '../constants';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Icon from '../components/icon';
+import DropdownQuestions from '../components/dropdown-questions';
 import { openCalendlyPopup, debounce } from '../utils';
 import styles from '../styles/index.module.css';
 
@@ -16,7 +16,7 @@ const Index = () => {
     const servicesRef = useRef();
     const contactRef = useRef();
 
-    const sectionsWithRefs = { ...SECTIONS };
+    const sectionsWithRefs = { ...HOME_SECTIONS };
     // sectionsWithRefs.SCHEDULE.ref = scheduleRef;
     sectionsWithRefs.WHO_WE_ARE.ref = whoWeAreRef;
     sectionsWithRefs.SERVICES.ref = servicesRef;
@@ -50,21 +50,16 @@ const Index = () => {
 
     return (
         <React.Fragment>
-            <Head>
-                <link
-                    href="https://assets.calendly.com/assets/external/widget.css"
-                    rel="stylesheet"></link>
-            </Head>
-            <Header activeSection={activeSection} />
+            <Header page="index" activeSection={activeSection} />
             <main>
                 <div className={styles.hero}>
                     <div className={styles.hero_image} />
                 </div>
                 {/* <section
                     className={`${styles.section} ${styles.schedule}`}
-                    id={SECTIONS.SCHEDULE.id}>
+                    id={HOME_SECTIONS.SCHEDULE.id}>
                     <h1 className={styles.section_header} ref={scheduleRef}>
-                        {SECTIONS.SCHEDULE.text}
+                        {HOME_SECTIONS.SCHEDULE.text}
                     </h1>
                     <div className={styles.section_content}>
                         <p>
@@ -80,13 +75,20 @@ const Index = () => {
                 </section> */}
                 <section
                     className={`${styles.section} ${styles.who_we_are}`}
-                    id={SECTIONS.WHO_WE_ARE.id}>
+                    id={HOME_SECTIONS.WHO_WE_ARE.id}>
                     <h1 className={styles.section_header} ref={whoWeAreRef}>
                         Financial Planning for Progress
                     </h1>
 
                     <div className={styles.section_content}>
                         <div className={styles.section_content_group}>
+                            <div className={styles.quote}>
+                                <h5>
+                                    Planning is bringing the future into the present so that you can
+                                    do something about it now.
+                                </h5>
+                                <p>-- Alan Lakein</p>
+                            </div>
                             <p>
                                 Meet your financial planning partners that provide you the tools,
                                 guidance, inspiration and advice you need to succeed.{' '}
@@ -188,19 +190,37 @@ const Index = () => {
                 </section>
                 <section
                     className={`${styles.section} ${styles.services}`}
-                    id={SECTIONS.SERVICES.id}>
+                    id={HOME_SECTIONS.SERVICES.id}>
                     <h1 className={styles.section_header} ref={servicesRef}>
-                        {SECTIONS.SERVICES.text}
+                        {HOME_SECTIONS.SERVICES.text}
                     </h1>
                     <div className={styles.section_content}>
                         <div className={styles.section_content_group}>
                             <ul className={styles.services_list}>
-                                <li><Icon name="family" size={48} color="icon_gold" />Life Changes</li>
-                                <li><Icon name="career" size={52} color="icon_gold" />Career Advice</li>
-                                <li><Icon name="personal" size={42} color="icon_gold" />Personal Finance</li>
-                                <li><Icon name="retirement" size={52} color="icon_gold" />Retirement Planning</li>
-                                <li><Icon name="investments" size={34} color="icon_gold" />Investment Advice</li>
-                                <li><Icon name="tax" size={42} color="icon_gold" />Tax Advice</li>
+                                <li>
+                                    <Icon name="family" size={48} color="icon_gold" />
+                                    Life Changes
+                                </li>
+                                <li>
+                                    <Icon name="career" size={52} color="icon_gold" />
+                                    Career Advice
+                                </li>
+                                <li>
+                                    <Icon name="personal" size={42} color="icon_gold" />
+                                    Personal Finance
+                                </li>
+                                <li>
+                                    <Icon name="retirement" size={52} color="icon_gold" />
+                                    Retirement Planning
+                                </li>
+                                <li>
+                                    <Icon name="investments" size={34} color="icon_gold" />
+                                    Investment Advice
+                                </li>
+                                <li>
+                                    <Icon name="tax" size={42} color="icon_gold" />
+                                    Tax Advice
+                                </li>
                             </ul>
                         </div>
                         <div className={styles.section_content_group}>
@@ -235,13 +255,18 @@ const Index = () => {
                                 <li>Do I need an estate plan and if so, how should it look?</li>
                             </ul>
                         </div>
+
+                        <div className={styles.section_content_group}>
+                            <h2>Still have questions?</h2>
+                            <DropdownQuestions />
+                        </div>
                     </div>
                 </section>
                 <section
                     className={`${styles.section} ${styles.contact_us}`}
-                    id={SECTIONS.CONTACT_US.id}>
+                    id={HOME_SECTIONS.CONTACT_US.id}>
                     <h1 className={styles.section_header} ref={contactRef}>
-                        {SECTIONS.CONTACT_US.text}
+                        {HOME_SECTIONS.CONTACT_US.text}
                     </h1>
                     <div className={styles.section_content}>
                         <div className={styles.section_content_group}>

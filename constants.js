@@ -1,4 +1,4 @@
-const SECTIONS = {
+const HOME_SECTIONS = {
     // SCHEDULE: {
     //     text: 'Schedule an Appointment',
     //     id: 'schedule',
@@ -17,4 +17,4 @@ const SECTIONS = {
     },
 };
 
-export { SECTIONS };
+export { HOME_SECTIONS };

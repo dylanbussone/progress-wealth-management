@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../styles/icon.module.css';
 import { toTitleCase } from '../utils';
 
+// TODO: dropdown/up icons
 import Career from './icons/career.svg';
 import Close from './icons/close.svg';
 import Easy from './icons/easy.svg';

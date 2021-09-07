@@ -1,0 +1,47 @@
+@value sm, md, lg, xl, xxl from './layout.css';
+@value text_p, text_label from './typography.css';
+@value black, white, blue, border, lightgrey from './colors.css';
+
+.dropdown_questions {
+
+}
+.dropdown_question {
+    composes: box_shadow_thin from './effect.css';
+    composes: unselectable from './effect.css';
+    margin: xl 0;
+    padding: md;
+    background: lightgrey;
+    color: black;
+}
+.dropdown_question:first-of-type {
+    margin-top: 0;
+}
+.dropdown_question:last-of-type {
+    margin-bottom: 0;
+}
+.dropdown_question h4, .dropdown_question h4 a {
+    font-size: text_label;
+    color: black;
+    text-decoration: underline;
+}
+.dropdown_question h4 a {
+    display: block;
+}
+.dropdown_question > div.closed {
+    display: none;
+}
+.dropdown_question > div.open {
+    display: block;
+}
+.dropdown_question > div {
+    padding: md 0;
+}
+.dropdown_question > div button {
+    padding: 0;
+}
+.dropdown_question > div > p {
+    margin-bottom: md;
+}
+.dropdown_question > div > p:last-of-type {
+    margin-bottom: 0;
+}
