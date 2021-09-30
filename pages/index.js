@@ -272,7 +272,7 @@ const Index = () => {
                     </h1>
                     <div className={styles.section_content}>
                         <div className={styles.section_content_group}>
-                            <img src="/blaine.jpg" alt="Blaine Thiederman" loading="lazy" />
+                            <img src="/blaine_sm.jpg" alt="Blaine Thiederman" loading="lazy" />
                             <h3>
                                 <span className={styles.bold}>Blaine Thiederman</span> MBA,CFP(R)
                                 <br />
