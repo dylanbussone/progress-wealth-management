@@ -3,13 +3,17 @@ const HOME_SECTIONS = {
     //     text: 'Schedule an Appointment',
     //     id: 'schedule',
     // },
-    WHO_WE_ARE: {
+    ABOUT: {
         text: 'Progress Wealth Management',
-        id: 'who-we-are',
+        id: 'about',
     },
     SERVICES: {
         text: 'Our Services',
         id: 'our-services',
+    },
+    WHO_WE_ARE: {
+        text: 'Who We Are',
+        id: 'who-we-are',
     },
     CONTACT_US: {
         text: 'Contact Us',

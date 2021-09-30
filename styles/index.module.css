@@ -1,4 +1,4 @@
-@value mobile, xxs, xs, sm, md, lg, xl, xxl, xxxl from './layout.css';
+@value mobile, max_width, xxs, xs, sm, md, lg, xl, xxl, xxxl from './layout.css';
 @value text_sup, text_p, text_label, text_h1, text_h1_mob, text_h2, text_h2_mob, text_h3 from './typography.css';
 @value blue, green, white, border, violet from './colors.css';
 @value header_height, mob_header_height from './header.module.css';
@@ -33,7 +33,7 @@
 .section {
     composes: max_content_width from './layout.css';
     margin: 0 auto;
-    padding: calc(xl + header_height) xxl xl;
+    padding: calc(md + header_height) xxl xl;
 }
 @media (max-width: mobile) {
     .section {
@@ -67,9 +67,12 @@
         font-size: text_h2_mob;
     }
 }
-.section_content h3 {
+.section_content h3, .section_content h3 * {
     font-size: text_h3;
     font-family: "RobotoThin";
+}
+.section_content h3 .bold {
+    font-family: "RobotoRegular";
 }
 .section_content h4 {
     font-size: text_label;
@@ -94,7 +97,7 @@
     font-size: text_sup;
 }
 
-/* Who We Are */
+/* About */
 .button_link {
     text-decoration: underline;
     white-space: nowrap;
@@ -178,6 +181,41 @@
 }
 .services .services_list li svg {
     width: 80px;
+}
+
+.services .common_questions li {
+    list-style-type: none;
+    margin: md 0;
+}
+
+/* Who We Are */
+.who_we_are .section_content_group img {
+    max-width: 100%;
+    margin-bottom: md;
+}
+.who_we_are .section_content_group .paragraphs {
+    display: flex;
+    margin: lg 0;
+}
+.who_we_are .section_content_group .paragraphs:first-of-type {
+    margin-top: md;
+}
+.who_we_are .section_content_group .paragraphs p:nth-of-type(2) {
+    padding-left: lg;
+}
+
+.who_we_are .section_content_group h2 {
+    margin-bottom: lg;
+}
+.who_we_are .section_content_group .we_bring_list {
+    margin: md 0;
+    display: flex;
+    justify-content: space-between;
+}
+.who_we_are .section_content_group .we_bring_list li {
+    margin: sm 0;
+    font-weight: bold;
+    list-style-type: none;
 }
 
 /* Contact Us */

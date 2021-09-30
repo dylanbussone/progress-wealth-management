@@ -29,6 +29,7 @@ const Header = ({ page, activeSection }) => {
             scrollToId(id);
         }
     };
+    // TODO: simplify header logic. Links should stay the same, and if not on homepage, clicking one should link to that section of the homepage.
     const isHomePage = page === 'index';
 
     return (
