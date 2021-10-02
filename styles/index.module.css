@@ -203,6 +203,15 @@
 .who_we_are .section_content_group .paragraphs p:nth-of-type(2) {
     padding-left: lg;
 }
+@media (max-width: mobile) {
+    .who_we_are .section_content_group .paragraphs {
+        flex-direction: column;
+    }
+    .who_we_are .section_content_group .paragraphs p:nth-of-type(2) {
+        padding: 0;
+        margin-top: lg;
+    }
+}
 
 .who_we_are .section_content_group h2 {
     margin-bottom: lg;
@@ -216,6 +225,16 @@
     margin: sm 0;
     font-weight: bold;
     list-style-type: none;
+}
+.who_we_are .memberships {
+    display: flex;
+    justify-content: space-around;
+}
+.who_we_are .memberships img {
+    min-width: 0;
+    object-fit: contain;
+    max-width: 220px;
+    margin: 0 md;
 }
 
 /* Contact Us */

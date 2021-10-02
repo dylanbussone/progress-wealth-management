@@ -333,6 +333,24 @@ const Index = () => {
                                 what’s typical within the Denver Metro Area.
                             </p>
                         </div>
+                        <div className={styles.section_content_group}>
+                            <h2>Memberships and Alliances</h2>
+                            <div className={styles.memberships}>
+                                <img
+                                    src="/cfp.jpeg"
+                                    alt="Certified Financial Planner"
+                                    loading="lazy"
+                                />
+                                <img src="/vanguard.jpeg" alt="Vanguard" loading="lazy" />
+                            </div>
+                            <div className={styles.memberships}>
+                                <img src="/fo.jpeg" alt="Fee Only" loading="lazy" />
+                                <img src="/napfa.jpeg" alt="NAPFA" loading="lazy" />
+                            </div>
+                            <div className={styles.memberships}>
+                                <img src="/dimensional.png" alt="Dimensional" loading="lazy" />
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section
