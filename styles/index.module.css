@@ -1,6 +1,6 @@
 @value mobile, max_width, xxs, xs, sm, md, lg, xl, xxl, xxxl from './layout.css';
 @value text_sup, text_p, text_label, text_h1, text_h1_mob, text_h2, text_h2_mob, text_h3 from './typography.css';
-@value blue, green, white, border, violet from './colors.css';
+@value blue, green, gold, lavender, white, border, violet from './colors.css';
 @value header_height, mob_header_height from './header.module.css';
 
 /* Hero */
@@ -259,4 +259,16 @@
     border-radius: 6px;
     width: 100%;
     opacity: 0.9;
+}
+
+/* Testimonials */
+.testimonials .testimonial {
+    margin: lg 0 xxl;
+}
+.testimonials .testimonial .date {
+    margin-left: sm;
+}
+.testimonials .testimonial .name, .testimonials .testimonial .date {
+    font-size: text_sup;
+    font-style: italic;
 }

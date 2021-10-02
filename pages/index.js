@@ -393,6 +393,44 @@ const Index = () => {
                             </form>
                         </div>
                     </div>
+                    <div className={styles.section_content}>
+                        <div className={styles.section_content_group}>
+                            <h2>Testimonials</h2>
+                            <div className={styles.testimonials}>
+                                <div className={styles.testimonial}>
+                                    <h4>
+                                        &quot;Fantastic rates for a CFP. Awesome guy and extremely
+                                        helpful with my planning and portfolio.&quot;
+                                    </h4>
+                                    <span className={styles.name}>Joshua H.</span>
+                                </div>
+                                <div className={styles.testimonial}>
+                                    <h4>
+                                        &quot;Blaine is very knowledgeable and personable. He is
+                                        very client focused and results driven. You feel confident
+                                        your finances are in good hands working with Blaine.&quot;
+                                    </h4>
+                                    <span className={styles.name}>Eric T.</span>
+                                    <span className={styles.date}>Sep 28, 2021</span>
+                                </div>
+                                <div className={styles.testimonial}>
+                                    <h4>
+                                        &quot;Blane is a very hard-working, intelligent advisor with
+                                        a genuine interest in seeing his clients succeed.&quot;
+                                    </h4>
+                                    <span className={styles.name}>Kevin B.</span>
+                                    <span className={styles.date}>Sep 29, 2021</span>
+                                </div>
+                                <div className={styles.testimonial}>
+                                    <h4>
+                                        &quot;Very professional and exceeded my expectations. Would
+                                        highly recommend.&quot;
+                                    </h4>
+                                    <span className={styles.name}>Chris P.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </main>
             <Footer />
