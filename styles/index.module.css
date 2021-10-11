@@ -225,6 +225,7 @@
     margin: sm 0;
     font-weight: bold;
     list-style-type: none;
+    font-size: text_label;
 }
 .who_we_are .memberships {
     display: flex;
@@ -234,7 +235,16 @@
     min-width: 0;
     object-fit: contain;
     max-width: 220px;
+    max-height: 120px;
     margin: 0 md;
+}
+@media (max-width: mobile) {
+    .who_we_are .memberships {
+        flex-direction: column;
+    }
+    .who_we_are .memberships img {
+        margin: md 0;
+    }
 }
 
 /* Contact Us */

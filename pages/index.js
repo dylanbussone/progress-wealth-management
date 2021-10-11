@@ -4,6 +4,7 @@ import Script from 'next/script';
 import { HOME_SECTIONS } from '../constants';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import Link from '../components/link';
 import Icon from '../components/icon';
 import DropdownQuestions from '../components/dropdown-questions';
 import { openCalendlyPopup, debounce } from '../utils';
@@ -336,19 +337,28 @@ const Index = () => {
                         <div className={styles.section_content_group}>
                             <h2>Memberships and Alliances</h2>
                             <div className={styles.memberships}>
-                                <img
-                                    src="/cfp.jpeg"
-                                    alt="Certified Financial Planner"
-                                    loading="lazy"
-                                />
+                                <Link href="https://www.letsmakeaplan.org/find-a-cfp-professional/certified-professional-profile/ed120926-8235-4607-a3cf-1e09f3b0a3b5">
+                                    <img
+                                        src="/cfp.jpeg"
+                                        alt="Certified Financial Planner"
+                                        loading="lazy"
+                                    />
+                                </Link>
                                 <img src="/vanguard.jpeg" alt="Vanguard" loading="lazy" />
                             </div>
                             <div className={styles.memberships}>
-                                <img src="/fo.jpeg" alt="Fee Only" loading="lazy" />
-                                <img src="/napfa.jpeg" alt="NAPFA" loading="lazy" />
+                                <Link href="https://www.feeonlynetwork.com/financial-advisor/blaine-thiederman/">
+                                    <img src="/fo.jpeg" alt="Fee Only" loading="lazy" />
+                                </Link>
+                                <Link href="https://www.napfa.org/member/91997/35608">
+                                    <img src="/napfa.jpeg" alt="NAPFA" loading="lazy" />
+                                </Link>
                             </div>
                             <div className={styles.memberships}>
                                 <img src="/dimensional.png" alt="Dimensional" loading="lazy" />
+                                <Link href="https://www.xyplanningnetwork.com/advisors/blaine-thiederman-cfp-mba/">
+                                    <img src="/xypn.png" alt="XYPN" loading="lazy" />
+                                </Link>
                             </div>
                         </div>
                     </div>

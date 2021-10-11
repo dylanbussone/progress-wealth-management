@@ -12,6 +12,7 @@
     padding: md;
     background: lightgrey;
     color: black;
+    border-radius: 4px;
 }
 .dropdown_question:first-of-type {
     margin-top: 0;
