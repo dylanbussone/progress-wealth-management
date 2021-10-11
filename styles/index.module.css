@@ -229,13 +229,13 @@
 }
 .who_we_are .memberships {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .who_we_are .memberships img {
     min-width: 0;
     object-fit: contain;
-    max-width: 220px;
-    max-height: 120px;
+    max-width: 200px;
+    max-height: 100px;
     margin: 0 md;
 }
 @media (max-width: mobile) {
@@ -243,7 +243,11 @@
         flex-direction: column;
     }
     .who_we_are .memberships img {
-        margin: md 0;
+        margin: lg 0;
+    }
+    /* First div images happen to have built-in padding... */
+    .who_we_are .memberships:first-of-type img {
+        margin: 0;
     }
 }
 

@@ -344,17 +344,15 @@ const Index = () => {
                                         loading="lazy"
                                     />
                                 </Link>
-                                <img src="/vanguard.jpeg" alt="Vanguard" loading="lazy" />
-                            </div>
-                            <div className={styles.memberships}>
-                                <Link href="https://www.feeonlynetwork.com/financial-advisor/blaine-thiederman/">
-                                    <img src="/fo.jpeg" alt="Fee Only" loading="lazy" />
-                                </Link>
                                 <Link href="https://www.napfa.org/member/91997/35608">
                                     <img src="/napfa.jpeg" alt="NAPFA" loading="lazy" />
                                 </Link>
+                                <Link href="https://www.feeonlynetwork.com/financial-advisor/blaine-thiederman/">
+                                    <img src="/fo.jpeg" alt="Fee Only" loading="lazy" />
+                                </Link>
                             </div>
                             <div className={styles.memberships}>
+                                <img src="/vanguard.jpeg" alt="Vanguard" loading="lazy" />
                                 <img src="/dimensional.png" alt="Dimensional" loading="lazy" />
                                 <Link href="https://www.xyplanningnetwork.com/advisors/blaine-thiederman-cfp-mba/">
                                     <img src="/xypn.png" alt="XYPN" loading="lazy" />
