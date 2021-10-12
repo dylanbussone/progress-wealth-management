@@ -2,8 +2,6 @@ import React from 'react';
 import Link from '../components/link';
 import styles from '../styles/about.module.css';
 
-/* eslint-disable @next/next/no-img-element */
-
 const About = () => {
     return (
         <main className={styles.main}>

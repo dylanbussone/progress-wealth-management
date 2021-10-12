@@ -141,18 +141,21 @@ button {
 }
 
 h1 {
-    font-size: 2.6rem;
+    font-size: 2.65rem;
 }
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.85rem;
 }
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
+}
+h4 {
+    font-size: 1.2rem;
 }
 label {
-    font-size: 1.1em;
+    font-size: 1.2rem;
 }
 p, span, div, button, a, textarea, input {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5;
 }
