@@ -1,5 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
+import Script from 'next/script';
+import Header from '../components/header';
+import Footer from '../components/footer';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
@@ -7,7 +10,7 @@ function MyApp({ Component, pageProps }) {
         <React.Fragment>
             <Head>
                 <title>Progress Wealth Management</title>
-                <link rel="icon" type="image/png" href="/logo-icon.png" sizes="16x16" />
+                <link rel="icon" type="image/png" href="/logo-favicon.png" sizes="16x16" />
                 <link
                     href="https://assets.calendly.com/assets/external/widget.css"
                     rel="stylesheet"></link>
@@ -17,7 +20,11 @@ function MyApp({ Component, pageProps }) {
                 <script async src="/ga.js"></script>
                 <script async src="/calendly.js" />
             </Head>
+            <Header />
             <Component {...pageProps} />
+            <Footer />
+            {/* Calendly widget */}
+            <Script strategy="lazyOnload" src="/calendly.js" />
         </React.Fragment>
     );
 }

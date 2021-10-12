@@ -5,7 +5,6 @@
 .legal {
     padding: lg;
     composes: max_content_width from './layout.css';
-    margin: 0 auto;
     min-height: calc(100vh - header_height);
 }
 

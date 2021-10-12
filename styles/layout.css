@@ -12,6 +12,7 @@
 
 .max_content_width {
     max-width: max_width;
+    margin: 0 auto;
 }
 
 .three_col {

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="137812.375 113431.234 27905.068 46865.152" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="a" x1="138112" x2="146786" y1="160064" y2="100618" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#c93" offset="0"/>
+      <stop stop-color="#ffc" offset="1"/>
+    </linearGradient>
+    <style type="text/css">
+    .fil0 {fill:#0F1D2B}
+    .fil2 {fill:white;fill-rule:nonzero}
+    .fil1 {fill:url(#a)}
+  </style>
+  </defs>
+  <rect class="fil0" x="137812.375" y="113431.235" width="27905.068" height="46865.151" style=""/>
+  <polygon class="fil1" points="152775 145839 152819 129758 152841 121583 150751 122001 150721 133068 150667 152602 138112 160064 138153 145032 138212 123375 138183 123360 152863 113700 152863 113677 165392 116129 165361 127253 165331 138377"/>
+</svg>

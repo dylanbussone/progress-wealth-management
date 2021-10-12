@@ -1,4 +1,4 @@
-@value mobile, xs, sm, md from './layout.css';
+@value mobile, xs, sm, md, max_width from './layout.css';
 @value text_p from './typography.css';
 @value blue, white, gold from './colors.css';
 @value header_height: 100px;
@@ -9,22 +9,41 @@
     height: header_height;
     position: sticky;
     top: 0;
-    display: flex;
-    justify-content: center;
     z-index: 3;
+    padding: 0 md;
 }
 
-.header > div {
+.header_content {
+    composes: max_content_width from './layout.css';
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    height: 100%;
 }
+
 .logo_button {
-    height: 70;
-    width: 100;
+    height: 50px;
+    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: blue;
+    background-image: url('/logo-simple.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.logo_button_text {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+    background-image: url('/logo-text.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .link_list {
     display: flex;
@@ -34,21 +53,21 @@
     margin-left: md;
 }
 
-.header_link {
+.link_list li a {
     font-size: text_p;
     padding: md;
     color: white;
+    white-space: nowrap;
 }
-.active_header_link {
-    font-size: text_p;
-    padding: md;
+.link_list li a:hover, .link_list li a:active {
     color: gold;
 }
 
 /* Mobile header */
 .mobile_toggle {
     display: none;
-    padding: sm md xs;
+    height: 100%;
+    padding: sm 0 0;
 }
 @media (max-width: mobile) {
     .header {

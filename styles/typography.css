@@ -4,18 +4,37 @@
 @value text_h3: 1.3rem;
 @value text_h2: 2rem;
 @value text_h2_mob: 1.6rem;
-@value text_h1: 3rem;
-@value text_h1_mob: 2.5rem;
+@value text_h1: 2.6rem;
 
 @font-face {
-    font-family: "RobotoThin";
-    src: url("./fonts/Roboto/Roboto-Thin.ttf");
+    font-family: "LatoBlack";
+    src: url("./fonts/Lato/Lato-Black.ttf");
 }
 @font-face {
-    font-family: "RobotoRegular";
-    src: url("./fonts/Roboto/Roboto-Regular.ttf");
+    font-family: "LatoBold";
+    src: url("./fonts/Lato/Lato-Bold.ttf");
 }
 @font-face {
-    font-family: "RobotoBold";
-    src: url("./fonts/Roboto/Roboto-Bold.ttf");
+    font-family: "LatoItalic";
+    src: url("./fonts/Lato/Lato-Italic.ttf");
+}
+@font-face {
+    font-family: "LatoLight";
+    src: url("./fonts/Lato/Lato-Light.ttf");
+}
+@font-face {
+    font-family: "LatoLightItalic";
+    src: url("./fonts/Lato/Lato-LightItalic.ttf");
+}
+@font-face {
+    font-family: "LatoRegular";
+    src: url("./fonts/Lato/Lato-Regular.ttf");
+}
+@font-face {
+    font-family: "LatoThin";
+    src: url("./fonts/Lato/Lato-Thin.ttf");
+}
+@font-face {
+    font-family: "LatoThinItalic";
+    src: url("./fonts/Lato/Lato-ThinItalic.ttf");
 }
