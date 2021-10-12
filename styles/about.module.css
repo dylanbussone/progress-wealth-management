@@ -4,15 +4,16 @@
 @value header_height, mob_header_height from './header.module.css';
 
 .main {
-    padding: xxl md lg;
+    padding: xxl 0 lg;
 }
 @media (max-width: mobile) {
     .main {
-        padding: lg md;
+        padding: lg 0;
     }
 }
 .section {
     composes: max_content_width from './layout.css';
+    padding: 0 md;
 }
 .section_content {
     margin: xl 0;
