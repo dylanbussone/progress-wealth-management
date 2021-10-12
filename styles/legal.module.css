@@ -2,6 +2,8 @@
 @value text_p, text_label from './typography.css';
 @value header_height from './header.module.css';
 
+/* TODO: make more like other pages */
+
 .legal {
     padding: lg;
     composes: max_content_width from './layout.css';
