@@ -57,32 +57,43 @@
 /* end */
 
 
-.services_list {
-    list-style: none;
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-}
-@media (max-width: mobile) {
-    .services_list {
-        columns: 1;
-        -webkit-columns: 1;
-        -moz-columns: 1;
-    }
-}
-.services_list li {
-    line-height: 6;
+.button_link {
+    text-decoration: underline;
+    white-space: nowrap;
     margin: 0;
+    padding: 0;
+}
+.meeting_image {
+    margin-top: lg;
+    width: 100%;
+    max-height: 500px;
     display: flex;
     align-items: center;
-    font-size: text_label;
-    font-weight: bold;
+    overflow: hidden;
 }
-.services_list li svg {
-    width: 80px;
+.easy_opt_pers {
+    composes: three_col from './layout.css';
+    text-align: center;
 }
-
-.common_questions li {
-    list-style-type: none;
-    margin: md 0;
+@media (max-width: mobile) {
+    .easy_opt_pers {
+        flex-direction: column;
+    }
+    .easy_opt_pers > div {
+        width: 100%;
+        margin-bottom: lg;
+    }
+    .easy_opt_pers > div:last-of-type {
+        margin-bottom: 0;
+    }
+}
+.easy_opt_pers svg {
+    margin-bottom: calc(-1 * xs);
+}
+.easy_opt_pers h4 {
+    color: violet;
+    margin-bottom: sm;
+}
+.easy_opt_pers p {
+    font-size: text_p;
 }
