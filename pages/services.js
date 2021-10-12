@@ -7,7 +7,7 @@ const Services = () => {
     return (
         <main className={styles.main}>
             <section className={styles.section}>
-                <h1 className={styles.section_header}>Our Services</h1>
+                <h1>What We Do</h1>
                 <div className={styles.section_content}>
                     <div className={styles.section_content_group}>
                         <ul className={styles.services_list}>

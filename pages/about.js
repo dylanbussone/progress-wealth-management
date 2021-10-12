@@ -8,7 +8,7 @@ const About = () => {
     return (
         <main className={styles.main}>
             <section className={styles.section}>
-                <h1 className={styles.section_header}>Who We Are</h1>
+                <h1>Who We Are</h1>
                 <div className={styles.section_content}>
                     <div className={styles.section_content_group}>
                         <img src="/blaine_sm.jpg" alt="Blaine Thiederman" loading="lazy" />

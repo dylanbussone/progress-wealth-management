@@ -1,9 +1,8 @@
 @value mobile, max_width, xxs, xs, sm, md, lg, xl, xxl, xxxl from './layout.css';
-@value text_sup, text_p, text_label, text_h1, text_h1_mob, text_h2, text_h2_mob, text_h3 from './typography.css';
+@value text_sup from './typography.css';
 @value green, white, border, violet from './colors.css';
 @value header_height, mob_header_height from './header.module.css';
 
-/* start CONDENSE COPYPASTA */
 .main {
     padding: xxl md lg;
 }
@@ -15,46 +14,21 @@
 .section {
     composes: max_content_width from './layout.css';
 }
-
-.section_header {
-    font-size: text_h1;
-}
 .section_content {
     margin: xl 0;
 }
-.section_content * {
-    font-size: text_p;
-    line-height: 1.5;
+.section_content .section_content_group {
+    margin-bottom: xxxl;
 }
 .section_content h2 {
-    font-size: text_h2;
-    margin: xxl 0 md;
+    margin-bottom: md;
     font-family: "LatoLight";
-}
-@media (max-width: mobile) {
-    .section_content h2 {
-        font-size: text_h2_mob;
-    }
-}
-.section_content h3, .section_content h3 * {
-    font-size: text_h3;
-    font-family: "LatoThin";
-}
-.section_content h3 .bold {
-    font-family: "LatoRegular";
-}
-.section_content h4 {
-    font-size: text_label;
 }
 .section_content li {
     margin-left: lg;
     margin-bottom: md;
     line-height: 2;
 }
-.section_content .section_content_group {
-    margin-bottom: xxxl;
-}
-/* end */
 
 
 .quote {
@@ -67,7 +41,6 @@
 .quote p {
     font-size: text_sup;
 }
-
 
 .button_link {
     text-decoration: underline;
@@ -106,9 +79,6 @@
     color: violet;
     margin-bottom: sm;
 }
-.easy_opt_pers p {
-    font-size: text_p;
-}
 
 /* Boat */
 .today_tomorrow {
@@ -131,7 +101,6 @@
 /* Contact Us */
 .contact_us form input,
 .contact_us form textarea {
-    font-size: text_p;
     background-color: transparent;
     display: block;
     border: 1px solid border;
