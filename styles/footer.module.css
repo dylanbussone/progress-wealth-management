@@ -13,7 +13,6 @@
 
 .footer_content {
     composes: max_content_width from './layout.css';
-    margin: 0 auto;
     padding: xxxl;
 }
 

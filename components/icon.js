@@ -2,10 +2,13 @@ import React from 'react';
 import styles from '../styles/icon.module.css';
 import { toTitleCase } from '../utils';
 
-// TODO: dropdown/up icons
+// https://thenounproject.com/search/
+
 import Career from './icons/career.svg';
 import Close from './icons/close.svg';
+import Collapse from './icons/collapse.svg';
 import Easy from './icons/easy.svg';
+import Expand from './icons/expand.svg';
 import Family from './icons/family.svg';
 import Investments from './icons/investments.svg';
 import Menu from './icons/menu.svg';
@@ -18,7 +21,9 @@ import Tax from './icons/tax.svg';
 const ICONS = {
     Career,
     Close,
+    Collapse,
     Easy,
+    Expand,
     Family,
     Investments,
     Menu,

@@ -16,4 +16,14 @@ function toTitleCase(str) {
     });
 }
 
-export { openCalendlyPopup, debounce, toTitleCase };
+function scrollToId(id, additionalOffset = 0) {
+    if (window.scrollTo) {
+        const offsetTop = document.getElementById(id)?.offsetTop || 0;
+        window.scrollTo({
+            top: offsetTop + additionalOffset,
+            behavior: 'smooth',
+        });
+    }
+}
+
+export { openCalendlyPopup, debounce, toTitleCase, scrollToId };
