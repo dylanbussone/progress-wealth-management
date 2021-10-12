@@ -891,7 +891,7 @@ Calendly._autoLoadInlineWidgets();
 Calendly.initBadgeWidget({
     url: 'https://calendly.com/progresswealth',
     text: 'Schedule an Appointment',
-    color: '#81AE9D',
+    color: '#1fa572',
     textColor: '#ffffff',
     branding: false,
 });

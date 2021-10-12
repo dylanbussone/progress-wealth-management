@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Icon from '../components/icon';
@@ -17,6 +16,10 @@ const HEADER_LINKS = [
         text: 'About Us',
         href: '/about',
     },
+    {
+        text: 'Schedule Now',
+        href: '/schedule',
+    }
 ];
 
 const Header = () => {

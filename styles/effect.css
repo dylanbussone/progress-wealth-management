@@ -5,6 +5,13 @@
     box-shadow: 0px 0px 2px rgba(35, 33, 41, 0.8);
 }
 
+.button_opacity {
+    opacity: 0.75;
+}
+.button_opacity:hover, .button_opacity:active {
+    opacity: 1;
+}
+
 .unselectable {
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */

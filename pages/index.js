@@ -1,27 +1,9 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import Icon from '../components/icon';
 import { openCalendlyPopup } from '../utils';
 import styles from '../styles/index.module.css';
 
-/* eslint-disable @next/next/no-img-element */
-
 const Index = () => {
-    const contactFormRef = useRef();
-
-    const sendMail = e => {
-        e.preventDefault();
-        const [name, email, phone, message] = Array.from(contactFormRef.current.elements).map(
-            el => el.value,
-        );
-        const addr = 'blaine@progresswealthmanagement.com';
-        const subject = `Message from ${name}`;
-        const body = `${message.replace(
-            /\n/g,
-            '%0D%0A',
-        )}%0D%0A%0D%0A--%0D%0A${name}%0D%0A${email}%0D%0A${phone}`;
-        window.location.href = `mailto:${addr}?subject=${subject}&body=${body}`;
-    };
-
     return (
         <main className={styles.main}>
             <section className={styles.section}>
@@ -135,41 +117,6 @@ const Index = () => {
                 </div>
             </section>
             <section className={`${styles.section} ${styles.contact_us}`}>
-                <h1>Contact Us</h1>
-                <div className={styles.section_content}>
-                    <div className={styles.section_content_group}>
-                        <form ref={contactFormRef}>
-                            {' '}
-                            <input
-                                type="text"
-                                id="name"
-                                placeholder="Name"
-                                autoComplete="name"
-                                required
-                            />
-                            <input
-                                type="text"
-                                id="email"
-                                placeholder="Email"
-                                autoComplete="email"
-                                required
-                            />
-                            <input
-                                type="text"
-                                id="phone"
-                                placeholder="Phone number (optional)"
-                                autoComplete="phone"
-                            />
-                            <textarea id="message" placeholder="Message" rows={4} required />
-                            <button
-                                className={styles.submit_button}
-                                type="submit"
-                                onClick={sendMail}>
-                                Submit
-                            </button>
-                        </form>
-                    </div>
-                </div>
                 <div className={styles.section_content}>
                     <div className={styles.section_content_group}>
                         <h2>Testimonials</h2>

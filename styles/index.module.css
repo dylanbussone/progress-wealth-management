@@ -99,29 +99,6 @@
     overflow: hidden;
 }
 
-/* Contact Us */
-.contact_us form input,
-.contact_us form textarea {
-    background-color: transparent;
-    display: block;
-    border: 1px solid border;
-    margin-bottom: sm;
-    padding: sm;
-    width: calc(100% - (sm * 2));
-}
-.submit_button {
-    composes: box_shadow_thin from './effect.css';
-    composes: transition from './effect.css';
-    background: green;
-    color: white;
-    text-decoration: none;
-    padding: sm;
-    margin-top: sm;
-    border-radius: 6px;
-    width: 100%;
-    opacity: 0.9;
-}
-
 /* Testimonials */
 .testimonials .testimonial {
     margin: lg 0 xxl;
