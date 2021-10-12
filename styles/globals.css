@@ -139,3 +139,20 @@ button {
     transition: color 0.3s;
     color: #227C9D;
 }
+
+h1 {
+    font-size: 2.6rem;
+}
+h2 {
+    font-size: 1.8rem;
+}
+h3 {
+    font-size: 1.3rem;
+}
+label {
+    font-size: 1.1em;
+}
+p, span, div, button, a, textarea, input {
+    font-size: 1rem;
+    line-height: 1.5;
+}

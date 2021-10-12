@@ -3,7 +3,6 @@
 @value green, white, border, violet from './colors.css';
 @value header_height, mob_header_height from './header.module.css';
 
-/* start CONDENSE COPYPASTA */
 .main {
     padding: xxl md lg;
 }
@@ -15,27 +14,22 @@
 .section {
     composes: max_content_width from './layout.css';
 }
-
-.section_header {
-    font-size: text_h1;
-}
 .section_content {
     margin: xl 0;
 }
-.section_content * {
-    font-size: text_p;
-    line-height: 1.5;
+.section_content .section_content_group {
+    margin-bottom: xxxl;
 }
 .section_content h2 {
-    font-size: text_h2;
-    margin: xxl 0 md;
+    margin-bottom: md;
     font-family: "LatoLight";
 }
-@media (max-width: mobile) {
-    .section_content h2 {
-        font-size: text_h2_mob;
-    }
+.section_content li {
+    margin-left: lg;
+    margin-bottom: md;
+    line-height: 2;
 }
+/* TODO name h3 */
 .section_content h3, .section_content h3 * {
     font-size: text_h3;
     font-family: "LatoThin";
@@ -43,38 +37,26 @@
 .section_content h3 .bold {
     font-family: "LatoRegular";
 }
-.section_content h4 {
-    font-size: text_label;
-}
-.section_content li {
-    margin-left: lg;
-    margin-bottom: md;
-    line-height: 2;
-}
-.section_content .section_content_group {
-    margin-bottom: xxxl;
-}
-/* end */
 
 .section_content_group img {
     max-width: 100%;
     margin-bottom: md;
 }
-.section_content_group .paragraphs {
+.paragraphs {
     display: flex;
     margin: lg 0;
 }
-.section_content_group .paragraphs:first-of-type {
+.paragraphs:first-of-type {
     margin-top: md;
 }
-.section_content_group .paragraphs p:nth-of-type(2) {
+.paragraphs p:nth-of-type(2) {
     padding-left: lg;
 }
 @media (max-width: mobile) {
-    .section_content_group .paragraphs {
+    .paragraphs {
         flex-direction: column;
     }
-    .section_content_group .paragraphs p:nth-of-type(2) {
+    .paragraphs p:nth-of-type(2) {
         padding: 0;
         margin-top: lg;
     }
@@ -83,12 +65,12 @@
 .section_content_group h2 {
     margin-bottom: lg;
 }
-.section_content_group .we_bring_list {
+.we_bring_list {
     margin: md 0;
     display: flex;
     justify-content: space-between;
 }
-.section_content_group .we_bring_list li {
+.we_bring_list li {
     margin: sm 0;
     font-weight: bold;
     list-style-type: none;

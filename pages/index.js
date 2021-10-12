@@ -25,7 +25,7 @@ const Index = () => {
     return (
         <main className={styles.main}>
             <section className={styles.section}>
-                <h1 className={styles.section_header}>Financial Planning for Progress</h1>
+                <h1>Financial Planning for Progress</h1>
 
                 <div className={styles.section_content}>
                     <div className={styles.section_content_group}>
@@ -135,7 +135,7 @@ const Index = () => {
                 </div>
             </section>
             <section className={`${styles.section} ${styles.contact_us}`}>
-                <h1 className={styles.section_header}>Contact Us</h1>
+                <h1>Contact Us</h1>
                 <div className={styles.section_content}>
                     <div className={styles.section_content_group}>
                         <form ref={contactFormRef}>
