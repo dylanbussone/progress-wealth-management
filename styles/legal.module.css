@@ -1,24 +1,9 @@
 @value sm, md, lg, xl from './layout.css';
 @value text_p, text_label from './typography.css';
-@value header_height from './header.module.css';
-
-/* TODO: make more like other pages */
-
-.legal {
-    padding: lg;
-    composes: max_content_width from './layout.css';
-    min-height: calc(100vh - header_height);
-}
 
 .legal h1 {
     margin: xl 0;
 }
-
 .legal p {
     margin: lg 0;
-}
-.home_link {
-    padding: 0;
-    font-size: text_label;
-    text-decoration: underline;
 }

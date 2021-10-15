@@ -1,0 +1,13 @@
+@value mobile, lg, xxl from './layout.css';
+@value header_height from './header.module.css';
+@value footer_and_padding_offset_height: 470px;
+
+.main {
+    padding: xxl 0 lg;
+    min-height: calc(100vh - header_height - footer_and_padding_offset_height);
+}
+@media (max-width: mobile) {
+    .main {
+        padding: lg 0;
+    }
+}

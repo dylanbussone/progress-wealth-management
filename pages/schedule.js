@@ -1,4 +1,6 @@
 import React, { useRef } from 'react';
+import Main from '../components/main';
+import Section from '../components/section';
 import { openCalendlyPopup } from '../utils';
 import styles from '../styles/schedule.module.css';
 
@@ -20,58 +22,56 @@ const Schedule = () => {
     };
 
     return (
-        <main className={styles.main}>
-            <section className={styles.section}>
+        <Main>
+            <Section>
                 <h1>Let&apos;s talk</h1>
-                <div className={styles.section_content}>
-                    <div className={styles.section_content_group}>
-                        <p>
-                            Meet your financial planning partners that provide you the tools,
-                            guidance, inspiration and advice you need to succeed.
-                        </p>
-                        <div className={styles.meeting_image}>
-                            <img src="/meeting.jpg" alt="Meeting" width="100%" loading="lazy" />
-                        </div>
-                        <button className={styles.schedule_now} onClick={openCalendlyPopup}>
-                            Schedule an Appointment
-                        </button>
-                    </div>
-                    <div className={`${styles.section_content_group} ${styles.contact_us}`}>
-                        <h2>Let&apos;s email first</h2>
-                        <form ref={contactFormRef}>
-                            {' '}
-                            <input
-                                type="text"
-                                id="name"
-                                placeholder="Name"
-                                autoComplete="name"
-                                required
-                            />
-                            <input
-                                type="text"
-                                id="email"
-                                placeholder="Email"
-                                autoComplete="email"
-                                required
-                            />
-                            <input
-                                type="text"
-                                id="phone"
-                                placeholder="Phone number (optional)"
-                                autoComplete="phone"
-                            />
-                            <textarea id="message" placeholder="Message" rows={4} required />
-                            <button
-                                className={styles.contact_us_submit_button}
-                                type="submit"
-                                onClick={sendMail}>
-                                Submit
-                            </button>
-                        </form>
-                    </div>
+                <p>
+                    Meet your financial planning partners that provide you the tools, guidance,
+                    inspiration and advice you need to succeed.
+                </p>
+                <div className={styles.meeting_image}>
+                    <img src="/meeting.jpg" alt="Meeting" width="100%" loading="lazy" />
                 </div>
-            </section>
-        </main>
+                <button className={styles.schedule_now} onClick={openCalendlyPopup}>
+                    Schedule an Appointment
+                </button>
+            </Section>
+            <Section>
+                <div className={styles.contact_us}>
+                    <h2>Let&apos;s email first</h2>
+                    <form ref={contactFormRef}>
+                        {' '}
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Name"
+                            autoComplete="name"
+                            required
+                        />
+                        <input
+                            type="text"
+                            id="email"
+                            placeholder="Email"
+                            autoComplete="email"
+                            required
+                        />
+                        <input
+                            type="text"
+                            id="phone"
+                            placeholder="Phone number (optional)"
+                            autoComplete="phone"
+                        />
+                        <textarea id="message" placeholder="Message" rows={4} required />
+                        <button
+                            className={styles.contact_us_submit_button}
+                            type="submit"
+                            onClick={sendMail}>
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </Section>
+        </Main>
     );
 };
 
