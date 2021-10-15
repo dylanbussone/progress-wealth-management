@@ -23,8 +23,8 @@ const Index = () => (
                     Get Started.
                 </button>
             </p>
-            <div className={styles.meeting_image}>
-                <img src="/meeting.jpg" alt="Meeting" width="100%" loading="lazy" />
+            <div className={styles.clients_image}>
+                <img src="/clients.jpg" alt="Meeting" width="100%" loading="lazy" />
             </div>
         </Section>
         <Section>
