@@ -1,0 +1,21 @@
+@value md, lg, xxxl from './layout.css';
+
+.section {
+    composes: max_content_width from './layout.css';
+    padding: 0 md;
+    margin-bottom: xxxl;
+}
+
+.section h1 {
+    margin-bottom: lg;
+}
+
+.section h2 {
+    margin-bottom: md;
+}
+
+.section li {
+    margin-left: lg;
+    margin-bottom: md;
+    line-height: 2;
+}

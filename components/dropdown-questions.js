@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Link from './link';
+import Icon from '../components/icon';
 import styles from '../styles/dropdown-questions.module.css';
 import { openCalendlyPopup } from '../utils';
 
@@ -26,8 +27,8 @@ const DROPDOWN_CONTENT = [
                     money and support our trading technology. Betterment Securities is a Member of
                     SIPC, which protects securities customers of its members up to $500,000
                     (including $250,000 for claims for cash). Explanatory brochure available upon
-                    request or at <Link href="https://www.sipc.org">www.sipc.org</Link>. What you should
-                    remember is that the SPIC does not protect against market changes in your
+                    request or at <Link href="https://www.sipc.org">www.sipc.org</Link>. What you
+                    should remember is that the SPIC does not protect against market changes in your
                     investing account.
                 </p>
                 <p>
@@ -70,9 +71,9 @@ const DROPDOWN_CONTENT = [
             <React.Fragment>
                 <p>
                     Our team of investing experts make decisions about our{' '}
-                    <Link href="https://www.betterment.com/investments/">portfolio strategies</Link> and
-                    fund selection with the help of an external committee of economists, PhDs, and
-                    industry experts.
+                    <Link href="https://www.betterment.com/investments/">portfolio strategies</Link>{' '}
+                    and fund selection with the help of an external committee of economists, PhDs,
+                    and industry experts.
                 </p>
                 <p>
                     More than just a portfolio management team, our experts work to develop
@@ -96,17 +97,23 @@ const DropdownQuestions = () => {
         });
     };
 
-    // TODO: dropdown/up icons
-
     return (
         <div className={styles.dropdown_questions}>
             {DROPDOWN_CONTENT.map(({ question, dropdownContent }) => (
                 <div className={styles.dropdown_question} key={question}>
                     <h4>
-                        <a onClick={() => toggleDropdown(question)}>{question}</a>
+                        <a onClick={() => toggleDropdown(question)}>
+                            <span>{question}</span>
+                            <Icon
+                                name={openDropdowns[question] ? 'collapse' : 'expand'}
+                                size="14"
+                            />
+                        </a>
                     </h4>
                     <div className={openDropdowns[question] ? styles.open : styles.closed}>
-                        {dropdownContent}
+                        <div className={styles.padding}>
+                            {dropdownContent}
+                        </div>
                     </div>
                 </div>
             ))}

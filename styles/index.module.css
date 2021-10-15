@@ -1,36 +1,6 @@
-@value mobile, max_width, xxs, xs, sm, md, lg, xl, xxl, xxxl from './layout.css';
+@value mobile, xxs, xs, sm, md, lg, xl, xxl, xxxl from './layout.css';
 @value text_sup from './typography.css';
-@value green, white, border, violet from './colors.css';
-@value header_height, mob_header_height from './header.module.css';
-
-.main {
-    padding: xxl 0 lg;
-}
-@media (max-width: mobile) {
-    .main {
-        padding: lg 0;
-    }
-}
-.section {
-    composes: max_content_width from './layout.css';
-    padding: 0 md;
-}
-.section_content {
-    margin: xl 0;
-}
-.section_content .section_content_group {
-    margin-bottom: xxxl;
-}
-.section_content h2 {
-    margin-bottom: md;
-    font-family: "LatoLight";
-}
-.section_content li {
-    margin-left: lg;
-    margin-bottom: md;
-    line-height: 2;
-}
-
+@value violet from './colors.css';
 
 .quote {
     margin-bottom: lg;
@@ -60,6 +30,7 @@
 .easy_opt_pers {
     composes: three_col from './layout.css';
     text-align: center;
+    margin-top: xxl;
 }
 @media (max-width: mobile) {
     .easy_opt_pers {

@@ -1,6 +1,6 @@
-@value sm, md, lg, xl, xxl from './layout.css';
-@value text_p, text_label from './typography.css';
-@value black, white, blue, border, lightgrey from './colors.css';
+@value md, xl from './layout.css';
+@value text_label from './typography.css';
+@value black, lightgrey from './colors.css';
 
 .dropdown_questions {
 
@@ -26,7 +26,9 @@
     text-decoration: underline;
 }
 .dropdown_question h4 a {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .dropdown_question > div.closed {
     display: none;
@@ -34,15 +36,15 @@
 .dropdown_question > div.open {
     display: block;
 }
-.dropdown_question > div {
-    padding: md 0;
-}
 .dropdown_question > div button {
     padding: 0;
 }
-.dropdown_question > div > p {
+.dropdown_questions .padding {
+    margin-top: md;
+}
+.dropdown_question > div p {
     margin-bottom: md;
 }
-.dropdown_question > div > p:last-of-type {
+.dropdown_question > div p:last-of-type {
     margin-bottom: 0;
 }
