@@ -39,9 +39,7 @@ const Header = () => {
                     <ul className={styles.link_list}>
                         {HEADER_LINKS.map(link => (
                             <li key={link.text}>
-                                <Link href={link.href}>
-                                    {link.text}
-                                </Link>
+                                <Link href={link.href}>{link.text}</Link>
                             </li>
                         ))}
                     </ul>
@@ -64,10 +62,8 @@ const Header = () => {
                 {mobileMenuActive && (
                     <ul className={styles.mobile_link_list}>
                         {HEADER_LINKS.map(link => (
-                            <li key={link.text}>
-                                <Link
-                                    href={link.href}
-                                    onClick={() => setMobileMenuActive(false)}>
+                            <li key={link.text} onClick={() => setMobileMenuActive(false)}>
+                                <Link href={link.href}>
                                     {link.text}
                                 </Link>
                             </li>

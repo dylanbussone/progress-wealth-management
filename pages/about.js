@@ -9,7 +9,7 @@ const About = () => {
         <Main>
             <Section>
                 <h1>Who We Are</h1>
-                <img src="/blaine_sm.jpg" alt="Blaine Thiederman" loading="lazy" />
+                <img src="/blaine_sm.jpg" alt="Blaine Thiederman" width="100%" loading="lazy" />
                 <h3 className={styles.name_title}>
                     <span className={styles.bold}>Blaine Thiederman</span> MBA,CFP(R)
                     <br />
