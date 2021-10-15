@@ -1,5 +1,4 @@
-@value sm, md, lg, xl from './layout.css';
-@value text_p, text_label from './typography.css';
+@value lg, xl from './layout.css';
 
 .legal h1 {
     margin: xl 0;
