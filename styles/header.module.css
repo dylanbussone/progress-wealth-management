@@ -86,8 +86,11 @@
     background-size: contain;
 }
 
-.mobile_link_list li {
-
+.mobile_link_list {
+    background: blue;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 .mobile_link_list li:nth-child(even) {
     background-color: rgba(255, 255, 255, 0.1);
