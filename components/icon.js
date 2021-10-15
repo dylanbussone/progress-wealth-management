@@ -34,7 +34,7 @@ const ICONS = {
     Tax,
 };
 
-const Icon = ({ name, size = '64', color, ...props }) => {
+const Icon = ({ name, size = '42', color, ...props }) => {
     const iconName = toTitleCase(name);
     if (ICONS[iconName]) {
         return React.createElement(ICONS[iconName], { height: size, width: size, className: styles[color], ...props });

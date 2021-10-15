@@ -13,11 +13,11 @@ const Services = () => {
 
                 <ul className={styles.services_list}>
                     <li>
-                        <Icon name="family" size={48} color="icon_gold" />
+                        <Icon name="family" size={32} color="icon_gold" />
                         Life Changes
                     </li>
                     <li>
-                        <Icon name="career" size={52} color="icon_gold" />
+                        <Icon name="career" size={50} color="icon_gold" />
                         Career Advice
                     </li>
                     <li>
@@ -25,11 +25,11 @@ const Services = () => {
                         Personal Finance
                     </li>
                     <li>
-                        <Icon name="retirement" size={52} color="icon_gold" />
+                        <Icon name="retirement" size={46} color="icon_gold" />
                         Retirement Planning
                     </li>
                     <li>
-                        <Icon name="investments" size={34} color="icon_gold" />
+                        <Icon name="investments" size={40} color="icon_gold" />
                         Investment Advice
                     </li>
                     <li>
