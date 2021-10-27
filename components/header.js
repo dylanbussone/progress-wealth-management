@@ -13,6 +13,10 @@ const HEADER_LINKS = [
         href: '/services',
     },
     {
+        text: 'Pricing',
+        href: '/pricing',
+    },
+    {
         text: 'About Us',
         href: '/about',
     },
