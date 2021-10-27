@@ -15,11 +15,16 @@
     margin: 0 auto;
 }
 
-.three_col {
+.three_col, .four_col {
     display: flex;
 }
 .three_col > div {
     flex-grow: 1;
     width: calc(33% - lg);
+    margin-right: lg;
+}
+.four_col > div {
+    flex-grow: 1;
+    width: calc(25% - lg);
     margin-right: lg;
 }

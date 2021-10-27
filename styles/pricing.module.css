@@ -1,0 +1,17 @@
+@value mobile, md from './layout.css';
+@value text_label from './typography.css';
+
+.pricing_blocks {
+    composes: four_col from './layout.css';
+}
+.pricing_blocks > div {
+    border: 1px dashed grey;
+}
+.pricing_blocks > div > h3 {
+    font-family: "LatoBlack";
+}
+@media (max-width: mobile) {
+    .pricing_blocks {
+        
+    }
+}
