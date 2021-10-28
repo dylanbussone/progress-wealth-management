@@ -1,17 +1,53 @@
-@value mobile, md from './layout.css';
-@value text_label from './typography.css';
+@value mobile, md, lg from './layout.css';
+@value black, blue, gold, grey from './colors.css';
+@value text_h3 from './typography.css';
+
+.separator {
+    composes: border_radius_container from './effect.css';
+    width: 80px;
+    height: 3px;
+    background: gold;
+    margin: md 0 lg;
+}
 
 .pricing_blocks {
-    composes: four_col from './layout.css';
-}
-.pricing_blocks > div {
-    border: 1px dashed grey;
-}
-.pricing_blocks > div > h3 {
-    font-family: "LatoBlack";
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: lg;
 }
 @media (max-width: mobile) {
     .pricing_blocks {
-        
+        grid-template-columns: repeat(1, 1fr);
     }
+}
+.pricing_block {
+    composes: box_shadow_subtle from './effect.css';
+    composes: border_radius_container from './effect.css';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: lg;
+}
+.pricing_block * {
+    color: grey;
+}
+.pricing_block ul {
+    list-style: none;
+}
+.pricing_block ul li {
+    margin-left: 0;
+}
+.pricing_block .highlight {
+    color: black;
+    font-family: "LatoBold";
+}
+.pricing_block > h3 {
+    font-family: "LatoBlack";
+}
+
+.pricing_block .price {
+    margin-top: md;
+    color: black;
+    font-size: text_h3;
+    text-align: center;
 }

@@ -1,5 +1,5 @@
 @value mobile: 768px;
-@value max_width: 1000px;
+@value max_width: 1150px;
 
 @value xxs: 4px;
 @value xs: 8px;
@@ -15,16 +15,16 @@
     margin: 0 auto;
 }
 
-.three_col, .four_col {
+.three_col, .two_col {
     display: flex;
+}
+.two_col > div {
+    flex-grow: 1;
+    width: calc(50% - lg);
+    margin-right: lg;
 }
 .three_col > div {
     flex-grow: 1;
     width: calc(33% - lg);
-    margin-right: lg;
-}
-.four_col > div {
-    flex-grow: 1;
-    width: calc(25% - lg);
     margin-right: lg;
 }

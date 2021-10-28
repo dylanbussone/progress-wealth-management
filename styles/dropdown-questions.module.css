@@ -8,11 +8,11 @@
 .dropdown_question {
     composes: box_shadow_thin from './effect.css';
     composes: unselectable from './effect.css';
+    composes: border_radius_subtle from './effect.css';
     margin: xl 0;
     padding: md;
     background: lightgrey;
     color: black;
-    border-radius: 4px;
 }
 .dropdown_question:first-of-type {
     margin-top: 0;
@@ -29,6 +29,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.question {
+    composes: letter_spacing from './typography.css';
 }
 .dropdown_question > div.closed {
     display: none;

@@ -103,7 +103,7 @@ const DropdownQuestions = () => {
                 <div className={styles.dropdown_question} key={question}>
                     <h4>
                         <a onClick={() => toggleDropdown(question)}>
-                            <span>{question}</span>
+                            <span className={styles.question}>{question}</span>
                             <Icon
                                 name={openDropdowns[question] ? 'collapse' : 'expand'}
                                 size="14"
