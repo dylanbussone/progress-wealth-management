@@ -34,7 +34,7 @@ const About = () => {
                 </div>
                 <div className={styles.paragraphs}>
                     <p>
-                        Blaine has dedicated 12 years of his life towards his career and expertise
+                        Blaine has dedicated nearly 10 years of his life towards his career and expertise
                         in financial planning and wealth management. As a Certified Financial
                         Planner™, Blaine brings a wide range of experience to the relationships he
                         holds with his clients focusing on his ability to provide holistic financial
