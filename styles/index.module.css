@@ -1,17 +1,6 @@
-@value mobile, xxs, xs, sm, md, lg, xl, xxl, xxxl from './layout.css';
+@value mobile, xs, sm, md, lg, xl, xxl, xxxl from './layout.css';
 @value text_sup from './typography.css';
 @value violet from './colors.css';
-
-.quote {
-    margin-bottom: lg;
-}
-.quote h5 {
-    font-style: italic;
-    margin-bottom: xxs;
-}
-.quote p {
-    font-size: text_sup;
-}
 
 .button_link {
     text-decoration: underline;

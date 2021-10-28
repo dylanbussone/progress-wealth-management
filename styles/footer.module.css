@@ -1,5 +1,6 @@
 @value footer_bg, white from './colors.css';
-@value md, lg, xxl, xxxl from './layout.css';
+@value sm, md, lg, xxl, xxxl from './layout.css';
+@value text_sup from './typography.css';
 
 .footer {
     background: footer_bg;
@@ -24,4 +25,14 @@
 }
 .footer_content ul li a {
     text-decoration: underline;
+}
+
+.quote h5 {
+    font-style: italic;
+    margin-right: sm;
+    display: inline-block;
+}
+.quote span {
+    display: inline-block;
+    font-size: text_sup;
 }

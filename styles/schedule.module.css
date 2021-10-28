@@ -9,14 +9,16 @@
     display: flex;
     align-items: center;
     overflow: hidden;
+    composes: border_radius_subtle from './effect.css';
 }
 .schedule_now {
     composes: box_shadow_thin from './effect.css';
     composes: transition from './effect.css';
     composes: button_opacity from './effect.css';
+    composes: border_radius_button from './effect.css';
+    composes: letter_spacing from './typography.css';
     margin: lg 0;
     background: button_green;
-    border-radius: 25px;
     padding: 10px 30px;
     color: white;
     font-size: text_h3;
@@ -35,11 +37,12 @@
     composes: box_shadow_thin from './effect.css';
     composes: transition from './effect.css';
     composes: button_opacity from './effect.css';
+    composes: border_radius_button from './effect.css';
+    composes: letter_spacing from './typography.css';
     background: button_green;
     color: white;
     text-decoration: none;
     padding: sm;
     margin-top: sm;
-    border-radius: 6px;
     width: 100%;
 }

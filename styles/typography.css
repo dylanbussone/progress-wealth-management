@@ -6,6 +6,10 @@
 @value text_h2: 1.85rem;
 @value text_h1: 2.65rem;
 
+.letter_spacing {
+    letter-spacing: 0.88px;
+}
+
 @font-face {
     font-family: "LatoBlack";
     src: url("./fonts/Lato/Lato-Black.ttf");
