@@ -9,7 +9,12 @@ const About = () => {
         <Main>
             <Section>
                 <h1>Who We Are</h1>
-                <img src="/blaine_sm.jpg" alt="Blaine Thiederman" width="100%" loading="lazy" />
+                <img
+                    className={styles.blaine_img}
+                    src="/blaine_sm.jpg"
+                    alt="Blaine Thiederman"
+                    loading="lazy"
+                />
                 <h3 className={styles.name_title}>
                     <span className={styles.bold}>Blaine Thiederman</span> MBA,CFP(R)
                     <br />
@@ -34,13 +39,13 @@ const About = () => {
                 </div>
                 <div className={styles.paragraphs}>
                     <p>
-                        Blaine has dedicated nearly 10 years of his life towards his career and expertise
-                        in financial planning and wealth management. As a Certified Financial
-                        Planner™, Blaine brings a wide range of experience to the relationships he
-                        holds with his clients focusing on his ability to provide holistic financial
-                        planning, tax planning and preparation. Prior to starting Progress Wealth
-                        management, Blaine served as a leading financial planner at Fisher
-                        Investments and Edelman Financial Engines.
+                        Blaine has dedicated nearly 10 years of his life towards his career and
+                        expertise in financial planning and wealth management. As a Certified
+                        Financial Planner™, Blaine brings a wide range of experience to the
+                        relationships he holds with his clients focusing on his ability to provide
+                        holistic financial planning, tax planning and preparation. Prior to starting
+                        Progress Wealth management, Blaine served as a leading financial planner at
+                        Fisher Investments and Edelman Financial Engines.
                     </p>
                 </div>
             </Section>

@@ -105,6 +105,15 @@ const Index = () => (
             </div>
         </Section>
         <Section>
+            <iframe
+                className={styles.video}
+                src="https://www.youtube.com/embed/BLpropxtFCc"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen></iframe>
+        </Section>
+        <Section>
             <div className={styles.contact_us}>
                 <h2>Testimonials</h2>
                 <div className={styles.testimonials}>

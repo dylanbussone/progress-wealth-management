@@ -1,6 +1,11 @@
 @value mobile, sm, md, lg from './layout.css';
 @value text_label, text_h3 from './typography.css';
 
+.blaine_img {
+    composes: border_radius_subtle from './effect.css';
+    max-width: 100%;
+}
+
 .name_title {
     margin: sm 0 lg;
 }
@@ -12,10 +17,6 @@
     font-family: "LatoBlack";
 }
 
-.section_content_group img {
-    max-width: 100%;
-    margin-bottom: md;
-}
 .paragraphs {
     display: flex;
     margin: lg 0;
@@ -36,9 +37,6 @@
     }
 }
 
-.section_content_group h2 {
-    margin-bottom: lg;
-}
 .we_bring_list {
     margin: md 0;
     display: flex;
