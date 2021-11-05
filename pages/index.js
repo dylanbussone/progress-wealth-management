@@ -110,6 +110,7 @@ const Index = () => (
         <Section>
             <iframe
                 className={styles.video}
+                loading="lazy"
                 src="https://www.youtube.com/embed/BLpropxtFCc"
                 title="YouTube video player"
                 frameBorder="0"
