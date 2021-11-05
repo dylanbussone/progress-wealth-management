@@ -60,8 +60,6 @@ const About = () => {
                     <li>Organization</li>
                     <li>Accountability</li>
                     <li>Proactivity</li>
-                </ul>
-                <ul className={styles.we_bring_list}>
                     <li>Objectivity</li>
                     <li>Partnership</li>
                     <li>Education</li>
@@ -80,20 +78,34 @@ const About = () => {
                 <h2>Memberships and Alliances</h2>
                 <div className={styles.memberships}>
                     <Link href="https://www.letsmakeaplan.org/find-a-cfp-professional/certified-professional-profile/ed120926-8235-4607-a3cf-1e09f3b0a3b5">
-                        <Image src={CfpImage} alt="Certified Financial Planner" />
+                        <Image
+                            className={styles.membership_image}
+                            src={CfpImage}
+                            alt="Certified Financial Planner"
+                        />
                     </Link>
                     <Link href="https://www.napfa.org/member/91997/35608">
-                        <Image src={NapfaImage} alt="NAPFA" />
+                        <Image className={styles.membership_image} src={NapfaImage} alt="NAPFA" />
                     </Link>
                     <Link href="https://www.feeonlynetwork.com/financial-advisor/blaine-thiederman/">
-                        <Image src={FoImage} alt="Fee Only" />
+                        <Image className={styles.membership_image} src={FoImage} alt="Fee Only" />
                     </Link>
-                </div>
-                <div className={styles.memberships}>
-                    <Image src={VanguardImage} alt="Vanguard" />
-                    <Image src={DimensionalImage} alt="Dimensional" />
+                    <Link href="https://investor.vanguard.com/">
+                        <Image
+                            className={styles.membership_image}
+                            src={VanguardImage}
+                            alt="Vanguard"
+                        />
+                    </Link>
+                    <Link href="https://us.dimensional.com/">
+                        <Image
+                            className={styles.membership_image}
+                            src={DimensionalImage}
+                            alt="Dimensional"
+                        />
+                    </Link>
                     <Link href="https://www.xyplanningnetwork.com/advisors/blaine-thiederman-cfp-mba/">
-                        <Image src={XypnImage} alt ="XYPN" />
+                        <Image className={styles.membership_image} src={XypnImage} alt="XYPN" />
                     </Link>
                 </div>
             </Section>

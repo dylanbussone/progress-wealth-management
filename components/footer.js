@@ -20,9 +20,7 @@ const Footer = () => (
                     <li>&copy; 2021 Progress Wealth Management</li>
                 </ul>
             </div>
-            <div className={styles.logo}>
-                <img src="/logo.svg" alt="Progress Wealth Management" />
-            </div>
+            <div className={styles.logo} />
         </div>
     </footer>
 );

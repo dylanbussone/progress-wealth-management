@@ -9,12 +9,13 @@
 .name_title {
     margin: sm 0 lg;
 }
-.name_title, .name_title * {
+.name_title,
+.name_title * {
     font-size: text_h3;
-    font-family: "LatoLight";
+    font-family: 'LatoLight';
 }
 .name_title .bold {
-    font-family: "LatoBlack";
+    font-family: 'LatoBlack';
 }
 
 .paragraphs {
@@ -39,8 +40,14 @@
 
 .we_bring_list {
     margin: md 0;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: lg;
+}
+@media (max-width: mobile) {
+    .we_bring_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 .we_bring_list li {
     margin: sm 0;
@@ -49,25 +56,21 @@
     font-size: text_label;
 }
 .memberships {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: lg;
 }
-.memberships img {
-    min-width: 0;
-    object-fit: contain;
-    max-width: 200px;
-    max-height: 100px;
-    margin: 0 md;
+.memberships a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.memberships a * {
+    max-height: 100px !important;
+    max-width: 200px !important;
 }
 @media (max-width: mobile) {
     .memberships {
-        flex-direction: column;
-    }
-    .memberships img {
-        margin: lg 0;
-    }
-    /* First div images happen to have built-in padding... */
-    .memberships:first-of-type img {
-        margin: 0;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
