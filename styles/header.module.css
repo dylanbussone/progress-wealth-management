@@ -101,7 +101,7 @@
     display: block;
     color: white;
     white-space: nowrap;
-    padding: lg md;
+    padding: md;
 }
 
 .mobile_link_list li a:hover,

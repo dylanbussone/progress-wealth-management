@@ -22,6 +22,4 @@ TODOS
 
 - lead with empathetic "high touch" point / problem statement, someone who cares about you
 
-- mobile header, reduce padding of each dropdown option
-
 - revisit next-image for images
