@@ -2,8 +2,11 @@ import React from 'react';
 import Main from '../components/main';
 import Section from '../components/section';
 import Icon from '../components/icon';
+import Image from '../components/image';
 import { openCalendlyPopup } from '../utils';
 import styles from '../styles/index.module.css';
+import ClientsImage from '../public/clients.jpg';
+import BoatImage from '../public/boat.jpg';
 
 const Index = () => (
     <Main>
@@ -17,7 +20,7 @@ const Index = () => (
                 </button>
             </p>
             <div className={styles.clients_image}>
-                <img src="/clients.jpg" alt="Meeting" width="100%" loading="lazy" />
+                <Image src={ClientsImage} quality={100} priority alt="Meeting" />
             </div>
         </Section>
         <Section>
@@ -100,7 +103,7 @@ const Index = () => (
                     Progress tomorrow.
                 </h4>
                 <div className={styles.today_tomorrow_img_wrapper}>
-                    <img src="/boat.jpg" alt="Sailing" width="100%" loading="lazy" />
+                    <Image src={BoatImage} />
                 </div>
             </div>
         </Section>

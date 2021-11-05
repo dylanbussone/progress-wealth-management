@@ -2,19 +2,23 @@ import React from 'react';
 import Main from '../components/main';
 import Section from '../components/section';
 import Link from '../components/link';
+import Image from '../components/image';
 import styles from '../styles/about.module.css';
+import BlaineImage from '../public/blaine_sm.jpg';
+import CfpImage from '../public/cfp.png';
+import NapfaImage from '../public/napfa.png';
+import FoImage from '../public/fo.png';
+import VanguardImage from '../public/vanguard.png';
+import DimensionalImage from '../public/dimensional.png';
+import XypnImage from '../public/xypn.png';
 
 const About = () => {
     return (
         <Main>
             <Section>
                 <h1>Who We Are</h1>
-                <img
-                    className={styles.blaine_img}
-                    src="/blaine_sm.jpg"
-                    alt="Blaine Thiederman"
-                    loading="lazy"
-                />
+                <Image className={styles.blaine_img} src={BlaineImage} alt="Blaine Thiederman" />
+
                 <h3 className={styles.name_title}>
                     <span className={styles.bold}>Blaine Thiederman</span> MBA,CFP(R)
                     <br />
@@ -76,20 +80,20 @@ const About = () => {
                 <h2>Memberships and Alliances</h2>
                 <div className={styles.memberships}>
                     <Link href="https://www.letsmakeaplan.org/find-a-cfp-professional/certified-professional-profile/ed120926-8235-4607-a3cf-1e09f3b0a3b5">
-                        <img src="/cfp.jpeg" alt="Certified Financial Planner" loading="lazy" />
+                        <Image src={CfpImage} alt="Certified Financial Planner" />
                     </Link>
                     <Link href="https://www.napfa.org/member/91997/35608">
-                        <img src="/napfa.jpeg" alt="NAPFA" loading="lazy" />
+                        <Image src={NapfaImage} alt="NAPFA" />
                     </Link>
                     <Link href="https://www.feeonlynetwork.com/financial-advisor/blaine-thiederman/">
-                        <img src="/fo.jpeg" alt="Fee Only" loading="lazy" />
+                        <Image src={FoImage} alt="Fee Only" />
                     </Link>
                 </div>
                 <div className={styles.memberships}>
-                    <img src="/vanguard.jpeg" alt="Vanguard" loading="lazy" />
-                    <img src="/dimensional.png" alt="Dimensional" loading="lazy" />
+                    <Image src={VanguardImage} alt="Vanguard" />
+                    <Image src={DimensionalImage} alt="Dimensional" />
                     <Link href="https://www.xyplanningnetwork.com/advisors/blaine-thiederman-cfp-mba/">
-                        <img src="/xypn.png" alt="XYPN" loading="lazy" />
+                        <Image src={XypnImage} alt ="XYPN" />
                     </Link>
                 </div>
             </Section>

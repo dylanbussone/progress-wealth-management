@@ -1,8 +1,10 @@
 import React, { useRef } from 'react';
 import Main from '../components/main';
 import Section from '../components/section';
+import Image from '../components/image';
 import { openCalendlyPopup } from '../utils';
 import styles from '../styles/schedule.module.css';
+import MeetingImage from '../public/meeting.jpg';
 
 const Schedule = () => {
     const contactFormRef = useRef();
@@ -30,7 +32,7 @@ const Schedule = () => {
                     inspiration and advice you need to succeed.
                 </p>
                 <div className={styles.meeting_image}>
-                    <img src="/meeting.jpg" alt="Meeting" width="100%" loading="lazy" />
+                    <Image src={MeetingImage} alt="Meeting" />
                 </div>
                 <button className={styles.schedule_now} onClick={openCalendlyPopup}>
                     Schedule an Appointment

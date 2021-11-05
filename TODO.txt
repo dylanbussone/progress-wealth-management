@@ -21,5 +21,3 @@ TODOS
 - shorten bullet points
 
 - lead with empathetic "high touch" point / problem statement, someone who cares about you
-
-- revisit next-image for images
