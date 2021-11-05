@@ -1,29 +1,27 @@
 PWM marketing talk with Ryan:
 
-fix shitty wording
-
 INSPO:
 https://www.betterment.com/
 https://www.stash.com/
 
 
-lead with problem statement
-
 get their need
 we are the people to fix your need
 
-personal touch
 
 PROB STATEMENTS:
-    do you feel like jsut a nubmer iwth you current planner?
+    do you feel like just a number with you current planner?
     Do you want to be more than a number?
 
-shorten bullet points
 
-lead with empaphetic "high touch" point, someone who cares about you
+TODOS
 
+- fix shitty wording
 
-- add full logo (with text) in footer.
-make footer background the dark blue?
+- shorten bullet points
+
+- lead with empathetic "high touch" point / problem statement, someone who cares about you
 
 - mobile header, reduce padding of each dropdown option
+
+- revisit next-image for images

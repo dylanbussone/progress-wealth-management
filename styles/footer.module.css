@@ -1,9 +1,9 @@
-@value footer_bg, white from './colors.css';
-@value sm, md, lg, xxl, xxxl from './layout.css';
+@value blue, white from './colors.css';
+@value sm, md, lg, xxl, xxxl, mobile from './layout.css';
 @value text_sup from './typography.css';
 
 .footer {
-    background: footer_bg;
+    background: blue;
     min-height: 220px;
     margin-top: xxl;
 }
@@ -15,6 +15,8 @@
 .footer_content {
     composes: max_content_width from './layout.css';
     padding: xxxl;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer_content ul {
@@ -35,4 +37,18 @@
 .quote span {
     display: inline-block;
     font-size: text_sup;
+}
+
+.logo {
+    float: right;
+    max-width: 135px;
+}
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+@media (max-width: mobile) {
+    .logo {
+        display: none;
+    }
 }
