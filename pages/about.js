@@ -5,12 +5,12 @@ import Link from '../components/link';
 import Image from '../components/image';
 import styles from '../styles/about.module.css';
 import BlaineImage from '../public/blaine_sm.jpg';
-import CfpImage from '../public/cfp.png';
-import NapfaImage from '../public/napfa.png';
-import FoImage from '../public/fo.png';
-import VanguardImage from '../public/vanguard.png';
-import DimensionalImage from '../public/dimensional.png';
-import XypnImage from '../public/xypn.png';
+import CfpImage from '../public/cfp.jpg';
+import NapfaImage from '../public/napfa.jpg';
+import FoImage from '../public/fo.jpg';
+import VanguardImage from '../public/vanguard.jpg';
+import DimensionalImage from '../public/dimensional.jpg';
+import XypnImage from '../public/xypn.jpg';
 
 const About = () => {
     return (
