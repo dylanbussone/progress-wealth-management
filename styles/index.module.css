@@ -2,6 +2,9 @@
 @value text_sup from './typography.css';
 @value violet from './colors.css';
 
+.bold {
+    font-family: 'LatoBold';
+}
 .button_link {
     text-decoration: underline;
     white-space: nowrap;
@@ -21,6 +24,9 @@
     composes: three_col from './layout.css';
     text-align: center;
     margin-top: xxl;
+}
+.spacey p {
+    margin: xxl 0;
 }
 @media (max-width: mobile) {
     .easy_opt_pers {

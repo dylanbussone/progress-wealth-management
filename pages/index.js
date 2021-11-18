@@ -54,46 +54,39 @@ const Index = () => (
                 </div>
             </div>
         </Section>
-        <Section>
+        <Section className={styles.spacey}>
             <h2>What Makes Progress Wealth Management better?</h2>
-
-            <ul>
-                <li>
-                    Built to make achieving progress EASY.
-                    <ul>
-                        <li>
-                            Our goal is to make it as simple as possible to bring organization,
-                            objectivity and simplicity to your financial life.
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    We use a time tested model for building wealth to give you the best chance at
-                    affording whatever life throws at you.
-                </li>
-                <li>
-                    We’re truly holistic, so there’s no stone left unturned as we help you figure
-                    out your financial life.
-                    <ul>
-                        <li>
-                            If it can benefit your financial future, we will do anything to support
-                            you and to optimize your future progress.
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    We’re tax professionals and CFPs, so we don’t just help you plan for your future
-                    but we do so in the most tax efficient way.
-                </li>
-                <li>
-                    We hold your hand every step of the way to help you stay disciplined and to make
-                    every big decision simple.
-                </li>
-                <li>
-                    Invest with your values. Our socially responsible investing helps you make a
-                    positive impact on society without sacrificing performance.
-                </li>
-            </ul>
+            <p>
+                Built to make achieving progress <span className={styles.bold}>easy</span>.
+            </p>
+            <p>
+                Our goal is to make it as simple as possible to bring{' '}
+                <span className={styles.bold}>organization, objectivity and simplicity</span> to
+                your financial life.
+            </p>
+            <p>
+                We use a time-tested model for building wealth to give you the best chance at
+                affording whatever life throws at you.
+            </p>
+            <p>
+                We’re truly <span className={styles.bold}>holistic</span>, so there’s no stone left
+                unturned as we help you figure out your financial life. <br />
+                If it can benefit your financial future, we will do anything to support you and to
+                optimize your future progress.
+            </p>
+            <p>
+                We’re tax professionals and CFPs, so we don’t just help you plan for your future but
+                we do so in the most <span className={styles.bold}>tax efficient</span> way.
+            </p>
+            <p>
+                We hold your hand every step of the way to help you stay disciplined and to make
+                every big decision simple.
+            </p>
+            <p>
+                Invest with your values. Our{' '}
+                <span className={styles.bold}>socially responsible</span> investing helps you make a
+                positive impact on society without sacrificing performance.
+            </p>
         </Section>
         <Section>
             <div className={styles.today_tomorrow}>
