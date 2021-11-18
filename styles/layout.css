@@ -14,17 +14,3 @@
     max-width: max_width;
     margin: 0 auto;
 }
-
-.three_col, .two_col {
-    display: flex;
-}
-.two_col > div {
-    flex-grow: 1;
-    width: calc(50% - lg);
-    margin-right: lg;
-}
-.three_col > div {
-    flex-grow: 1;
-    width: calc(33% - lg);
-    margin-right: lg;
-}

@@ -21,9 +21,16 @@
     overflow: hidden;
 }
 .easy_opt_pers {
-    composes: three_col from './layout.css';
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: lg;
     text-align: center;
     margin-top: xxl;
+}
+@media (max-width: mobile) {
+    .easy_opt_pers {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 .spacey p {
     margin: xxl 0;
