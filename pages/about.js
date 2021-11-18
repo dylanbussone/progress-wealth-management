@@ -78,34 +78,22 @@ const About = () => {
                 <h2>Memberships and Alliances</h2>
                 <div className={styles.memberships}>
                     <Link href="https://www.letsmakeaplan.org/find-a-cfp-professional/certified-professional-profile/ed120926-8235-4607-a3cf-1e09f3b0a3b5">
-                        <Image
-                            className={styles.membership_image}
-                            src={CfpImage}
-                            alt="Certified Financial Planner"
-                        />
+                        <Image src={CfpImage} alt="Certified Financial Planner" />
                     </Link>
                     <Link href="https://www.napfa.org/member/91997/35608">
-                        <Image className={styles.membership_image} src={NapfaImage} alt="NAPFA" />
+                        <Image src={NapfaImage} alt="NAPFA" />
                     </Link>
                     <Link href="https://www.feeonlynetwork.com/financial-advisor/blaine-thiederman/">
-                        <Image className={styles.membership_image} src={FoImage} alt="Fee Only" />
+                        <Image src={FoImage} alt="Fee Only" />
                     </Link>
                     <Link href="https://investor.vanguard.com/">
-                        <Image
-                            className={styles.membership_image}
-                            src={VanguardImage}
-                            alt="Vanguard"
-                        />
+                        <Image src={VanguardImage} alt="Vanguard" />
                     </Link>
                     <Link href="https://us.dimensional.com/">
-                        <Image
-                            className={styles.membership_image}
-                            src={DimensionalImage}
-                            alt="Dimensional"
-                        />
+                        <Image src={DimensionalImage} alt="Dimensional" />
                     </Link>
                     <Link href="https://www.xyplanningnetwork.com/advisors/blaine-thiederman-cfp-mba/">
-                        <Image className={styles.membership_image} src={XypnImage} alt="XYPN" />
+                        <Image src={XypnImage} alt="XYPN" />
                     </Link>
                 </div>
             </Section>
