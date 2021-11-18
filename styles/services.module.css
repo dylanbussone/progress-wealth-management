@@ -1,6 +1,9 @@
-@value mobile, md from './layout.css';
+@value mobile, md, lg from './layout.css';
 @value text_label from './typography.css';
 
+.bold {
+    font-family: 'LatoBold';
+}
 .services_list {
     list-style: none;
     columns: 2;
@@ -24,9 +27,10 @@
 }
 .services_list li svg {
     width: 80px;
+    margin-right: md;
 }
 
 .common_questions li {
     list-style-type: none;
-    margin: md 0;
+    margin: lg 0;
 }
