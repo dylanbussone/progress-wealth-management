@@ -1,0 +1,16 @@
+@value blue from './colors.css';
+@value header_height from './header.module.css';
+@value xs, lg from './layout.css';
+
+.dropdown_content {
+    composes: border_radius_subtle from './effect.css';
+    display: none;
+    position: absolute;
+    background: blue;
+    top: calc(header_height - lg - xs);
+    color: pink;
+}
+
+.content_shown {
+    display: inherit;
+}

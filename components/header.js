@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { DropdownLink } from '../components/link';
 import Icon from '../components/icon';
 import styles from '../styles/header.module.css';
 
@@ -11,6 +12,23 @@ const HEADER_LINKS = [
     {
         text: 'Services',
         href: '/services',
+    },
+    {
+        text: 'Resources',
+        children: [
+            {
+                text: 'Case Studies',
+                href: '/case-studies',
+            },
+            {
+                text: 'Investing Guides',
+                href: '/investing-guides',
+            },
+            {
+                text: 'Knowledge Center',
+                href: '/knowledge-center',
+            },
+        ],
     },
     {
         text: 'Pricing',
@@ -41,11 +59,31 @@ const Header = () => {
                         <button className={styles.logo_button} />
                     </Link>
                     <ul className={styles.link_list}>
-                        {HEADER_LINKS.map(link => (
-                            <li key={link.text}>
-                                <Link href={link.href}>{link.text}</Link>
-                            </li>
-                        ))}
+                        {HEADER_LINKS.map(link =>
+                            link.children ? (
+                                <li key={link.text}>
+                                    <DropdownLink
+                                        dropdownContent={
+                                            <ul
+                                                className={`${styles.link_list} ${styles.nested_link_list}`}>
+                                                {link.children.map(childLink => (
+                                                    <li key={childLink.text}>
+                                                        <Link href={childLink.href}>
+                                                            {childLink.text}
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        }>
+                                        {link.text}
+                                    </DropdownLink>
+                                </li>
+                            ) : (
+                                <li key={link.text}>
+                                    <Link href={link.href}>{link.text}</Link>
+                                </li>
+                            ),
+                        )}
                     </ul>
                 </div>
             </header>
@@ -67,9 +105,7 @@ const Header = () => {
                     <ul className={styles.mobile_link_list}>
                         {HEADER_LINKS.map(link => (
                             <li key={link.text} onClick={() => setMobileMenuActive(false)}>
-                                <Link href={link.href}>
-                                    {link.text}
-                                </Link>
+                                <Link href={link.href}>{link.text}</Link>
                             </li>
                         ))}
                     </ul>

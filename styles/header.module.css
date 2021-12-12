@@ -46,6 +46,7 @@
 }
 .link_list li {
     margin-left: md;
+    position: relative;
 }
 
 .link_list li a {
@@ -56,6 +57,14 @@
 .link_list li a:hover,
 .link_list li a:active {
     color: gold;
+}
+
+.nested_link_list {
+    flex-direction: column;
+}
+.nested_link_list li a {
+    padding: md;
+    display: block;
 }
 
 /* Mobile header */
