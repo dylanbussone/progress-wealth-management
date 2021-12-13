@@ -48,6 +48,9 @@
     background-size: contain;
 }
 @media (max-width: mobile) {
+    .footer_content {
+        padding: lg;
+    }
     .logo {
         display: none;
     }
