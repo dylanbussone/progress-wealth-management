@@ -1,5 +1,6 @@
 @value mobile, xs, sm, md, lg from './layout.css';
 @value blue, white, gold, border from './colors.css';
+@value text_sup from './typography.css';
 @value header_height: 100px;
 
 @media (max-width: mobile) {
@@ -126,4 +127,16 @@
 .mobile_link_list li a:hover,
 .mobile_link_list li a:active {
     color: gold;
+}
+
+.mobile_nested_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobile_nested_link_cat {
+    color: white;
+    opacity: 0.5;
+    font-size: text_sup;
+    padding: md;
 }

@@ -103,11 +103,29 @@ const Header = () => {
                 </div>
                 {mobileMenuActive && (
                     <ul className={styles.mobile_link_list}>
-                        {HEADER_LINKS.map(link => (
-                            <li key={link.text} onClick={() => setMobileMenuActive(false)}>
-                                <Link href={link.href}>{link.text}</Link>
-                            </li>
-                        ))}
+                        {HEADER_LINKS.map(link =>
+                            link.children ? (
+                                <li key={link.text}>
+                                    <ul>
+                                        {link.children.map(childLink => (
+                                            <li
+                                                key={childLink.text}
+                                                onClick={() => setMobileMenuActive(false)}
+                                                className={styles.mobile_nested_link}>
+                                                <span className={styles.mobile_nested_link_cat}>
+                                                    {link.text}
+                                                </span>
+                                                <Link href={childLink.href}>{childLink.text}</Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </li>
+                            ) : (
+                                <li key={link.text} onClick={() => setMobileMenuActive(false)}>
+                                    <Link href={link.href}>{link.text}</Link>
+                                </li>
+                            ),
+                        )}
                     </ul>
                 )}
             </header>
