@@ -11,22 +11,31 @@ export default Link;
 
 const DropdownLink = ({ dropdownContent, children }) => {
     const [contentShown, setContentShown] = useState(false);
-    const cb = e => {
+    const parentLinkClick = e => {
         e.preventDefault();
         setContentShown(!contentShown);
+    };
+    const showDropdown = () => {
+        setContentShown(true);
+    };
+    const closeDropdown = () => {
+        setContentShown(false);
     };
 
     return (
         <React.Fragment>
-            <a href="#" onClick={cb}>
+            <a
+                href="#"
+                onClick={parentLinkClick}
+                onMouseOver={showDropdown}
+                onMouseOut={closeDropdown}>
                 {children}
+                <div className={`${styles.dropdown} ${contentShown ? styles.content_shown : ''}`}>
+                    <div className={styles.dropdown_content} onClick={closeDropdown}>
+                        {dropdownContent}
+                    </div>
+                </div>
             </a>
-            <div
-                className={`${styles.dropdown_content} ${
-                    contentShown ? styles.content_shown : ''
-                }`}>
-                {dropdownContent}
-            </div>
         </React.Fragment>
     );
 };

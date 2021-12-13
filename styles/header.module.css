@@ -1,5 +1,5 @@
 @value mobile, xs, sm, md, lg from './layout.css';
-@value blue, white, gold from './colors.css';
+@value blue, white, gold, border from './colors.css';
 @value header_height: 100px;
 
 @media (max-width: mobile) {
@@ -62,9 +62,19 @@
 .nested_link_list {
     flex-direction: column;
 }
+.nested_link_list li {
+    margin-left: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
 .nested_link_list li a {
     padding: md;
     display: block;
+}
+.nested_link_list li:first-of-type {
+    margin-top: md;
+}
+.nested_link_list li:nth-child(even) {
+    background: rgba(255,255,255,0.1);
 }
 
 /* Mobile header */
