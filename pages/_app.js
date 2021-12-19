@@ -15,16 +15,22 @@ function MyApp({ Component, pageProps }) {
                     href="https://assets.calendly.com/assets/external/widget.css"
                     rel="stylesheet"></link>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                <meta name="description" content="Blaine Thiederman - financial advisor and founder of Progress Wealth Management serving clients in Arvada, Denver, and Golden Colorado." />
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2GFTDTW6P"></script>
-                <script async src="/ga.js"></script>
-                <script async src="/calendly.js" />
+                <meta
+                    name="description"
+                    content="Blaine Thiederman - financial advisor and founder of Progress Wealth Management serving clients in Arvada, Denver, and Golden Colorado."
+                />
             </Head>
             <Header />
             <Component {...pageProps} />
             <Footer />
             {/* Calendly widget */}
+            <Script
+                strategy="lazyOnload"
+                src="https://www.googletagmanager.com/gtag/js?id=G-K2GFTDTW6"
+            />
+            <Script strategy="lazyOnload" src="/ga.js" />
             <Script strategy="lazyOnload" src="/calendly.js" />
+            <Script strategy="lazyOnload" src="/mailchimp.js" />
         </React.Fragment>
     );
 }
