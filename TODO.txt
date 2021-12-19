@@ -21,3 +21,10 @@ TODOS
 - shorten bullet points
 
 - lead with empathetic "high touch" point / problem statement, someone who cares about you
+
+- fix GA script to fire events for the different nextjs pages
+
+- could render ebooks in page? https://code.tutsplus.com/tutorials/how-to-create-a-pdf-viewer-in-javascript--cms-32505
+    or does blaine just want to link to them so users can download?
+
+- calendly.js loaded twice in app.js ?
