@@ -7,7 +7,7 @@ const CaseStudies = () => {
         <Main>
             <Section>
                 <h1>Case Studies</h1>
-                <div>stuff</div>
+                <div>Coming soon</div>
             </Section>
         </Main>
     );

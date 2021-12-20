@@ -7,8 +7,6 @@ const Link = ({ href, children }) => (
     </a>
 );
 
-export default Link;
-
 const DropdownLink = ({ dropdownContent, children }) => {
     const [contentShown, setContentShown] = useState(false);
     const parentLinkClick = e => {
@@ -40,4 +38,4 @@ const DropdownLink = ({ dropdownContent, children }) => {
     );
 };
 
-export { DropdownLink };
+export { Link, DropdownLink };

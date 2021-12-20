@@ -7,7 +7,7 @@ const InvestingGuides = () => {
         <Main>
             <Section>
                 <h1>Investing Guides</h1>
-                <div>stuff</div>
+                <div>Coming soon</div>
             </Section>
         </Main>
     );

@@ -1,7 +1,7 @@
 import React from 'react';
 import Main from '../components/main';
 import Section from '../components/section';
-import Link from '../components/link';
+import { Link } from '../components/link';
 import styles from '../styles/legal.module.css';
 
 const Legal = () => (

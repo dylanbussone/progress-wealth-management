@@ -1,7 +1,7 @@
 import React from 'react';
 import Main from '../components/main';
 import Section from '../components/section';
-import Link from '../components/link';
+import { Link } from '../components/link';
 import Image from '../components/image';
 import styles from '../styles/about.module.css';
 import BlaineImage from '../public/blaine_sm.jpg';

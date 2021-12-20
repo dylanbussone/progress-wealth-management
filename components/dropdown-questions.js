@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Link from './link';
+import { Link } from './link';
 import Icon from '../components/icon';
 import styles from '../styles/dropdown-questions.module.css';
 import { openCalendlyPopup } from '../utils';
@@ -111,9 +111,7 @@ const DropdownQuestions = () => {
                         </a>
                     </h4>
                     <div className={openDropdowns[question] ? styles.open : styles.closed}>
-                        <div className={styles.padding}>
-                            {dropdownContent}
-                        </div>
+                        <div className={styles.padding}>{dropdownContent}</div>
                     </div>
                 </div>
             ))}
