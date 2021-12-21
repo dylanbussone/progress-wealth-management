@@ -22,4 +22,3 @@ TODOS
 
 - fix GA script to fire events for the different nextjs pages
     > need gtm for that?
-
