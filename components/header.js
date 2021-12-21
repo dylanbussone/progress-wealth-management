@@ -17,10 +17,6 @@ const HEADER_LINKS = [
         text: 'Resources',
         children: [
             {
-                text: 'Case Studies',
-                href: '/case-studies',
-            },
-            {
                 text: 'Investing Guides',
                 href: '/investing-guides',
             },
