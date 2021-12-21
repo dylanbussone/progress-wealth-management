@@ -14,9 +14,8 @@
 .clients_image {
     composes: border_radius_subtle from './effect.css';
     margin-top: lg;
-    width: 100%;
     max-height: 550px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     overflow: hidden;
 }
@@ -60,14 +59,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: right;
 }
 .today_tomorrow > * {
     flex-grow: 1;
     width: 50%;
 }
+.today_tomorrow h4 {
+    padding-right: xl;
+}
 .today_tomorrow_img_wrapper {
     composes: border_radius_subtle from './effect.css';
-    width: 100%;
     max-height: 800px;
     display: flex;
     align-items: center;
@@ -93,7 +95,8 @@
 .testimonials .testimonial .date {
     margin-left: sm;
 }
-.testimonials .testimonial .name, .testimonials .testimonial .date {
+.testimonials .testimonial .name,
+.testimonials .testimonial .date {
     font-size: text_sup;
     font-style: italic;
 }

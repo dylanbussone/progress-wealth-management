@@ -5,9 +5,8 @@
 .meeting_image {
     composes: border_radius_subtle from './effect.css';
     margin-top: lg;
-    width: 100%;
     max-height: 400px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     overflow: hidden;
 }
