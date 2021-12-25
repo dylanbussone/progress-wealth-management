@@ -102,7 +102,7 @@ const Header = () => {
                         {HEADER_LINKS.map(link =>
                             link.children ? (
                                 <li key={link.text}>
-                                    <ul>
+                                    <ul className={styles.mobile_nested_link_list}>
                                         {link.children.map(childLink => (
                                             <li
                                                 key={childLink.text}

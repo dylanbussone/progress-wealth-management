@@ -65,7 +65,7 @@
 }
 .nested_link_list li {
     margin-left: 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .nested_link_list li a {
     padding: md;
@@ -75,7 +75,7 @@
     margin-top: md;
 }
 .nested_link_list li:nth-child(even) {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /* Mobile header */
@@ -129,10 +129,15 @@
     color: gold;
 }
 
+.mobile_nested_link_list {
+}
 .mobile_nested_link {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.mobile_nested_link {
+    background: none !important;
 }
 .mobile_nested_link_cat {
     color: white;
