@@ -34,6 +34,7 @@ const Schedule = () => {
                 <div className={styles.meeting_image}>
                     <Image src={MeetingImage} alt="Meeting" />
                 </div>
+                <h4>Currently accepting new clients.</h4>
                 <button className={styles.schedule_now} onClick={openCalendlyPopup}>
                     Schedule an Appointment
                 </button>

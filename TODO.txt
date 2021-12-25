@@ -21,4 +21,5 @@ TODOS
 - lead with empathetic "high touch" point / problem statement, someone who cares about you
 
 - fix GA script to fire events for the different nextjs pages
-    > need gtm for that?
+    https://mariestarck.com/add-google-analytics-to-your-next-js-application-in-5-easy-steps/
+    https://blog.jarrodwatts.com/track-user-behaviour-on-your-website-with-google-analytics-and-nextjs

@@ -14,7 +14,11 @@ const Index = () => (
             <h1>Financial Planning for Progress</h1>
             <p>
                 Meet your financial planning partners that provide you the tools, guidance,
-                inspiration and advice you need to succeed.{' '}
+                inspiration and advice you need to succeed.
+            </p>
+            <br />
+            <p>
+                We&apos;re currently accepting new clients.{' '}
                 <button className={styles.button_link} onClick={openCalendlyPopup}>
                     Get Started.
                 </button>
