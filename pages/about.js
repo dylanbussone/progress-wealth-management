@@ -20,7 +20,7 @@ const About = () => {
                 <Image className={styles.blaine_img} src={BlaineImage} alt="Blaine Thiederman" />
 
                 <h3 className={styles.name_title}>
-                    <span className={styles.bold}>Blaine Thiederman</span> MBA,CFP(R)
+                    <span className={styles.bold}>Blaine Thiederman</span> MBA, CFP(R)
                     <br />
                     Founder/Lead Advisor
                 </h3>
