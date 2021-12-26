@@ -21,20 +21,16 @@ const DropdownLink = ({ dropdownContent, children }) => {
     };
 
     return (
-        <React.Fragment>
-            <a
-                href="#"
-                onClick={parentLinkClick}
-                onMouseOver={showDropdown}
-                onMouseOut={closeDropdown}>
+        <div onMouseOver={showDropdown} onMouseOut={closeDropdown}>
+            <a href="#" onClick={parentLinkClick}>
                 {children}
-                <div className={`${styles.dropdown} ${contentShown ? styles.content_shown : ''}`}>
-                    <div className={styles.dropdown_content} onClick={closeDropdown}>
-                        {dropdownContent}
-                    </div>
-                </div>
             </a>
-        </React.Fragment>
+            <div
+                className={`${styles.dropdown} ${contentShown ? styles.content_shown : ''}`}
+                onClick={closeDropdown}>
+                {dropdownContent}
+            </div>
+        </div>
     );
 };
 

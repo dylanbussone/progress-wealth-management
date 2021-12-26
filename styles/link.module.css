@@ -2,15 +2,12 @@
 @value header_height from './header.module.css';
 
 .dropdown {
+    composes: border_radius_subtle from './effect.css';
+    background: blue;
+    position: absolute;
+    top: 40px;
     display: none;
 }
-.content_shown {
+.dropdown.content_shown {
     display: inherit;
-}
-
-.dropdown_content {
-    composes: border_radius_subtle from './effect.css';
-    position: absolute;
-    background: blue;
-    top: 40px;
 }
