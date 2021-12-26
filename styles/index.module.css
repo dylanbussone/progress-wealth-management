@@ -59,14 +59,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: right;
 }
 .today_tomorrow > * {
     flex-grow: 1;
     width: 50%;
 }
 .today_tomorrow h4 {
-    padding-right: xl;
+    padding-left: xxl;
 }
 .today_tomorrow_img_wrapper {
     composes: border_radius_subtle from './effect.css';
@@ -74,6 +73,24 @@
     display: flex;
     align-items: center;
     overflow: hidden;
+}
+
+@media (max-width: mobile) {
+    .today_tomorrow {
+        flex-direction: column;
+        text-align: center;
+    }
+    .today_tomorrow_img_wrapper {
+        width: 100%;
+        max-height: 50vh;
+    }
+    .today_tomorrow h4 {
+        padding-left: 0;
+        padding-top: lg;
+    }
+    .today_tomorrow > * {
+        width: 100%;
+    }
 }
 
 /* Video */

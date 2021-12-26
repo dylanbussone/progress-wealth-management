@@ -94,17 +94,18 @@ const Index = () => (
         </Section>
         <Section>
             <div className={styles.today_tomorrow}>
+                <div className={styles.today_tomorrow_img_wrapper}>
+                    <Image src={BoatImage} />
+                </div>
                 <h4>
                     Progress Wealth today.
                     <br />
                     Progress tomorrow.
                 </h4>
-                <div className={styles.today_tomorrow_img_wrapper}>
-                    <Image src={BoatImage} />
-                </div>
             </div>
         </Section>
         <Section>
+            <h2>Learn more:</h2>
             <iframe
                 className={styles.video}
                 loading="lazy"
