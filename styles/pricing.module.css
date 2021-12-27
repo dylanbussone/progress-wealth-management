@@ -2,50 +2,24 @@
 @value black, blue, gold, grey from './colors.css';
 @value text_h3 from './typography.css';
 
-.separator {
-    composes: border_radius_container from './effect.css';
-    width: 80px;
-    height: 3px;
-    background: gold;
-    margin: md 0 lg;
-}
-
-.pricing_blocks {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: lg;
-}
-@media (max-width: mobile) {
-    .pricing_blocks {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-.pricing_block {
-    composes: box_shadow_subtle from './effect.css';
-    composes: border_radius_container from './effect.css';
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: lg;
-}
-.pricing_block * {
+.pricing_blocks * {
     color: grey;
 }
-.pricing_block ul {
+.pricing_blocks ul {
     list-style: none;
 }
-.pricing_block ul li {
+.pricing_blocks ul li {
     margin-left: 0;
 }
-.pricing_block .highlight {
+.pricing_blocks .highlight {
     color: black;
     font-family: "LatoBold";
 }
-.pricing_block > h3 {
+.pricing_blocks > h3 {
     font-family: "LatoBlack";
 }
 
-.pricing_block .price {
+.pricing_blocks .price {
     margin-top: md;
     color: black;
     font-size: text_h3;

@@ -1,0 +1,36 @@
+@value mobile, md, lg from './layout.css';
+@value gold, grey from './colors.css';
+
+.blocks {
+    display: grid;
+    gap: lg;
+}
+.cols_2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.cols_3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: mobile) {
+    .blocks {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.block {
+    composes: box_shadow_subtle from './effect.css';
+    composes: border_radius_container from './effect.css';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: lg;
+}
+.header {
+    color: grey;
+}
+.separator {
+    composes: border_radius_container from './effect.css';
+    width: 80px;
+    height: 3px;
+    background: gold;
+    margin: md 0 lg;
+}

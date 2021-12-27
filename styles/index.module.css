@@ -1,10 +1,7 @@
 @value mobile, xs, sm, md, lg, xl, xxl, xxxl from './layout.css';
 @value text_sup from './typography.css';
-@value violet from './colors.css';
+@value violet, grey from './colors.css';
 
-.bold {
-    font-family: 'LatoBold';
-}
 .button_link {
     text-decoration: underline;
     white-space: nowrap;
@@ -19,6 +16,7 @@
     align-items: center;
     overflow: hidden;
 }
+
 .easy_opt_pers {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -28,15 +26,8 @@
 }
 @media (max-width: mobile) {
     .easy_opt_pers {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-.spacey p {
-    margin: xxl 0;
-}
-@media (max-width: mobile) {
-    .easy_opt_pers {
         flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
     }
     .easy_opt_pers > div {
         width: 100%;
@@ -103,17 +94,4 @@
     .video {
         height: 350px;
     }
-}
-
-/* Testimonials */
-.testimonials .testimonial {
-    margin: lg 0 xxl;
-}
-.testimonials .testimonial .date {
-    margin-left: sm;
-}
-.testimonials .testimonial .name,
-.testimonials .testimonial .date {
-    font-size: text_sup;
-    font-style: italic;
 }
