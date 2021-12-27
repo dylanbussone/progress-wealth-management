@@ -17,6 +17,10 @@ const HEADER_LINKS = [
         text: 'Resources',
         children: [
             {
+                text: 'Blog',
+                href: '/blog',
+            },
+            {
                 text: 'Investing Guides',
                 href: '/investing-guides',
             },
