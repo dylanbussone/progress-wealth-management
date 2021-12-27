@@ -1,6 +1,6 @@
 @value mobile, xs, sm, md, lg, xl, xxl, xxxl from './layout.css';
-@value text_sup from './typography.css';
-@value violet, grey from './colors.css';
+@value text_sup, text_h4, white from './typography.css';
+@value violet, grey, button_green, white from './colors.css';
 
 .button_link {
     text-decoration: underline;
@@ -15,6 +15,21 @@
     display: inline-flex;
     align-items: center;
     overflow: hidden;
+}
+
+.block_link {
+    composes: box_shadow_thin from './effect.css';
+    composes: transition from './effect.css';
+    composes: button_opacity from './effect.css';
+    composes: border_radius_button from './effect.css';
+    composes: letter_spacing from './typography.css';
+    display: block;
+    margin: lg 0 0;
+    background: button_green;
+    padding: 8px 24px;
+    color: white;
+    font-size: text_h4;
+    text-align: center;
 }
 
 .easy_opt_pers {

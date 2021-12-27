@@ -3,6 +3,7 @@ import Main from '../components/main';
 import Section from '../components/section';
 import Icon from '../components/icon';
 import Image from '../components/image';
+import { Link } from '../components/link';
 import CleanBlocks from '../components/clean-blocks';
 import { openCalendlyPopup } from '../utils';
 import styles from '../styles/index.module.css';
@@ -30,11 +31,58 @@ const Index = () => (
         </Section>
 
         <Section>
-            <CleanBlocks cols={3} blocksContent={[
-                { header: 'Learn', body: <div>hi</div> },
-                { header: 'Watch', body: <div>hi</div> },
-                { header: 'Plan', body: <div>hi</div> }
-            ]} />
+            <CleanBlocks
+                cols={3}
+                blocksContent={[
+                    {
+                        header: 'Learn',
+                        body: (
+                            <div>
+                                Go beyond the basics with comprehensive yet concise educational
+                                articles.
+                            </div>
+                        ),
+                        footer: (
+                            <Link
+                                newTab={false}
+                                href="/knowledge-center"
+                                className={styles.block_link}>
+                                Learn More
+                            </Link>
+                        ),
+                    },
+                    {
+                        header: 'Watch',
+                        body: (
+                            <div>
+                                See how to review and summarize your important financial documents.
+                            </div>
+                        ),
+                        footer: (
+                            <Link
+                                href="https://www.youtube.com/channel/UCUJvR7nsmlQT3GUSptx0EFQ"
+                                className={styles.block_link}>
+                                Watch
+                            </Link>
+                        ),
+                    },
+                    {
+                        header: 'Plan',
+                        body: (
+                            <div>
+                                Create your own comprehensive financial plan from the ground up.
+                            </div>
+                        ),
+                        footer: (
+                            <Link
+                                href="https://www.360financialliteracy.org/Calculators/Retirement-Planner"
+                                className={styles.block_link}>
+                                Plan
+                            </Link>
+                        ),
+                    },
+                ]}
+            />
         </Section>
 
         <Section>

@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import styles from '../styles/link.module.css';
 
-const Link = ({ href, children }) => (
-    <a target="_blank" rel="noreferrer" href={href}>
-        {children}
-    </a>
-);
+const Link = ({ href, newTab = true, children, className }) => {
+    const newTabProps = newTab ? { target: '_blank', rel: 'noreferrer' } : {};
+
+    return (
+        <a href={href} className={className} {...newTabProps}>
+            {children}
+        </a>
+    );
+};
 
 const DropdownLink = ({ dropdownContent, children }) => {
     const [contentShown, setContentShown] = useState(false);
