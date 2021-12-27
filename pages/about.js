@@ -26,30 +26,22 @@ const About = () => {
                 </h3>
                 <div className={styles.paragraphs}>
                     <p>
-                        When retirement comes, Blaine is hoping to have saved enough to spend it
-                        with his wife, traveling the United States to explore every national park.
-                        Buying time until he gets started exploring, we’re proud to say that Blaine
-                        is a mentor to ASU students and volunteers his time to entrepreneurs through
-                        the Rocky Mountain Microfinance institute. 
+                        “As a CERTIFIED FINANCIAL PLANNER™, it’s my life’s mission to provide
+                        unbiased financial education, advice and guidance to help my clients create
+                        their path to financial independence. I believe that true comprehensive
+                        financial planning can provide the clarity and confidence necessary for
+                        families to understand and implement their own well-informed decisions.{' '}
                     </p>
                     <p>
-                        Blaine wanted to start a financial services business that’s different from
-                        what’s standard within the industry - a firm where he can truly prioritize
-                        the needs of his clients over himself and the firm. He wanted to start a
-                        business where clients can expect personal service, unbiased expert advice,
-                        guidance and counsel to help them grow and customized solutions and that
-                        firm is Progress Wealth Management. 
+                        My goal is to translate the complexity of financial topics into a simple,
+                        step-by-step action plan to help you understand how to align your money with
+                        your personal values and objectives. As a trusted source, my insights have
+                        been featured in articles by Forbes, Gobankingrates.com, the Washington
+                        Post, Yahoo Finance, MarketWatch, Business Insider and MSN.{' '}
                     </p>
-                </div>
-                <div className={styles.paragraphs}>
                     <p>
-                        Blaine has dedicated nearly 10 years of his life towards his career and
-                        expertise in financial planning and wealth management. As a Certified
-                        Financial Planner™, Blaine brings a wide range of experience to the
-                        relationships he holds with his clients focusing on his ability to provide
-                        holistic financial planning, tax planning and preparation. Prior to starting
-                        Progress Wealth management, Blaine served as a leading financial planner at
-                        Fisher Investments and Edelman Financial Engines.
+                        I look forward to us exploring the opportunities and options to help you
+                        experience the progress you’re hoping for.”
                     </p>
                 </div>
             </Section>
