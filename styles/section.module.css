@@ -1,9 +1,16 @@
 @value md, lg, xxxl from './layout.css';
+@value white from './colors.css';
 
 .section {
-    composes: max_content_width from './layout.css';
     padding: 0 md;
     margin-bottom: xxxl;
+}
+.section:last-of-type {
+    margin-bottom: 0;
+}
+
+.section_content {
+    composes: max_content_width from './layout.css';
 }
 
 .section h1 {
@@ -18,4 +25,11 @@
     margin-left: lg;
     margin-bottom: md;
     line-height: 2;
+}
+
+.theme_dark {
+    background: #111;
+}
+.theme_dark * {
+    color: white;
 }
