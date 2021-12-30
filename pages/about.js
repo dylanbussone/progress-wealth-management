@@ -62,8 +62,8 @@ const About = () => {
                     As a result, we believe that through the relationship offered with our firm, we
                     can ensure that your financial future is as easy to reach as we can make
                     possible. We seek to help our clients this way all the while charging a
-                    significantly more competitive fee than what’s typical within the Denver Metro
-                    Area.
+                    significantly more competitive fee than what’s typically seen across the
+                    country.
                 </p>
             </Section>
             <Section>

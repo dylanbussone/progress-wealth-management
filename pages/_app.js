@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <meta
                     name="description"
-                    content="Blaine Thiederman - financial advisor and founder of Progress Wealth Management serving clients in Arvada, Denver, and Golden Colorado."
+                    content="Progress Wealth Management financial planning. Blaine Thiederman MBA, CFP(R) - financial advisor and founder of Progress Wealth Management."
                 />
             </Head>
             <Header />
