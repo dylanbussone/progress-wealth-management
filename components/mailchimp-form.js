@@ -10,7 +10,7 @@ const mailchimpHTML = `<link href="//cdn-images.mailchimp.com/embedcode/classic-
          <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"></div>
          <div class="mc-field-group"><label for="mce-FNAME">First Name </label><input type="text" value="" name="FNAME" class="" id="mce-FNAME"></div>
          <div class="mc-field-group"><label for="mce-LNAME">Last Name </label><input type="text" value="" name="LNAME" class="" id="mce-LNAME"></div>
-         <div class="mc-field-group size1of2">
+         <div class="mc-field-group size1of2" style="display:none">
             <label for="mce-BIRTHDAY-month">Birthday </label>
             <div class="datefield"><span class="subfield monthfield"><input class="birthday " type="text" pattern="[0-9]*" value="" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month"></span> / <span class="subfield dayfield"><input class="birthday " type="text" pattern="[0-9]*" value="" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day"></span> <span class="small-meta nowrap">( mm / dd )</span></div>
          </div>
