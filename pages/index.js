@@ -5,6 +5,7 @@ import Icon from '../components/icon';
 import Image from '../components/image';
 import { Link } from '../components/link';
 import CleanBlocks from '../components/clean-blocks';
+import MailchimpForm from '../components/mailchimp-form';
 import { openCalendlyPopup } from '../utils';
 import styles from '../styles/index.module.css';
 import ClientsImage from '../public/clients.jpg';
@@ -139,6 +140,11 @@ const Index = () => (
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen></iframe>
+        </Section>
+        <Section>
+            <h2>Go Beyond the Basics</h2>
+            <p>Subscribe to get exclusive content and free financial education</p>
+            <MailchimpForm />
         </Section>
     </Main>
 );

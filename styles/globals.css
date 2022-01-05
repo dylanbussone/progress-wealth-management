@@ -80,10 +80,10 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -97,38 +97,41 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+    display: block;
 }
 body {
-  line-height: 1;
+    line-height: 1;
 }
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
-  content: none;
+    content: '';
+    content: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 input,
 button,
 submit {
-  border: none;
-  background: none;
+    border: none;
+    background: none;
+}
+form {
+    padding: 0 !important;
 }
 
 /* END RESET */
 
 * {
     color: #232129;
-    font-family: "LatoRegular", sans-serif, serif;
+    font-family: 'LatoRegular', sans-serif, serif;
     line-height: 1.4;
 }
 
@@ -137,7 +140,7 @@ button {
     cursor: pointer;
     text-decoration: none;
     transition: color 0.3s;
-    color: #227C9D;
+    color: #227c9d;
 }
 
 h1 {
@@ -145,7 +148,7 @@ h1 {
 }
 h2 {
     font-size: 1.85rem;
-    font-family: "LatoLight";
+    font-family: 'LatoLight';
 }
 h3 {
     font-size: 1.35rem;
@@ -156,7 +159,23 @@ h4 {
 label {
     font-size: 1.2rem;
 }
-p, span, div, button, a, textarea, input {
+p,
+span,
+div,
+button,
+a,
+textarea,
+input {
     font-size: 1.1rem;
     line-height: 1.5;
+}
+
+/* mailchimp */
+.brandingLogo {
+    width: 1px;
+    overflow: hidden;
+}
+#mce-responses {
+    margin: 0 !important;
+    padding-left: 0 !important;
 }

@@ -30,7 +30,6 @@ function MyApp({ Component, pageProps }) {
             />
             <Script strategy="lazyOnload" src="/ga.js" />
             <Script strategy="lazyOnload" src="/calendly.js" />
-            <Script strategy="lazyOnload" src="/mailchimp.js" />
         </React.Fragment>
     );
 }
