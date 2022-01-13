@@ -1,13 +1,18 @@
 @value mobile, sm, md, lg from './layout.css';
 @value text_label, text_h3 from './typography.css';
 
+.blaine_img_wrapper {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: lg;
+    overflow: hidden;
+    position: relative;
+}
 .blaine_img {
     composes: border_radius_subtle from './effect.css';
-    max-width: 100%;
 }
-
 .name_title {
-    margin: sm 0 lg;
+    margin-left: lg;
 }
 .name_title,
 .name_title * {
@@ -16,6 +21,17 @@
 }
 .name_title .bold {
     font-family: 'LatoBlack';
+}
+
+@media (max-width: mobile) {
+    .blaine_img_wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .name_title {
+        margin-left: 0;
+        margin-top: sm;
+    }
 }
 
 .paragraphs p {

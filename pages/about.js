@@ -4,7 +4,7 @@ import Section from '../components/section';
 import { Link } from '../components/link';
 import Image from '../components/image';
 import styles from '../styles/about.module.css';
-import BlaineImage from '../public/blaine_sm.jpg';
+import BlaineImage from '../public/blaine-headshot.jpg';
 import CfpImage from '../public/cfp.jpg';
 import NapfaImage from '../public/napfa.jpg';
 import FoImage from '../public/fo.jpg';
@@ -17,13 +17,20 @@ const About = () => {
         <Main>
             <Section>
                 <h1>Who We Are</h1>
-                <Image className={styles.blaine_img} src={BlaineImage} alt="Blaine Thiederman" />
 
-                <h3 className={styles.name_title}>
-                    <span className={styles.bold}>Blaine Thiederman</span> MBA, CFP(R)
-                    <br />
-                    Founder/Lead Advisor
-                </h3>
+                <div className={styles.blaine_img_wrapper}>
+                    <Image
+                        className={styles.blaine_img}
+                        src={BlaineImage}
+                        alt="Blaine Thiederman"
+                    />
+
+                    <h3 className={styles.name_title}>
+                        <span className={styles.bold}>Blaine Thiederman</span> MBA, CFP(R)
+                        <br />
+                        Founder/Lead Advisor
+                    </h3>
+                </div>
                 <div className={styles.paragraphs}>
                     <p>
                         “As a CERTIFIED FINANCIAL PLANNER™, it’s my life’s mission to provide
