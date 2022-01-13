@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Glide from '@glidejs/glide';
 import { Link } from './link';
-import styles from '../styles/carousel.module.scss';
+import styles from '../styles/carousel.module.css';
 
 const CAROUSEL_ITEMS = [
     {
