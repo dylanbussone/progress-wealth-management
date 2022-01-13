@@ -1,0 +1,29 @@
+@value grey from './colors.css';
+
+.header {
+    color: grey;
+}
+
+.glide_slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel_item {
+}
+.carousel_item a {
+    opacity: 0.5;
+    transition: opacity 0.25s ease-in-out;
+    -moz-transition: opacity 0.25s ease-in-out;
+    -webkit-transition: opacity 0.25s ease-in-out;
+}
+.carousel_item a:hover,
+.carousel_item a:active {
+    opacity: 1;
+}
+
+.carousel_item img {
+    max-height: 200px;
+    max-width: 200px;
+}

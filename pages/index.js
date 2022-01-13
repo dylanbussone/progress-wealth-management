@@ -6,6 +6,7 @@ import Image from '../components/image';
 import { Link } from '../components/link';
 import CleanBlocks from '../components/clean-blocks';
 import MailchimpForm from '../components/mailchimp-form';
+import Carousel from '../components/carousel';
 import { openCalendlyPopup } from '../utils';
 import styles from '../styles/index.module.css';
 import ClientsImage from '../public/clients.jpg';
@@ -145,6 +146,9 @@ const Index = () => (
             <h2>Go Beyond the Basics</h2>
             <p>Subscribe to get exclusive content and free financial education</p>
             <MailchimpForm />
+        </Section>
+        <Section>
+            <Carousel />
         </Section>
     </Main>
 );

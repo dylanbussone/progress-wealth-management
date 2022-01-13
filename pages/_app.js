@@ -4,6 +4,7 @@ import Script from 'next/script';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import '../styles/globals.css';
+import '../styles/imports.scss';
 
 function MyApp({ Component, pageProps }) {
     return (
