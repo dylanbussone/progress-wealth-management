@@ -12,10 +12,23 @@ PROB STATEMENTS:
 
 TODOS
 
-- fix shitty wording
-- shorten bullet points
-- lead with empathetic "high touch" point / problem statement, someone who cares about you
-
 - fix GA script to fire events for the different nextjs pages
     https://mariestarck.com/add-google-analytics-to-your-next-js-application-in-5-easy-steps/
     https://blog.jarrodwatts.com/track-user-behaviour-on-your-website-with-google-analytics-and-nextjs
+
+
+Plaid: api for linking financial accounts
+Altruist: broker
+RightCaptial: good example of an existing company that sort of does this. https://www.rightcapital.com/ 
+
+Vision:
+User platform on site. Info about entire financial plan (long term). Retirement, account balances.
+Account balance over time chart?
+
+Firebase for db?
+https://firebase.google.com/docs/database
+
+Think about what data we need to store vs what we can get from apis. Ideally we don’t actually store _any_ financial data, and get it all from financial apis.
+Just store user/account data.
+
+Mortgage rate chart?
