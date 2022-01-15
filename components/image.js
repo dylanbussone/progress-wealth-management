@@ -1,12 +1,11 @@
 import NextImage from 'next/image';
 
-const Image = ({ Img, alt, ...rest }) => (
+const Image = props => (
     <NextImage
-        src={Img}
         placeholder="blur"
-        loading={rest.priority ? 'eager' : 'lazy'}
-        alt={alt ?? 'Progress Wealth Management'}
-        {...rest}
+        loading={props.priority ? 'eager' : 'lazy'}
+        alt={'Progress Wealth Management'}
+        {...props}
     />
 );
 
