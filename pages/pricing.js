@@ -1,4 +1,3 @@
-import React from 'react';
 import Main from '../components/main';
 import Section from '../components/section';
 import CleanBlocks from '../components/clean-blocks';
@@ -46,7 +45,7 @@ const Pricing = () => {
                                         </li>
                                     </ul>
                                 ),
-                                footer: <div className={styles.price}>$1000</div>,
+                                footer: <div className={styles.price}>$1200/yr</div>,
                             },
                             {
                                 header: 'For Couples',
@@ -72,7 +71,7 @@ const Pricing = () => {
                                         </li>
                                     </ul>
                                 ),
-                                footer: <div className={styles.price}>$2000</div>,
+                                footer: <div className={styles.price}>$2400/yr</div>,
                             },
                             {
                                 header: 'For Entrepreneurs',
@@ -94,7 +93,31 @@ const Pricing = () => {
                                         </li>
                                     </ul>
                                 ),
-                                footer: <div className={styles.price}>$2500</div>,
+                                footer: <div className={styles.price}>$5000/yr</div>,
+                            },
+                            {
+                                header: 'Financial Wellness for Small Businesses',
+                                body: (
+                                    <ul>
+                                        <li>
+                                            It&apos;s well known that financial stress is the number
+                                            one reason people look for a new job.
+                                        </li>
+                                        <li>
+                                            Hire Progress Wealth Management on as your financial
+                                            wellness provider and in doing so, provide every
+                                            employee with a financial plan to help bring
+                                            organization and peace to their financial lives.
+                                        </li>
+                                        <li>
+                                            Every employee gets unlimited calls with their planner
+                                            where they&apos;ll receive a financial plan, budgeting,
+                                            and low cost investment management so they know
+                                            they&apos;re on track.
+                                        </li>
+                                    </ul>
+                                ),
+                                footer: <div className={styles.price}>$200/yr per employee</div>,
                             },
                             {
                                 header: 'Wealth Management',
