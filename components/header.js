@@ -31,6 +31,10 @@ const HEADER_LINKS = [
         ],
     },
     {
+        text: 'What to Expect',
+        href: '/what-to-expect',
+    },
+    {
         text: 'Pricing',
         href: '/pricing',
     },

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import Main from '../components/main';
 import Section from '../components/section';
 import Image from '../components/image';

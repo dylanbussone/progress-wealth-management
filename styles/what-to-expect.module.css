@@ -1,0 +1,5 @@
+@value mobile, md from './layout.css';
+
+.video_section h4 {
+    margin: md 0;
+}

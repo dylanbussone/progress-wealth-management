@@ -8,7 +8,7 @@
         display: none;
     }
 }
-@media (min-width: mobile) {
+@media (min-width: calc(mobile + 1px)) {
     .mobile_header {
         display: none;
     }

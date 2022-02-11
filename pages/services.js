@@ -1,4 +1,3 @@
-import React from 'react';
 import Main from '../components/main';
 import Section from '../components/section';
 import DropdownQuestions from '../components/dropdown-questions';
