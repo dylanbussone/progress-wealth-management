@@ -63,7 +63,7 @@ const Carousel = () => {
     });
 
     return (
-        <div>
+        <div className={styles.carousel}>
             <h3 className={styles.header}>As featured in...</h3>
             <div className="glide">
                 <div className="glide__track" data-glide-el="track">

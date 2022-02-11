@@ -1,3 +1,4 @@
+@value mobile from './layout.css';
 @value grey from './colors.css';
 
 .header {
@@ -26,4 +27,10 @@
 .carousel_item img {
     max-height: 200px;
     max-width: 200px;
+}
+
+@media (max-width: mobile) {
+    .carousel {
+        display: none;
+    }
 }
