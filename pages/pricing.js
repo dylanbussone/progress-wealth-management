@@ -45,7 +45,7 @@ const Pricing = () => {
                                         </li>
                                     </ul>
                                 ),
-                                footer: <div className={styles.price}>$1200/yr</div>,
+                                footer: <div className={styles.price}>$2400/yr</div>,
                             },
                             {
                                 header: 'For Couples',
@@ -71,7 +71,7 @@ const Pricing = () => {
                                         </li>
                                     </ul>
                                 ),
-                                footer: <div className={styles.price}>$2400/yr</div>,
+                                footer: <div className={styles.price}>$3600/yr</div>,
                             },
                             {
                                 header: 'For Entrepreneurs',
