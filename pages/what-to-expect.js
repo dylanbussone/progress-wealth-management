@@ -28,18 +28,12 @@ const WhatToExpect = () => {
 
             <Section className={styles.video_section}>
                 <h4>How we can help you stay organized and ensure efficiency</h4>
-                <div
-                    className="wistia_embed wistia_async_7qf14xt5ys"
-                    style={{ height: '360px', position: 'relative', width: '640px' }}>
-                    &nbsp;
-                </div>
+                <div className={`${styles.video} wistia_embed wistia_async_7qf14xt5ys`}>&nbsp;</div>
             </Section>
 
             <Section className={styles.video_section}>
                 <h4>Get help with creating a science behind affording your future</h4>
-                <div
-                    className="wistia_embed wistia_async_tfil6fkbh9"
-                    style={{ height: '360px', position: 'relative', width: '640px' }}>
+                <div className={`${styles.video} wistia_embed wistia_async_tfil6fkbh9`}>
                     <div
                         className="wistia_swatch"
                         style={{
@@ -67,9 +61,7 @@ const WhatToExpect = () => {
 
             <Section className={styles.video_section}>
                 <h4>Navigate Market Uncertainty</h4>
-                <div
-                    className="wistia_embed wistia_async_zqz9m9keff"
-                    style={{ height: '360px', position: 'relative', width: '640px' }}>
+                <div className={`${styles.video} wistia_embed wistia_async_zqz9m9keff`}>
                     <div
                         className="wistia_swatch"
                         style={{

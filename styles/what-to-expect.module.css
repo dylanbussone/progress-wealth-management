@@ -3,3 +3,9 @@
 .video_section h4 {
     margin: md 0;
 }
+
+.video {
+    width: 100%;
+    aspect-ratio: 640 / 360;
+    position: relative;
+}
