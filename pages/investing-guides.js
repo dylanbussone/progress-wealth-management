@@ -1,12 +1,23 @@
 import Main from '../components/main';
 import Section from '../components/section';
 import { Link } from '../components/link';
+import Image from '../components/image';
+import Pic from '../public/investing-guides.jpg';
 
 const InvestingGuides = () => {
     return (
         <Main>
+            <style jsx>{`
+                ul {
+                    margin-top: 24px;
+                }
+                li {
+                    margin-left: 12px;
+                }
+            `}</style>
             <Section>
                 <h1>Investing Guides</h1>
+                <Image src={Pic} />
                 <ul>
                     <li>
                         <Link href="https://www.scribd.com/document/548422185/Women-and-Investing Retirement">

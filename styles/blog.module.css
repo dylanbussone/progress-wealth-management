@@ -1,0 +1,21 @@
+@value md, xl, mobile_sm from './layout.css';
+
+.flex_section {
+    display: flex;
+    flex: 1 1;
+    margin-bottom: xl;
+}
+
+.flex_section li {
+    margin-left: md;
+}
+
+.flex_section > * {
+    flex: 1;
+}
+
+@media (max-width: mobile_sm) {
+    .flex_section {
+        flex-direction: column;
+    }
+}

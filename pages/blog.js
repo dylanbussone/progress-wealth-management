@@ -1,63 +1,83 @@
 import Main from '../components/main';
 import Section from '../components/section';
 import { Link } from '../components/link';
+import Image from '../components/image';
+import CashFlow from '../public/cash-flow.jpg';
+import Investing from '../public/investing.jpg';
+import Insurance from '../public/insurance.jpg';
+import styles from '../styles/blog.module.css';
 
 const Blog = () => {
     return (
         <Main>
             <Section>
                 <h1>Blog</h1>
-                <h2>Cash Flow</h2>
-                <ul>
-                    <li>
-                        <Link href="https://www.library-messages.com/e1ccfcf3-46f7-4d17-8901-98a4241cd809/resource-center/investment/inflation-and-the-real-rate-of-return">
-                            Inflation and the Real Rate of Return
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="https://www.library-messages.com/e1ccfcf3-46f7-4d17-8901-98a4241cd809/resource-center/money/a-penny-saved-is-two-pennies-earned">
-                            A Penny Saved is Two Pennies Earned
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="https://www.library-messages.com/e1ccfcf3-46f7-4d17-8901-98a4241cd809/resource-center/money/budget-check-up-tax-time-is-the-right-time">
-                            Budget Check Up
-                        </Link>
-                    </li>
-                </ul>
+                <div className={styles.flex_section}>
+                    <div>
+                        <h2>Cash Flow</h2>
+                        <ul>
+                            <li>
+                                <Link href="https://www.library-messages.com/e1ccfcf3-46f7-4d17-8901-98a4241cd809/resource-center/investment/inflation-and-the-real-rate-of-return">
+                                    Inflation and the Real Rate of Return
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="https://www.library-messages.com/e1ccfcf3-46f7-4d17-8901-98a4241cd809/resource-center/money/a-penny-saved-is-two-pennies-earned">
+                                    A Penny Saved is Two Pennies Earned
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="https://www.library-messages.com/e1ccfcf3-46f7-4d17-8901-98a4241cd809/resource-center/money/budget-check-up-tax-time-is-the-right-time">
+                                    Budget Check Up
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <Image src={CashFlow} alt="cash flow" />
+                </div>
                 <br />
-                <h2>Investing</h2>
-                <ul>
-                    <li>
-                        <Link href="https://www.library-messages.com/e1ccfcf3-46f7-4d17-8901-98a4241cd809/resource-center/investment/a-look-at-diversification">
-                            A Look at Diversification{' '}
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="https://www.library-messages.com/e1ccfcf3-46f7-4d17-8901-98a4241cd809/resource-center/retirement/401k-choices-at-a-former-employer">
-                            What To Do With Your Old 401k
-                        </Link>
-                    </li>
-                </ul>
+                <div className={styles.flex_section}>
+                    <div>
+                        <h2>Investing</h2>
+                        <ul>
+                            <li>
+                                <Link href="https://www.library-messages.com/e1ccfcf3-46f7-4d17-8901-98a4241cd809/resource-center/investment/a-look-at-diversification">
+                                    A Look at Diversification{' '}
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="https://www.library-messages.com/e1ccfcf3-46f7-4d17-8901-98a4241cd809/resource-center/retirement/401k-choices-at-a-former-employer">
+                                    What To Do With Your Old 401k
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <Image src={Investing} alt="investing" />
+                </div>
                 <br />
-                <h2>Insurance</h2>
-                <ul>
-                    <li>
-                        <Link href="https://www.library-messages.com/e1ccfcf3-46f7-4d17-8901-98a4241cd809/resource-center/insurance/when-life-insurance-becomes-taxable">
-                            When Life Insurance Becomes Taxable
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="https://www.library-messages.com/e1ccfcf3-46f7-4d17-8901-98a4241cd809/resource-center/insurance/assess-your-life-insurance-needs">
-                            Life Insurance Needs: A Calculator
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="https://www.library-messages.com/e1ccfcf3-46f7-4d17-8901-98a4241cd809/resource-center/insurance/how-insurance-deductibles-work-1">
-                            How Insurance Deductibles Work
-                        </Link>
-                    </li>
-                </ul>
+                <div className={styles.flex_section}>
+                    <div>
+                        <h2>Insurance</h2>
+                        <ul>
+                            <li>
+                                <Link href="https://www.library-messages.com/e1ccfcf3-46f7-4d17-8901-98a4241cd809/resource-center/insurance/when-life-insurance-becomes-taxable">
+                                    When Life Insurance Becomes Taxable
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="https://www.library-messages.com/e1ccfcf3-46f7-4d17-8901-98a4241cd809/resource-center/insurance/assess-your-life-insurance-needs">
+                                    Life Insurance Needs: A Calculator
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="https://www.library-messages.com/e1ccfcf3-46f7-4d17-8901-98a4241cd809/resource-center/insurance/how-insurance-deductibles-work-1">
+                                    How Insurance Deductibles Work
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <Image src={Insurance} alt="insurance" />
+                </div>
                 <br />
                 <h2>Retirement Planning</h2>
                 <ul>

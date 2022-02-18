@@ -1,4 +1,5 @@
 @value mobile: 1150px;
+@value mobile_sm: 768px;
 @value max_width: 1150px;
 
 @value xxs: 4px;
