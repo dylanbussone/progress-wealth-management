@@ -14,7 +14,7 @@ const Schedule = () => {
         const [name, email, phone, message] = Array.from(contactFormRef.current.elements).map(
             el => el.value,
         );
-        const addr = 'blaine@progresswealthmanagement.com';
+        const addr = 'support@progresswealthmanagement.com';
         const subject = `Message from ${name}`;
         const body = `${message.replace(
             /\n/g,
