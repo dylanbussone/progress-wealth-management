@@ -6,7 +6,8 @@ import Footer from '../components/footer';
 import '../styles/globals.css';
 import '../styles/imports.scss';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
+    //const isHomePage = router.asPath === '/';
     return (
         <React.Fragment>
             <Head>

@@ -1,5 +1,5 @@
 @value md, lg, xxxl from './layout.css';
-@value white from './colors.css';
+@value white, blue from './colors.css';
 
 .section {
     padding: 0 md;
@@ -31,5 +31,11 @@
     background: #111;
 }
 .theme_dark * {
+    color: white;
+}
+.theme_blue {
+    background: blue;
+}
+.theme_blue * {
     color: white;
 }

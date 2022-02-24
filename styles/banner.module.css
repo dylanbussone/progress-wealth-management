@@ -1,0 +1,23 @@
+@value md, lg, xl from './layout.css';
+@value gold, blue from './colors.css';
+
+.banner {
+    margin-bottom: md;
+}
+
+.logo_img {
+    max-width: 38px;
+}
+
+.logo_text {
+    max-width: 350px;
+    margin-left: lg;
+}
+
+.separator {
+    composes: border_radius_container from './effect.css';
+    width: 200px;
+    height: 3px;
+    background: gold;
+    margin: 0 0 xl calc(38px + lg);
+}

@@ -3,6 +3,7 @@ import Section from '../components/section';
 import Icon from '../components/icon';
 import Image from '../components/image';
 import { Link } from '../components/link';
+import Banner from '../components/banner';
 import CleanBlocks from '../components/clean-blocks';
 import MailchimpForm from '../components/mailchimp-form';
 import Carousel from '../components/carousel';
@@ -14,7 +15,8 @@ import BoatImage from '../public/boat.jpg';
 const Index = () => (
     <Main>
         <Section>
-            <h1>Financial Planning for Progress</h1>
+            <Banner />
+            <h2>Financial Planning for Progress</h2>
             <p>
                 Meet your financial planning partners that provide you the tools, guidance,
                 inspiration and advice you need to succeed.

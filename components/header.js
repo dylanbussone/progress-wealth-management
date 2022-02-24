@@ -6,7 +6,7 @@ import styles from '../styles/header.module.css';
 
 const HEADER_LINKS = [
     {
-        text: 'Progress Wealth Management',
+        text: 'Home',
         href: '/',
     },
     {
