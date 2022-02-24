@@ -1,4 +1,4 @@
-@value md, lg, xl from './layout.css';
+@value mobile_sm, md, lg, xl from './layout.css';
 @value gold, blue from './colors.css';
 
 .banner {
@@ -20,4 +20,19 @@
     height: 3px;
     background: gold;
     margin: 0 0 xl calc(38px + lg);
+}
+
+@media (max-width: mobile_sm) {
+    .logo_img {
+        max-width: 26px;
+    }
+
+    .logo_text {
+        max-width: 220px;
+    }
+
+    .separator {
+        width: 100%;
+        margin: 0 0 xl 0;
+    }
 }
