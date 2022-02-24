@@ -1,5 +1,5 @@
 @value md, lg, xxxl from './layout.css';
-@value white, blue from './colors.css';
+@value white, blue, blue_darker from './colors.css';
 
 .section {
     padding: 0 md;
@@ -34,7 +34,8 @@
     color: white;
 }
 .theme_blue {
-    background: blue;
+    composes: box_shadow from './effect.css';
+    background: blue_darker;
 }
 .theme_blue * {
     color: white;

@@ -119,16 +119,15 @@ const Index = () => (
             </div>
         </Section>
 
-        <Section>
+        <Section theme="blue">
             <div className={styles.today_tomorrow}>
                 <div className={styles.today_tomorrow_img_wrapper}>
                     <Image src={BoatImage} />
                 </div>
-                <h4>
-                    Progress Wealth today.
-                    <br />
-                    Progress tomorrow.
-                </h4>
+                <div>
+                    <h4>Progress Wealth today.</h4>
+                    <h4>Progress tomorrow.</h4>
+                </div>
             </div>
         </Section>
 

@@ -1,6 +1,7 @@
 @value mobile, xs, sm, md, lg, xl, xxl, xxxl from './layout.css';
 @value text_sup, text_h4, white from './typography.css';
 @value violet, grey, button_green, white from './colors.css';
+@value header_height from './header.module.css';
 
 .button_link {
     text-decoration: underline;
@@ -71,11 +72,10 @@
     width: 50%;
 }
 .today_tomorrow h4 {
-    padding-left: xxl;
+    padding: sm 0 sm xxl;
 }
 .today_tomorrow_img_wrapper {
-    composes: border_radius_subtle from './effect.css';
-    max-height: 800px;
+    height: calc(100vh - header_height);
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -83,19 +83,7 @@
 
 @media (max-width: mobile) {
     .today_tomorrow {
-        flex-direction: column;
-        text-align: center;
-    }
-    .today_tomorrow_img_wrapper {
-        width: 100%;
-        max-height: 50vh;
-    }
-    .today_tomorrow h4 {
-        padding-left: 0;
-        padding-top: lg;
-    }
-    .today_tomorrow > * {
-        width: 100%;
+        display: none;
     }
 }
 

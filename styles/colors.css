@@ -1,4 +1,9 @@
+/* https://www.w3schools.com/colors/colors_picker.asp */
+@value blue_lighterer: #1b334b;
+@value blue_lighter: #142639;
 @value blue: #0f1d2b;
+@value blue_darker: #0d1a26;
+@value blue_darkerer: #070d13;
 @value gold: #CC9933;
 @value green: #81AE9D;
 @value lavender: #EEE5E9;
