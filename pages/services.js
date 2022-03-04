@@ -10,6 +10,15 @@ const Services = () => {
             <Section>
                 <h1>What We Do</h1>
 
+                <iframe
+                    className={styles.video}
+                    loading="lazy"
+                    src="https://www.youtube.com/embed/hmwDo3-8t-o"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen></iframe>
+
                 <ul className={styles.services_list}>
                     <li>
                         <Icon name="family" size={32} color="icon_gold" />
@@ -37,6 +46,7 @@ const Services = () => {
                     </li>
                 </ul>
             </Section>
+
             <Section>
                 <h2>Common Questions We Help Our Clients Answer</h2>
 

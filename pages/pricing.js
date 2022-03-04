@@ -40,8 +40,9 @@ const Pricing = () => {
                                             .
                                         </li>
                                         <li>
-                                            As many calls with your dedicated CFP as you like for{' '}
-                                            <span className={styles.highlight}>2 months</span>.
+                                            As a result of signing up, you&apos;ll get as many calls
+                                            with your dedicated CFP as you like for{' '}
+                                            <span className={styles.highlight}>12 months</span>.
                                         </li>
                                     </ul>
                                 ),
@@ -52,48 +53,26 @@ const Pricing = () => {
                                 body: (
                                     <ul>
                                         <li>
-                                            We&apos;ll work with you figure out strategies to view
-                                            your financial life as a team, and help you make strides
-                                            together to bring peace to your finances in a simple,
-                                            easily digestible way.
-                                        </li>
-                                        <li>
-                                            We&apos;ll work with you to develop a straight-forward,
-                                            step-by-step plan to help you{' '}
+                                            Our goal will be to help you and your spouse{' '}
                                             <span className={styles.highlight}>
-                                                unlock your life&apos;s next chapter
-                                            </span>
-                                            .
+                                                make strides together
+                                            </span>{' '}
+                                            to bring peace to your finances in a simple, easily
+                                            digestible way. How we&apos;ll do this is, we&apos;ll
+                                            analyze every aspect of your financial life and in doing
+                                            so, figure out a{' '}
+                                            <span className={styles.highlight}>
+                                                step by step plan
+                                            </span>{' '}
+                                            and hold your hand to make it easy along the way.
                                         </li>
                                         <li>
-                                            As many calls with your dedicated CFP as you like for{' '}
-                                            <span className={styles.highlight}>6 months</span>.
+                                            Throughout the year, you&apos;ll get as many calls with
+                                            your dedicated CFP as you&apos;d like.
                                         </li>
                                     </ul>
                                 ),
                                 footer: <div className={styles.price}>$3600/yr</div>,
-                            },
-                            {
-                                header: 'For Entrepreneurs',
-                                body: (
-                                    <ul>
-                                        <li>
-                                            Whether you&apos;re about to launch a new career (or a
-                                            company) and you want to know what steps you have to
-                                            take first, second and last to be successful in the
-                                            venture you seek; we can ensure you&apos;re on the right
-                                            financial track while you&apos;re busy changing the
-                                            world.
-                                        </li>
-                                        <li>
-                                            You&apos;ll be paired up not just with{' '}
-                                            <span className={styles.highlight}>your own CFO</span>{' '}
-                                            but also a coach who holds their PMP to help hold you
-                                            accountable to your goals along the journey.
-                                        </li>
-                                    </ul>
-                                ),
-                                footer: <div className={styles.price}>$5000/yr</div>,
                             },
                             {
                                 header: 'Financial Wellness for Small Businesses',
@@ -117,7 +96,9 @@ const Pricing = () => {
                                         </li>
                                     </ul>
                                 ),
-                                footer: <div className={styles.price}>$200/yr per employee</div>,
+                                footer: (
+                                    <div className={styles.price}>$5-10 a month, per employee</div>
+                                ),
                             },
                             {
                                 header: 'Wealth Management',
