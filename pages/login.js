@@ -22,7 +22,6 @@ const Login = () => {
             callbacks: {
                 signInSuccessWithAuthResult: function (authResult, redirectUrl) {
                     // User successfully signed in.
-                    console.log('sign in success', authResult);
                     return true;
                 },
                 uiShown: function () {
