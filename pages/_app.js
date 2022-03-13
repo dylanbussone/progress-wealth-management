@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Script from 'next/script';
+import firebase from '../firebase'; // init firebase app
 import Header from '../components/header';
 import Footer from '../components/footer';
 import '../styles/globals.css';

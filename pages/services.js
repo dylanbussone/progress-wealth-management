@@ -56,7 +56,7 @@ const Services = () => {
                         <span className={styles.bold}>tax efficient</span> way?{' '}
                     </li>
                     <li>
-                        How should I approach my stock options to ensure I’m not wasting any money?
+                        How should I approach my <span className={styles.bold}>stock options</span> to ensure I’m not wasting any money?
                     </li>
                     <li>
                         What can be done today to ensure I’m not throwing away any of my{' '}
