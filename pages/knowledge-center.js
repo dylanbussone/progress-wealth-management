@@ -36,6 +36,22 @@ const KnowledgeCenter = () => {
                     </li>
                 </ul>
             </Section>
+
+            <Section>
+                <h2>Whitepapers</h2>
+                <ul>
+                    <li>
+                        <Link href="https://mailchi.mp/83457077e75e/quantifiedvalueofpwm">
+                            Quantified Value of Working with an Excellent Advisor
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="https://www.ifa.com/articles/dalbar_2016_qaib_investors_still_their_worst_enemy/">
+                            Investors Are Still Their Own Worst Enemy
+                        </Link>
+                    </li>
+                </ul>
+            </Section>
         </Main>
     );
 };
