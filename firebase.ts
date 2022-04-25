@@ -2,13 +2,13 @@ import { initializeApp } from 'firebase/app';
 // import { getFirestore } from 'firebase/firestore/lite';
 
 const firebaseConfig = {
-    apiKey: 'AIzaSyAmttynSJ2Ubht6N9pWefiPuXGK8W0r4F0',
-    authDomain: 'progress-wealth-management.firebaseapp.com',
-    projectId: 'progress-wealth-management',
-    storageBucket: 'progress-wealth-management.appspot.com',
-    messagingSenderId: '717934113207',
-    appId: '1:717934113207:web:958b07412b8cd6f271f832',
-    measurementId: 'G-NFTPYHQYL8',
+    apiKey: '',
+    authDomain: '',
+    projectId: '',
+    storageBucket: '',
+    messagingSenderId: '',
+    appId: '',
+    measurementId: '',
 };
 
 const app = initializeApp(firebaseConfig);
